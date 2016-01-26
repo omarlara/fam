@@ -1,0 +1,36 @@
+
+.form-feedback {
+    .form {
+    form.form-inline {
+      .form-group {
+        margin: 10px 0;
+        input {
+          border-radius: 0;
+          max-width: 340px;
+          width: 100%;
+        }
+        select {
+          border-radius: 0;
+          max-width: 340px;
+          width: 100%;
+        }
+      }
+    }
+  }  
+}
+
+@media (max-width: 991px) {
+
+    .form {
+        form.form-inline {
+        .form-group {
+            input {
+            max-width: 100% !important;
+            }
+        select {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}
