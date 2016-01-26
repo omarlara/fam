@@ -34,4 +34,7 @@ node_modules
 
 # Dependency directory
 bower_components
+css/posadas.css
+temp/main.css
 .sass-cache/
+
