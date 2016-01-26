@@ -50,21 +50,21 @@ module.exports = function (grunt) {
         cssmin: {
             options: {
                 sourceMap: false,
-                shorthandCompacting: true,
+                shorthandCompacting: false,
                 roundingPrecision: -1,
                 report: 'min',
                 keepSpecialComments: 0
             },
             target: {
                 files: {
-                    'css/<%= pkg.name %>.css' : [ 'temp/main.css' ]
+                    'css/<%= pkg.name %>.css': ['temp/main.css']
                 }
             }
         },
         compress: {
             main: {
                 options: {
-                  mode: 'gzip'
+                    mode: 'gzip'
                 },
                 files: [
                     {
@@ -91,4 +91,3 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['concurrent:dev']);
     grunt.registerTask('prod', ['concurrent:prod']);
 }
-

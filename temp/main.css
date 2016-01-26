@@ -25,4 +25,14 @@
 .btn-posadas {
   color: Red; }
 
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-header .navbar-brand {
+    padding: 0; }
+
+.user {
+  background-color: #aca095;
+  padding: 5px; }
+
 /*# sourceMappingURL=main.css.map */
