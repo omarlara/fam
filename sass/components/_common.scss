@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+    &:before,
+    &:after{
+        box-sizing: border-box;
+    }
+}
+
+*:focus {
+    outline: 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
