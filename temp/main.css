@@ -27,7 +27,8 @@
 
 .navbar-default {
   background-color: transparent;
-  border-color: transparent; }
+  border-color: transparent;
+  font-family: "Roboto", Sans-serif; }
   .navbar-default .navbar-header .navbar-brand {
     padding: 0; }
 
