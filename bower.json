@@ -1,0 +1,24 @@
+{
+  "name": "posadas",
+  "description": "bower config file",
+  "main": "index.js",
+  "authors": [
+    "Omar Lara <omar.a.lara.gonzalez@accenture.com>"
+  ],
+  "license": "isc",
+  "keywords": [
+    "posadaas"
+  ],
+  "homepage": "https://github.com/omarlara/fam",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
