@@ -1,4 +1,14 @@
 .user {
     background-color: $gray-user-color;
     padding: 5px;
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $font-primary;
+        font-we: 500;
+        color: #ffffff;
+        .cta{
+            text-decoration: underline;
+        }
+    }
 }

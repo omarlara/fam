@@ -25,16 +25,40 @@
 .btn-posadas {
   color: Red; }
 
+.navbar {
+  margin: 15px 0; }
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
   font-family: "Roboto", Sans-serif; }
   .navbar-default .navbar-header .navbar-brand {
     padding: 0; }
+  .navbar-default ul.nav li.active > a {
+    background-color: transparent; }
+    .navbar-default ul.nav li.active > a:hover {
+      background-color: transparent !important; }
+  .navbar-default ul.nav li a {
+    font-family: "Roboto", Sans-serif;
+    text-align: center;
+    color: #323232 !important;
+    font-size: 18px;
+    font-weight: 500; }
+    .navbar-default ul.nav li a:hover {
+      background-color: transparent !important;
+      color: #666 !important; }
 
 .user {
   background-color: #aca095;
   padding: 5px; }
+  .user a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto", Sans-serif;
+    font-we: 500;
+    color: #ffffff; }
+    .user a .cta {
+      text-decoration: underline; }
 
 .hero #hero-carousel .item .carousel-content {
   position: absolute;

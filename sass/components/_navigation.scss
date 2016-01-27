@@ -1,3 +1,6 @@
+.navbar{
+    margin:15px 0;
+}
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -5,6 +8,29 @@
     .navbar-header {
         .navbar-brand {
             padding: 0;
+        }
+    }
+    ul.nav {
+        li {
+            &.active {
+                > a {
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+            a {
+                font-family: $font-primary;
+                text-align: center;
+                color: #323232 !important;
+                font-size: 18px;
+                font-weight: 500;
+                &:hover {
+                    background-color: transparent !important;
+                    color: #666 !important;
+                }
+            }
         }
     }
 }

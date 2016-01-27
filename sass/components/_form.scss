@@ -1,7 +1,11 @@
 
 .form-feedback {
-    .form {
     form.form-inline {
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #323232;
+        }
       .form-group {
         margin: 10px 0;
         input {
@@ -16,12 +20,19 @@
         }
       }
     }
-  }  
+    button {
+        float: right;
+        border-radius: 0;
+        background-color: #FDB924 ;
+        border: none;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 0 15px;
+    }
 }
 
 @media (max-width: 991px) {
 
-    .form {
         form.form-inline {
         .form-group {
             input {
@@ -33,4 +44,3 @@
       }
     }
   }
-}
