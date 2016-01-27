@@ -1,13 +1,25 @@
 
 .form-feedback {
+    .required {
+        color: red;
+    }
     form.form-inline {
         h1 {
             text-align: center;
             font-size: 28px;
             color: #323232;
         }
+        p {
+            text-align: center;
+            font-size: 12px;
+            color: #8D7F75;
+        }
       .form-group {
         margin: 10px 0;
+        label.control-label {
+            font-size: 14px;
+            color: #8D7F75;
+        }
         input {
           border-radius: 0;
           max-width: 340px;
@@ -28,6 +40,13 @@
         color: #FFFFFF;
         font-size: 16px;
         margin: 0 15px;
+        padding: 6px 12px;
+    }
+    
+    button.active, button:active {
+       background-color: #FDB924 ;
+        border: none;
+        color: #FFFFFF;
     }
 }
 
