@@ -1,6 +1,7 @@
-.navbar{
-    margin:15px 0;
+.navbar {
+    margin: 15px 0;
 }
+
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -14,9 +15,11 @@
         li {
             &.active {
                 > a {
-                    background-color: transparent;
+                    background-color: $nav-active-color;
+                    color: #ffffff !important;
                     &:hover {
-                        background-color: transparent !important;
+                        color: #ffffff !important;
+                        background-color: $nav-active-color !important;
                     }
                 }
             }
