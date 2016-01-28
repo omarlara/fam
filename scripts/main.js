@@ -1,17 +1,17 @@
 'use strict';
 
-$(function() {
+$(function () {
 
-  $("#hero-carousel").owlCarousel({
- 
-      //autoPlay : 3000,
-      navigation : false,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
-  });
-    
-  $(".form-inline").validate();
-  
+    $("#hero-carousel").owlCarousel({
+
+        //autoPlay : 3000,
+        navigation: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+    });
+
+    $(".form-inline").validate();
+
 
 });

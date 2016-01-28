@@ -124,4 +124,15 @@ footer {
             }
         }
     }
+    .footer-banner {
+        p.text-center {
+            a {
+                display: block;
+                img {
+                    display: block;
+                    margin: 0 auto 20px;
+                }
+            }
+        }
+    }
 }
