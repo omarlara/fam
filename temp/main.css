@@ -70,8 +70,14 @@
   .navbar-brand > img {
     max-width: 80%; } }
 @media (max-width: 991px) {
-  .navbar-header {
-    float: none; }
+  .container.fiesta {
+    padding: 0; }
+    .container.fiesta .navbar {
+      margin: 15px 0 0 0; }
+      .container.fiesta .navbar .navbar-header {
+        float: none;
+        margin-left: 0 !important;
+        margin-right: 0 !important; }
 
   .navbar-toggle {
     display: block; }
@@ -244,10 +250,15 @@
       font-size: 24px; }
     .hero #hero-carousel .carousel-content h2 {
       font-size: 20px; } }
+.form-feedback .success {
+  display: none;
+  text-align: center; }
 .form-feedback .required {
   color: #f82c1d;
   font-size: 16px;
   vertical-align: middle; }
+.form-feedback .error {
+  color: #f82c1d; }
 .form-feedback .red {
   color: #f82c1d;
   font-size: 16px;
@@ -295,14 +306,22 @@
   border: none;
   color: #FFFFFF;
   font-size: 16px;
-  margin: 0 15px;
-  padding: 6px 12px; }
+  margin: 10px 15px 20px 0;
+  padding: 6px 12px;
+  width: 150px; }
 .form-feedback button.active, .form-feedback button:active {
   background-color: #FDB924;
   border: none;
   color: #FFFFFF; }
 
+@media (min-width: 1200px) {
+  .form-feedback button {
+    margin: 10px 60px 20px 0;
+    width: 150px; } }
 @media (max-width: 767px) {
+  .form-feedback button {
+    width: 140px; }
+
   form.form-inline .form-group label.control-label {
     text-align: left !important; }
   form.form-inline .form-group input {

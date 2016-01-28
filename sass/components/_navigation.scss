@@ -72,9 +72,19 @@
 }
 
 @media (max-width: 991px) {
-    .navbar-header {
-        float: none;
+    
+    .container.fiesta {
+        padding: 0;
+        .navbar {
+            margin: 15px 0 0 0;
+            .navbar-header {
+                float: none;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
     }
+    
     .navbar-toggle {
         display: block;
     }
