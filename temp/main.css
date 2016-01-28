@@ -128,6 +128,8 @@
   .user .text {
     color: #ffffff;
     font-weight: 500; }
+  .user span.drop-down.notifications {
+    margin-left: 5px; }
   .user span.drop-down {
     display: inline-block;
     position: relative;

@@ -28,6 +28,9 @@
         color: #ffffff;
         font-weight: 500;
     }
+    span.drop-down.notifications {
+        margin-left: 5px;
+    }
     span.drop-down {
         display: inline-block;
         position: relative;
@@ -85,7 +88,7 @@
             .fa-caret-down {
                 display: none;
             }
-            &:hover{
+            &:hover {
                 ul {
                     display: block;
                     width: 140px;
