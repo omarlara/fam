@@ -7,6 +7,24 @@
     border-color: transparent;
     font-family: $font-primary;
     .navbar-header {
+        button.navbar-toggle {
+            border: none;
+            background: none;
+            span.icon-bar {
+                background-color: #fdb924;
+                height: 4px;
+                width: 24px;
+            }
+            &:hover {
+                background: none;
+            }            
+        }
+        button.navbar-toggle[aria-expanded="true"] {
+                background-color: #fdb924;
+                span.icon-bar {
+                background-color: #FFF;
+            }
+        }
         .navbar-brand {
             padding: 0;
         }
@@ -55,17 +73,27 @@
     }
     .navbar-nav {
         float: none!important;
-        margin: 7.5px -15px;
+        margin: 0;
     }
     .navbar-nav>li {
         float: none;
     }
     .navbar-nav>li>a {
+        br {
+            display: none;
+        }
         padding-top: 10px;
         padding-bottom: 10px;
+        border-bottom: 1px solid #e7e7e7;
     }
      .navbar-collapse.collapse.in {
-         display: block !important; 
+         display: block !important;
+         margin-top: 15px;
+         padding: 0;
+    }
+    .navbar-default ul.nav li a {
+        min-height: 50px;
+        padding-top: 17px;
     }
 
 }
