@@ -1,9 +1,16 @@
 
 .form-feedback {
+    .success {
+        display: none;
+        text-align: center;
+    }
     .required {
         color: #f82c1d;
         font-size: 16px;
         vertical-align: middle;
+    }
+    .error {
+        color: #f82c1d;
     }
     .red {
         color: #f82c1d;
@@ -62,8 +69,9 @@
         border: none;
         color: #FFFFFF;
         font-size: 16px;
-        margin: 0 15px;
+        margin: 10px 15px 20px 0;
         padding: 6px 12px;
+        width: 150px;
     }
     
     button.active, button:active {
@@ -73,8 +81,17 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
+    .form-feedback button {
+        margin: 10px 60px 20px 0;
+        width: 150px;
+    }
+}
 
+@media (max-width: 767px) {
+        .form-feedback button {
+            width: 140px;
+        }
         form.form-inline {
         .form-group {
             label.control-label {
