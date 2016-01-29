@@ -17,11 +17,11 @@
             }
             &:hover {
                 background: none;
-            }            
+            }
         }
         button.navbar-toggle[aria-expanded="true"] {
-                background-color: #fdb924;
-                span.icon-bar {
+            background-color: #fdb924;
+            span.icon-bar {
                 background-color: #FFF;
             }
         }
@@ -56,17 +56,10 @@
     }
 }
 
-@media (max-width: 767px) {
-    .navbar-brand {
-        >img {
-            max-width: 75%;
-        }
-    }}
-
 @media (min-width: 767px) and (max-width: 1023px) {
     .navbar-brand {
         >img {
-            max-width: 80%;
+            //max-width: 80%;
         }
     }
 }
@@ -74,13 +67,17 @@
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
+        min-height: 63px;
     }
     .navbar-toggle {
+        float: right;
         display: block;
+        margin: 8px 15px 0 0;
     }
     .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        margin-left: -30px !important;
+        border-color: transparent !important;
+        //box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
     .navbar-collapse.collapse {
         display: none!important;
@@ -88,6 +85,7 @@
     .navbar-nav {
         float: none!important;
         margin: 0;
+        margin-top: 15px;
     }
     .navbar-nav>li {
         float: none;
@@ -100,14 +98,44 @@
         padding-bottom: 10px;
         border-bottom: 1px solid #e7e7e7;
     }
-     .navbar-collapse.collapse.in {
-         display: block !important;
-         margin-top: 15px;
-         padding: 0;
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        // margin-top: 15px;
+        //padding: 0;
     }
     .navbar-default ul.nav li a {
         min-height: 50px;
-        padding-top: 17px;
+        padding: 17px;
     }
+}
 
+@media (max-width: 767px) {
+    div.fiesta {
+        a.navbar-brand {
+            display: block;
+            float: left;
+            max-width: 230px;
+            >img {
+                //  max-width: 75%;
+            }
+        }
+        nav.navbar {}
+        .navbar-header {
+            //margin-bottom: 15px;
+            min-height: 55px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    div.fiesta a.navbar-brand {
+        max-width: 210px;
+        margin-top: 3px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-toggle {
+        margin-top: 13px;
+    }
 }
