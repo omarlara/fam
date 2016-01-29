@@ -214,6 +214,8 @@
     font-size: 16px;
     height: 44px;
     padding: 12px 16px; }
+  .hero #hero-carousel .item .carousel-content .btn-primary:hover, .hero #hero-carousel .item .carousel-content .btn-primary:focus, .hero #hero-carousel .item .carousel-content .btn-primary:active, .hero #hero-carousel .item .carousel-content .btn-primary.active, .hero #hero-carousel .item .carousel-content .open .dropdown-toggle.btn-primary {
+    background-color: #eca302; }
 .hero .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center;
@@ -238,6 +240,22 @@
   .hero .owl-theme .owl-controls .owl-page.active span, .hero .owl-theme .owl-controls .owl-page:hover span {
     background-color: #fdb924; }
 
+.hero-image .item .img-content {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%; }
+  .hero-image .item .img-content h2 {
+    color: #FFF;
+    margin-bottom: 0;
+    text-shadow: 0 0 1px black; }
+  .hero-image .item .img-content p {
+    color: #FFF;
+    margin-top: 0;
+    text-shadow: 0 0 1px black; }
+
 @media (max-width: 767px) {
   .hero #hero-carousel .item img.img-responsive {
     min-height: 170px; }
@@ -253,7 +271,16 @@
       margin-top: 0;
       font-size: 24px; }
     .hero #hero-carousel .carousel-content h2 {
-      font-size: 20px; } }
+      font-size: 20px; }
+
+  .hero-image .item .img-content {
+    position: static !important;
+    text-align: center !important;
+    background-color: #00a5e3;
+    padding-bottom: 40px;
+    padding-top: 20px; }
+  .hero-image .item img.img-responsive {
+    min-height: 170px; } }
 .form-feedback .success {
   display: none;
   text-align: center; }
@@ -311,20 +338,16 @@
   color: #FFFFFF;
   font-size: 16px;
   margin: 10px 15px 20px 0;
-  padding: 6px 12px;
-  width: 150px; }
-.form-feedback button.active, .form-feedback button:active {
-  background-color: #FDB924;
-  border: none;
-  color: #FFFFFF; }
+  padding: 6px 47px; }
+.form-feedback button:hover, .form-feedback button:focus, .form-feedback button:active, .form-feedback button.active {
+  background-color: #eca302; }
 
 @media (min-width: 1200px) {
   .form-feedback button {
-    margin: 10px 60px 20px 0;
-    width: 150px; } }
+    margin: 10px 60px 20px 0; } }
 @media (max-width: 767px) {
   .form-feedback button {
-    width: 140px; }
+    padding: 6px 42px; }
 
   form.form-inline .form-group label.control-label {
     text-align: left !important; }
