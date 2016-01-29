@@ -63,35 +63,27 @@
       background-color: transparent !important;
       color: #666 !important; }
 
-@media (max-width: 767px) {
-  .navbar-brand > img {
-    max-width: 75%; } }
-@media (min-width: 767px) and (max-width: 1023px) {
-  .navbar-brand > img {
-    max-width: 80%; } }
 @media (max-width: 991px) {
-  .container.fiesta {
-    padding: 0; }
-    .container.fiesta .navbar {
-      margin: 15px 0 0 0; }
-      .container.fiesta .navbar .navbar-header {
-        float: none;
-        margin-left: 0 !important;
-        margin-right: 0 !important; }
+  .navbar-header {
+    float: none;
+    min-height: 63px; }
 
   .navbar-toggle {
-    display: block; }
+    float: right;
+    display: block;
+    margin: 8px 15px 0 0; }
 
   .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+    margin-left: -30px !important;
+    border-color: transparent !important; }
 
   .navbar-collapse.collapse {
     display: none !important; }
 
   .navbar-nav {
     float: none !important;
-    margin: 0; }
+    margin: 0;
+    margin-top: 15px; }
 
   .navbar-nav > li {
     float: none; }
@@ -104,13 +96,25 @@
       display: none; }
 
   .navbar-collapse.collapse.in {
-    display: block !important;
-    margin-top: 15px;
-    padding: 0; }
+    display: block !important; }
 
   .navbar-default ul.nav li a {
     min-height: 50px;
-    padding-top: 17px; } }
+    padding: 17px; } }
+@media (max-width: 767px) {
+  div.fiesta a.navbar-brand {
+    display: block;
+    float: left;
+    max-width: 230px; }
+  div.fiesta .navbar-header {
+    min-height: 55px; } }
+@media (max-width: 320px) {
+  div.fiesta a.navbar-brand {
+    max-width: 210px;
+    margin-top: 3px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggle {
+    margin-top: 13px; } }
 .user {
   background-color: #aca095;
   padding: 5px;
@@ -140,7 +144,7 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 0;
     padding: 5px 10px;
     margin-top: -10px;
     margin-bottom: -10px; }
@@ -400,6 +404,9 @@ footer {
   .footer-banner .footer-phone {
     position: relative;
     top: 8px; }
+    .footer-banner .footer-phone a {
+      display: inline !important;
+      color: #8D7F75 !important; }
     .footer-banner .footer-phone span {
       font-size: 24px;
       color: #8D7F75;

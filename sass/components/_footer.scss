@@ -58,6 +58,10 @@ footer {
         margin-right: 60px;
     }
     .footer-phone {
+        a{
+            display: inline !important;
+            color:#8D7F75 !important;
+        }
         position: relative;
         top: 8px;
         span {
