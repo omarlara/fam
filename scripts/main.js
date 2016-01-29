@@ -10,6 +10,15 @@ $(function () {
         paginationSpeed: 400,
         singleItem: true
     });
+    
+    $("#presentation-image").owlCarousel({
+
+        //autoPlay : 3000,
+        navigation: false,
+        slideSpeed: 0,
+        paginationSpeed: 0,
+        singleItem: true
+    });
 
     $(".form-inline").validate({
     rules: {

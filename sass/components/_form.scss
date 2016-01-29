@@ -70,27 +70,22 @@
         color: #FFFFFF;
         font-size: 16px;
         margin: 10px 15px 20px 0;
-        padding: 6px 12px;
-        width: 150px;
+        padding: 6px 47px;
     }
-    
-    button.active, button:active {
-       background-color: #FDB924 ;
-        border: none;
-        color: #FFFFFF;
+    button:hover, button:focus, button:active, button.active {
+        background-color:  darken(#fdb924, 10%);
     }
 }
 
 @media (min-width: 1200px) {
     .form-feedback button {
         margin: 10px 60px 20px 0;
-        width: 150px;
     }
 }
 
 @media (max-width: 767px) {
         .form-feedback button {
-            width: 140px;
+           padding: 6px 42px;
         }
         form.form-inline {
         .form-group {
