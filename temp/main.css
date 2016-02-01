@@ -233,7 +233,9 @@ button.home-input {
   position: absolute;
   top: 20%;
   right: 10%;
-  text-align: right; }
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 15px; }
   .hero #hero-carousel .item .carousel-content h1 {
     color: #FFF;
     margin-bottom: 0;
@@ -298,6 +300,9 @@ button.home-input {
     margin-top: 0; }
 
 @media (max-width: 991px) {
+  .hero #hero-carousel .item .carousel-content {
+    top: 8%; }
+
   .presentation-block .item .img-content h1 {
     font-size: 24px; }
   .presentation-block .item .img-content h2 {
@@ -310,9 +315,8 @@ button.home-input {
   .hero #hero-carousel .carousel-content {
     position: static !important;
     text-align: center !important;
-    background-color: #00a5e3;
-    padding-bottom: 40px;
-    padding-top: 20px; }
+    background-color: #00a5e3 !important;
+    padding: 20px 0 40px 0 !important; }
     .hero #hero-carousel .carousel-content h1 {
       margin-top: 0;
       font-size: 24px; }
