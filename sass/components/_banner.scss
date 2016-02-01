@@ -1,16 +1,17 @@
 .hero {
     #hero-carousel {
         .owl-wrapper-outer {
-            max-height: 460px;
+            //max-height: 460px;
         }
     .item {
         img.img-responsive {
             width: 100%;
+            height: 460px;
         }
       .carousel-content {
           h1 {
               color: #FFF;
-              margin-bottom: 0;
+              margin: 0 0;
               text-shadow: 0 1px 4px rgba(0,0,0,0.60);
               font-weight: normal;
           }
@@ -18,7 +19,7 @@
               color: #FFF;
               margin-top: 0;
               text-shadow: 0 1px 4px rgba(0,0,0,0.60);
-              font-weight: normal;
+              font-weight: normal; 
           }
           position: absolute;
           top: 20%;
@@ -131,6 +132,7 @@
             .item {
                 img.img-responsive {
                     min-height: 170px;
+                    height: inherit;
                 }
             }
             .owl-wrapper-outer {
@@ -147,6 +149,9 @@
             }
             h2 {
                 font-size: 20px;
+            }
+            .carousel-share {
+                text-align: center;
             }
         }
         }
