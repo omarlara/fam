@@ -1,0 +1,61 @@
+.tile {
+    position: relative;
+    height: auto;
+    margin-bottom: 30px;
+    h3 {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+    .tile-content {
+        height: 208px;
+        position: relative;
+        background-size: cover;
+        background-color: #ddd;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .share-control {
+        padding: 5px 10px;
+        border: 1px solid #999;
+        > span.text {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        i {
+            color: $color-yellow;
+            font-size: 18px;
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            &:hover {
+                color: darken( $color-yellow, 10%);
+                text-decoration: none;
+            }
+        }
+        span.drop-down {
+            a {
+                text-decoration: none;
+            }
+            &.email {
+                margin-right: 5px;
+            }
+        }
+    }
+    .fb_iframe_widget {
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        left: -23px;
+        margin-right: -23px;
+        top: -4px;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
