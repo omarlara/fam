@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial,sans-serif; }
+  font-family: Arial, sans-serif; }
   *:before, *:after {
     box-sizing: border-box; }
 
@@ -21,6 +21,12 @@
 
 .pull-right {
   float: right; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", Sans-serif; }
 
 .btn-posadas {
   color: Red; }
@@ -483,5 +489,54 @@ footer {
     .footer-banner p.text-center a img {
       display: block;
       margin: 0 auto 20px; } }
+.tile {
+  position: relative;
+  height: auto;
+  margin-bottom: 30px; }
+  .tile h3 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff; }
+  .tile .tile-content {
+    height: 208px;
+    position: relative;
+    background-size: cover;
+    background-color: #ddd;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .tile .share-control {
+    padding: 5px 10px;
+    border: 1px solid #999; }
+    .tile .share-control > span.text {
+      display: inline-block;
+      margin-right: 10px; }
+    .tile .share-control i {
+      color: #FDB823;
+      font-size: 18px;
+      position: relative;
+      top: 1px;
+      display: inline-block; }
+      .tile .share-control i:hover {
+        color: #eba102;
+        text-decoration: none; }
+    .tile .share-control span.drop-down a {
+      text-decoration: none; }
+    .tile .share-control span.drop-down.email {
+      margin-right: 5px; }
+  .tile .fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    left: -23px;
+    margin-right: -23px;
+    top: -4px;
+    visibility: hidden;
+    opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
