@@ -1,0 +1,39 @@
+<div class="footer-banner">
+    <div class="container">
+        <p class="text-center">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+            <span class="footer-phone">
+                       <i class="fa fa-phone"></i>
+                        <span class="text">01 55-5434-3454</span>
+            </span>
+        </p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row nav-container-row">
+            <nav class="footer-nav">
+                <ul>
+                    <li> <a href="#">INICIO</a> </li>
+                    <li> <a href="#">INFORMACIÓN</a> </li>
+                    <li> <a href="#">PROMOCIONES</a> </li>
+                    <li> <a href="#">CAPTURAR REFERIDO</a> </li>
+                    <li> <a href="#">CONSULTAR REFERIDOS</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="copyrights">
+                <div class="pull-right">
+                    <a href="#" class="footer-copyrights">AVISO DE PRIVACIDAD</a>
+                    <a href="#" class="footer-copyrights">ACERCA DE NOSOTROS</a>
+                </div>
+                <div class="pull-left">
+                    <span>© Fiesta Americana Vacation Club, Compartiendo Sonrisas. Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
