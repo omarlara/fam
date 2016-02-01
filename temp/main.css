@@ -231,10 +231,9 @@ button.home-input {
       width: 140px;
       right: 0;
       margin-right: 0px; } }
-.hero #hero-carousel .owl-wrapper-outer {
-  max-height: 460px; }
 .hero #hero-carousel .item img.img-responsive {
-  width: 100%; }
+  width: 100%;
+  height: 460px; }
 .hero #hero-carousel .item .carousel-content {
   position: absolute;
   top: 20%;
@@ -244,7 +243,7 @@ button.home-input {
   padding: 0 15px; }
   .hero #hero-carousel .item .carousel-content h1 {
     color: #FFF;
-    margin-bottom: 0;
+    margin: 0 0;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     font-weight: normal; }
   .hero #hero-carousel .item .carousel-content h2 {
@@ -315,7 +314,8 @@ button.home-input {
     font-size: 20px; } }
 @media (max-width: 767px) {
   .hero #hero-carousel .item img.img-responsive {
-    min-height: 170px; }
+    min-height: 170px;
+    height: inherit; }
   .hero #hero-carousel .owl-wrapper-outer {
     max-height: inherit; }
   .hero #hero-carousel .carousel-content {
@@ -328,6 +328,8 @@ button.home-input {
       font-size: 24px; }
     .hero #hero-carousel .carousel-content h2 {
       font-size: 20px; }
+    .hero #hero-carousel .carousel-content .carousel-share {
+      text-align: center; }
 
   .presentation-block .item .information-img.container {
     padding: 0; }
