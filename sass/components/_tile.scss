@@ -10,7 +10,7 @@
         width: 100%;
         padding: 15px;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.3);
         color: #fff;
     }
     .tile-content {
@@ -57,5 +57,14 @@
         top: -4px;
         visibility: hidden;
         opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .tile {
+        margin-bottom: 16px;
+        .share-control{
+            text-align: center;
+        }
     }
 }

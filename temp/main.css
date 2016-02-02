@@ -28,6 +28,19 @@ h3,
 h4 {
   font-family: "Roboto", Sans-serif; }
 
+section h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  margin: 30px 0 40px 0;
+  font-weight: 400; }
+
+@media (max-width: 767px) {
+  section h1 {
+    font-size: 24px;
+    margin: 10px 0 30px 0; } }
+@media (min-width: 1025px) {
+  section h1 {
+    margin: 30px 0 60px 0; } }
 .btn-posadas {
   color: Red; }
 
@@ -158,6 +171,17 @@ button.home-input {
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
     margin-top: 13px; } }
+@media (min-width: 992px) {
+  .navbar-default ul.nav > li {
+    min-height: 70px;
+    display: table;
+    vertical-align: middle;
+    max-width: 170px; }
+    .navbar-default ul.nav > li > a {
+      min-height: 70px !important;
+      display: table-cell;
+      height: 100%;
+      vertical-align: middle; } }
 .user {
   background-color: #aca095;
   padding: 5px;
@@ -562,7 +586,7 @@ footer {
     width: 100%;
     padding: 15px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff; }
   .tile .tile-content {
     height: 208px;
@@ -599,5 +623,11 @@ footer {
     top: -4px;
     visibility: hidden;
     opacity: 0; }
+
+@media (max-width: 767px) {
+  .tile {
+    margin-bottom: 16px; }
+    .tile .share-control {
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
