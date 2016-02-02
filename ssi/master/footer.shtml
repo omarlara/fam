@@ -1,9 +1,10 @@
 <div class="footer-banner">
     <div class="container">
         <p class="text-center">
-            <a href="#">
-                <img src="img/logo.png" alt="">
-            </a>
+            <span class="footer-mail">
+                       <i class="fa fa-envelope"></i>
+                        <span class="text">compartiendosonrisas@fa-vacationclub.com</span>
+            </span>
             <span class="footer-phone">
                        <i class="fa fa-phone"></i>
                         <span class="text">01 55-5434-3454</span>
