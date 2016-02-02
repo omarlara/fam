@@ -63,3 +63,15 @@ section {
         }
     }
 }
+
+div.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    left: -23px;
+    margin-right: -23px;
+    top: -4px;
+    visibility: hidden;
+    opacity: 0;
+}
+

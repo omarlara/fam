@@ -5,7 +5,7 @@
         }
     .item {
         img.img-responsive {
-            height: 460px;           
+            height: 460px;
             width: 100%;
         }
       .carousel-content {
@@ -20,10 +20,10 @@
               margin-top: 15px;
               color: #FFF;
               text-shadow: 0 1px 4px rgba(0,0,0,0.60);
-              font-weight: normal; 
+              font-weight: normal;
           }
           span.text-content {
-              font-size: 16px;              
+              font-size: 16px;
               color: #FFF;
               font-family: $font-primary;
           }
@@ -39,7 +39,7 @@
                     color: #eba102;
                     text-decoration: none;
                   }
-              } 
+              }
           }
           position: absolute;
           top: 20%;
@@ -48,7 +48,7 @@
           background-color: rgba(0,0,0,0.2);
           padding: 0 15px;
       }
-    }     
+    }
   }
     .owl-theme .owl-controls {
         margin-top: 10px;
@@ -76,6 +76,9 @@
             background-color: #fdb924;
         }
     }
+    div.fb_iframe_widget{
+    left: -32px;
+}
 }
 
 .presentation-block {
@@ -89,7 +92,7 @@
         }
         .img-content {
                 padding: 0;
-                position: absolute; 
+                position: absolute;
                 bottom: 0;
                 margin: 0;
                 text-align: left;
@@ -100,7 +103,7 @@
                   font-weight: lighter;
                   font-size: 34px;
               }
-              h2 {  
+              h2 {
                   color: #FFF;
                   padding-right: 15px;
                   font-weight: lighter;
@@ -108,7 +111,7 @@
                   padding-bottom: 20px;
               }
         }
-        
+
     }
     .main-section {
         margin-top: 30px;
@@ -137,17 +140,17 @@
     .hero{
        #hero-carousel {
         .item {
-           img.img-responsive {              
+           img.img-responsive {
                max-width: inherit!important;
                width: initial;
-            } 
-        }     
-      } 
+            }
+        }
+      }
     }
-    
+
     .presentation-block {
         .item {
-            .img-content {               
+            .img-content {
                 h1 {
                     font-size: 24px;
                 }
@@ -186,7 +189,7 @@
             .item {
                 img.img-responsive {
                     min-height: 170px;
-                    height: inherit;               
+                    height: inherit;
                     width: 100% !important;
                 }
             }
@@ -211,14 +214,14 @@
         }
         }
     }
-    
+
     .presentation-block {
         .main-content {
             padding-bottom: 30px;
         }
         .item {
             .information-img.container {
-                padding: 0 ;                   
+                padding: 0 ;
             }
             img.img-responsive {
                 min-height: 170px;

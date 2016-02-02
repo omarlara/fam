@@ -48,22 +48,13 @@
             }
         }
     }
-    .fb_iframe_widget {
-        display: inline-block;
-        position: relative;
-        width: 20px;
-        left: -23px;
-        margin-right: -23px;
-        top: -4px;
-        visibility: hidden;
-        opacity: 0;
-    }
 }
+
 
 @media (max-width: 767px) {
     .tile {
         margin-bottom: 16px;
-        .share-control{
+        .share-control {
             text-align: center;
         }
     }
