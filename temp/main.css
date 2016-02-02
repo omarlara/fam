@@ -325,6 +325,10 @@ button.home-input {
     background-color: #fdb924; }
 .hero div.fb_iframe_widget {
   left: -32px; }
+  .hero div.fb_iframe_widget iframe {
+    width: 24px !important;
+    height: 24px !important;
+    margin: -9px 0 0 -12px !important; }
 
 .presentation-block h1, .presentation-block h2, .presentation-block p {
   font-family: "Roboto", Sans-serif; }
@@ -402,6 +406,8 @@ button.home-input {
       font-size: 20px; }
     .hero #hero-carousel .carousel-content .carousel-share {
       text-align: center; }
+  .hero div.fb_iframe_widget iframe {
+    margin: -9px 0 0 -10px !important; }
 
   .presentation-block .main-content {
     padding-bottom: 30px; }
