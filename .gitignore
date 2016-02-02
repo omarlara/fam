@@ -36,6 +36,7 @@ node_modules
 bower_components
 css/posadas.css
 temp/main.css
+temp/main.css.map
 .sass-cache/
 
 index.html.orig
