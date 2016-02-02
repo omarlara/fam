@@ -290,19 +290,28 @@ button.home-input {
   .presentation-block .item .img-content h1 {
     color: #FFF;
     margin-bottom: 0;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    font-weight: normal; }
+    font-weight: lighter;
+    font-size: 34px; }
   .presentation-block .item .img-content h2 {
     color: #FFF;
     padding-right: 15px;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    font-weight: normal; }
-.presentation-block .main-section .aside-content {
-  background-color: lightgray;
-  padding: 20px;
-  margin: 20px 0; }
-  .presentation-block .main-section .aside-content h1 {
-    margin-top: 0; }
+    font-weight: lighter;
+    font-size: 28px;
+    padding-bottom: 20px; }
+.presentation-block .main-section {
+  margin-top: 30px; }
+  .presentation-block .main-section h1, .presentation-block .main-section h2 {
+    font-weight: lighter; }
+  .presentation-block .main-section .main-content p {
+    color: #8d7f75;
+    font-size: 14px; }
+  .presentation-block .main-section .aside-content {
+    background-color: #f8f7f4;
+    padding: 1px 30px;
+    margin: 20px 0; }
+    .presentation-block .main-section .aside-content p {
+      color: #8d7f75;
+      font-size: 18px; }
 
 @media (max-width: 991px) {
   .hero #hero-carousel .item .carousel-content {
@@ -311,7 +320,17 @@ button.home-input {
   .presentation-block .item .img-content h1 {
     font-size: 24px; }
   .presentation-block .item .img-content h2 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .presentation-block .main-section .main-content h1 {
+    font-size: 28px; }
+  .presentation-block .main-section .main-content h2 {
+    font-size: 24px; }
+  .presentation-block .main-section .main-content p {
+    font-size: 14px; }
+  .presentation-block .main-section .aside-content h2 {
+    font-size: 18px; }
+  .presentation-block .main-section .aside-content p {
+    font-size: 14px; } }
 @media (max-width: 767px) {
   .hero #hero-carousel .item img.img-responsive {
     min-height: 170px;
@@ -338,7 +357,11 @@ button.home-input {
   .presentation-block .item .img-content {
     position: static !important;
     background-color: #00a5e3;
-    padding: 30px 20px; } }
+    padding: 5px 20px; }
+    .presentation-block .item .img-content h1 {
+      font-size: 24px; }
+    .presentation-block .item .img-content h2 {
+      font-size: 14px; } }
 .form-feedback .success {
   display: none;
   text-align: center; }
