@@ -171,6 +171,17 @@ button.home-input {
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
     margin-top: 13px; } }
+@media (min-width: 992px) {
+  .navbar-default ul.nav > li {
+    min-height: 70px;
+    display: table;
+    vertical-align: middle;
+    max-width: 170px; }
+    .navbar-default ul.nav > li > a {
+      min-height: 70px !important;
+      display: table-cell;
+      height: 100%;
+      vertical-align: middle; } }
 .user {
   background-color: #aca095;
   padding: 5px;

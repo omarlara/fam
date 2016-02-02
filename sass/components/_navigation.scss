@@ -145,3 +145,22 @@
         margin-top: 13px;
     }
 }
+
+@media (min-width: 992px) {
+    .navbar-default {
+        ul.nav {
+            >li {
+                min-height: 70px;
+                display: table;
+                vertical-align: middle;
+                max-width: 170px;
+                > a {
+                    min-height: 70px !important;
+                    display: table-cell;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
