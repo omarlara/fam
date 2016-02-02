@@ -565,10 +565,13 @@ footer {
     padding: 30px 0; }
     .footer-banner .footer-phone i {
       padding-top: 15px; }
-    .footer-banner .footer-phone span, .footer-banner .footer-mail span {
-      font-size: 14px; }
-    .footer-banner i {
-      width: 100%; }
+    .footer-banner .footer-phone, .footer-banner .footer-mail {
+      display: block;
+      padding: 0; }
+      .footer-banner .footer-phone span, .footer-banner .footer-mail span {
+        font-size: 14px; }
+      .footer-banner .footer-phone i, .footer-banner .footer-mail i {
+        display: block; }
     .footer-banner p.text-center a {
       display: block; }
       .footer-banner p.text-center a img {

@@ -149,13 +149,15 @@ footer {
             padding-top: 15px;
         }
         .footer-phone, .footer-mail {
+            display: block;
+            padding: 0;
             span {
                 font-size: 14px;
             }
+            i {
+                display: block;
+            }
         }        
-        i {
-            width: 100%
-        }
         p.text-center {
             a {
                 display: block;
