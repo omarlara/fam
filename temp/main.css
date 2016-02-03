@@ -222,10 +222,10 @@ button.home-input {
     background-color: red;
     position: absolute;
     display: block;
-    margin: -5px 0 0 10px;
-    width: 18px;
+    margin: -5px 0 0 8px;
+    width: 16px;
     text-align: center;
-    height: 18px; }
+    height: 16px; }
     .user span.drop-down.notifications .count .inner {
       font-size: 11px;
       width: 100%;
@@ -233,7 +233,7 @@ button.home-input {
       vertical-align: middle;
       color: #fff;
       height: 100%;
-      line-height: 1.7;
+      line-height: 1.5;
       display: block; }
   .user span.drop-down {
     display: inline-block;
