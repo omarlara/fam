@@ -125,9 +125,21 @@ button.home-input {
       color: #666 !important; }
 
 @media (max-width: 991px) {
+  .fiesta.container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
   .navbar-header {
     float: none;
-    min-height: 63px; }
+    min-height: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 750px; }
 
   .navbar-toggle {
     float: right;
@@ -139,7 +151,12 @@ button.home-input {
     border-color: transparent !important; }
 
   .navbar-collapse.collapse {
-    display: none !important; }
+    display: none !important;
+    padding: 0; }
+
+  .navbar-collapse.collapsing {
+    padding: 0;
+    margin: 0; }
 
   .navbar-nav {
     float: none !important;
@@ -157,18 +174,29 @@ button.home-input {
       display: none; }
 
   .navbar-collapse.collapse.in {
-    display: block !important; }
+    display: block !important;
+    padding: 0; }
 
   .navbar-default ul.nav li a {
     min-height: 50px;
-    padding: 17px; } }
+    padding: 17px; }
+
+  nav.navbar.navbar-default {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    nav.navbar.navbar-default .container {
+      width: 100%;
+      margin: 0;
+      padding: 0; } }
 @media (max-width: 767px) {
   div.fiesta a.navbar-brand {
     display: block;
     float: left;
     max-width: 230px; }
   div.fiesta .navbar-header {
-    min-height: 55px; }
+    min-height: 55px;
+    width: 100%; }
 
   .navbar-toggle {
     float: right;
@@ -451,6 +479,23 @@ button.home-input {
       line-height: 140%;
       font-size: 14px;
       padding-bottom: 0; } }
+.form-feedback .form-capturar h1, .form-feedback .form-capturar p {
+  text-align: left; }
+.form-feedback .form-capturar .row {
+  background-color: #fdfcfb;
+  border-bottom: 1px solid #edebeb; }
+  .form-feedback .form-capturar .row p {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px; }
+  .form-feedback .form-capturar .row .form-group {
+    min-height: 78px; }
+    .form-feedback .form-capturar .row .form-group .control-label {
+      text-align: left; }
+    .form-feedback .form-capturar .row .form-group textarea {
+      width: 100%; }
+.form-feedback .form-capturar .row.capturar {
+  border-bottom: none; }
 .form-feedback .success {
   display: none;
   text-align: center; }

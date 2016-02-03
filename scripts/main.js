@@ -19,6 +19,94 @@ $(function () {
         paginationSpeed: 0,
         singleItem: true
     });
+    
+    $(".form-capturar").validate({
+    rules: {
+        name: {
+          required: true
+        },
+        aPaterno: {
+          required: true
+        },
+        aMaterno: {
+          required: true
+        },
+        email: {
+          required: true
+        },
+        phone: {
+          required: true
+        },
+        pais: {
+            required: true
+        },
+        Estado: {
+          required: true
+        },
+        Ciudad: {
+          required: true
+        },
+        PromoCode: {
+          required: true
+        },
+        NumeroReferidor: {
+            required: true
+        },
+        TipoReferidor: {
+            required: true
+        },
+        Privacy: {
+            required: true
+        }
+        
+      },
+      success: function() {
+          //$('.success').show();
+      },
+      highlight: function() {
+          
+      },
+      messages: {
+        name: {
+            required:"Campo requerido"  
+        },
+        aPaterno: {
+          required: "Campo requerido"
+        },
+        aMaterno: {
+          required: "Campo requerido"
+        },
+        email: {
+          required: "Campo requerido",
+          email: "Este correo es inválido."
+        },
+        phone: {
+          required: "Campo requerido"
+        },
+        pais: {
+            required: "Favor de elegir una opción."
+        },
+        Estado: {
+          required: "Campo requerido"
+        },
+        Ciudad: {
+          required: "Campo requerido"
+        },
+        PromoCode: {
+          required: "Campo requerido"
+        },
+        NumeroReferidor: {
+            required: "Campo requerido"
+        },
+        TipoReferidor: {
+            required: "Favor de elegir una opción."
+        },
+        Privacy: {
+            required: "Campo requerido"
+        }
+          
+      }
+    });
 
     $(".form-inline").validate({
     rules: {
@@ -71,6 +159,6 @@ $(function () {
         
       }
     });
-
+    
 
 });

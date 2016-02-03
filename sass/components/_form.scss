@@ -1,5 +1,34 @@
 
 .form-feedback {
+    
+    .form-capturar {
+        h1, p {
+           text-align: left; 
+        }        
+        .row {
+            background-color: #fdfcfb;
+            border-bottom: 1px solid #edebeb;
+            p {
+                text-align: left;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+            .form-group {
+                min-height: 78px;
+                .control-label {
+                    text-align: left;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+        .row.capturar {
+            border-bottom: none;
+        }
+        
+    }
+    
     .success {
         display: none;
         text-align: center;
