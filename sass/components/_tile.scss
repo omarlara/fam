@@ -29,10 +29,14 @@
         }
         h3 {
             text-transform: uppercase;
-            -webkit-transition: all 0.5s; /* Safari */
+            -webkit-transition: all 0.5s;
+            /* Safari */
             transition: all 0.5s;
         }
         &:hover {
+            .tile-content {
+                opacity: 0.8;
+            }
             h3 {
                 background-color: rgba(0, 0, 0, 0.5);
             }
