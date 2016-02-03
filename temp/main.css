@@ -294,7 +294,8 @@ button.home-input {
   right: 10%;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 0 15px; }
+  padding: 0 15px;
+  max-width: 480px; }
   .hero #hero-carousel .item .carousel-content h1 {
     margin-top: 0;
     margin-bottom: 10px;
