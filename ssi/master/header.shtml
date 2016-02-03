@@ -17,8 +17,9 @@
             </span>
             <span class="drop-down notifications">
                          <span class="text" aria-haspopup="true">
-                              <i class="fa fa-bell"></i>
-                              <span class="name">Notificaciones</span>
+                              <span class="count">2</span>
+            <i class="fa fa-bell"></i>
+            <span class="name">Notificaciones</span>
             </span>
             <i class="fa fa-caret-down"></i>
             <ul>
@@ -32,6 +33,15 @@
                     </a>
                 </li>
             </ul>
+            </span>
+            <span class="drop-down chat">
+                <span class="text" aria-haspopup="true">
+                  <i class="fa fa-comments"></i>
+                  <span class="name">
+                      <a href="#">Chat</a>
+                  </span>
+            </span>
+
             </span>
             <span class="drop-down user-action">
                        <span class="text" aria-haspopup="true">

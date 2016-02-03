@@ -28,8 +28,28 @@
         color: #ffffff;
         font-weight: 500;
     }
-    span.drop-down.notifications {
+    span.drop-down.chat {
         margin-left: 5px;
+    }
+    span.drop-down.notifications .count {
+        border-radius: 100%;
+        background-color: red;
+        position: absolute;
+        display: block;
+        margin: -5px 0 0 10px;
+        width: 18px;
+        text-align: center;
+        height: 18px;
+        .inner {
+            font-size: 11px;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            height: 100%;
+            line-height: 1.7;
+            display: block;
+        }
     }
     span.drop-down {
         display: inline-block;

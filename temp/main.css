@@ -215,8 +215,26 @@ button.home-input {
   .user .text {
     color: #ffffff;
     font-weight: 500; }
-  .user span.drop-down.notifications {
+  .user span.drop-down.chat {
     margin-left: 5px; }
+  .user span.drop-down.notifications .count {
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    display: block;
+    margin: -5px 0 0 10px;
+    width: 18px;
+    text-align: center;
+    height: 18px; }
+    .user span.drop-down.notifications .count .inner {
+      font-size: 11px;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+      height: 100%;
+      line-height: 1.7;
+      display: block; }
   .user span.drop-down {
     display: inline-block;
     position: relative;
