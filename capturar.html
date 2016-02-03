@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fiesta Americana</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300' rel='stylesheet' type='text/css'>
+    <link href="css/posadas.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="fiesta">
+        <div class="user">
+            <div class="container">
+                <div class="pull-left">
+                    <a href="#">
+                        <span class="icon eu">
+                            <img src="img/flag-usa.gif">
+                        </span>
+                        <span class="cta">English</span>
+                    </a>
+                </div>
+                <div class="pull-right">
+                    <span class="fam-phone">
+                        <i class="fa fa-phone phone"></i>
+                        <span class="text">
+                           0155-5434-3454
+                       </span>
+                    </span>
+                    <span class="drop-down chat">
+                <span class="text" aria-haspopup="true">
+                  <i class="fa fa-comments"></i>
+                  <span class="name">
+                      <a href="#">Chat</a>
+                  </span>
+                    </span>
+
+                    </span>
+                    <span class="drop-down notifications">
+                         <span class="text" aria-haspopup="true">
+                             <span class="count">
+                                 <span class="inner">3</span>
+                    </span>
+                    <i class="fa fa-bell"></i>
+                    <span class="name">Notificaciones</span>
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bell"></i>
+                                <span>
+                                    Notificacion 1
+                                </span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    </span>
+                    <span class="drop-down user-action">
+                       <span class="text" aria-haspopup="true">
+                          <i class="fa fa-user"></i>
+                          <span class="name">Juan.Perez.Rdz </span>
+                    <i class="fa fa-caret-down"></i>
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-gear"></i>
+                                <span>
+                                    Cerrar Sesion
+                                </span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container fiesta">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">
+                            <img src="img/logo.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="./">INFORMACIÓN <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="#">PROMOCIONES</a></li>
+                            <li><a href="#">CAPTURAR <br> REFERIDO</a></li>
+                            <li><a href="#">CONSULTAR <br> REFERIDO</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <div class="form-feedback container capturar-referido">
+            <form class="form-inline form-capturar">
+                <h1>CAPTURAR REFERIDO</h1>
+                <p>Los campos marcados con asterisco (<span class="red">*</span>) son obligatorios</p>
+                <h2 class="success">Los datos se han enviado correctamente. </h2>
+                <div class="row">
+                    <p class="capturar-titulo">REFERIDOR</p>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label required">Numero de Referidor <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputReferidor" name="NumeroReferidor" placeholder=" " class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputPromoCode" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Campaña Promo / Code <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <select id="inputPromoCode" name="PromoCode" class="form-control" required>
+                                <option selected value=""> </option>
+                                <option value="X">X</option>
+                                <option value="X">X</option>
+                                <option value="X">X</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputTipoReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Elige un tipo de referidor <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputTipoReferidor" name="TipoReferidor" placeholder=" " class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="capturar-titulo">NOMBRE</p>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputName" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombre (s) <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputName" name="name" placeholder="Juan Alberto" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputApellidoPaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Paterno <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputApellidoPaterno" name="aPaterno" placeholder="Perez" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputApellidoMaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Materno <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputApellidoMaterno" name="aMaterno" placeholder="Gonzalez" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="capturar-titulo">CONTACTO</p>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputEmail" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">E-mail <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputEmail" name="email" type="email" placeholder="usuario@correo.com" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputPhone" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Celular <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputPhone" name="phone" type="tel" placeholder="0123 45 67 89" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputTelefonoCasa" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Teléfono de Casa</label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputTelefonoCasa" name="TelCasa" type="tel" placeholder="555 123 1234" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputTelefonoOficina" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Teléfono de Oficina</label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputTelefonoOficina" name="TelOficina" type="tel" placeholder="555 123 4567" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="capturar-titulo">UBICACIÓN</p>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputPais" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Pais <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <select id="inputPais" name="pais" placeholder="México" class="form-control" required>
+                                <option selected value="">Seleccione estado</option>
+                                <option value="AR">Argentina</option>
+                                <option value="MX">México</option>
+                                <option value="PR">Peru</option>
+                                <option value="BR">Brasil </option>
+                                <option value="US">Estados Unidos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputEstado" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Estado <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputEstado" name="Estado" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputCiudad" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Ciudad <span class="required">*</span></label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input id="inputCiudad" name="Ciudad" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="capturar-titulo">COMENTARIOS</p>
+                    <div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <label for="inputComentario" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Comentarios</label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea id="inputComentario" name="comentario" placeholder=" " class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row capturar">
+                    <p class="capturar-titulo">PRIVACIDAD</p>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <input type="checkbox" id="inputReferidoAnon" name="ReferidoAnonimo" class="form-control">
+                        </div>
+                        <label for="inputReferidoAnon" class="col-lg-11 col-md-11 col-sm-11 col-xs-11 control-label">Socio desea permanecer anónimo</label>
+                    </div>
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <input type="checkbox" id="inputPrivacy" name="Privacy" class="form-control" required>
+                        </div>
+                        <label for="inputPrivacy" class="col-lg-11 col-md-11 col-sm-11 col-xs-11 control-label">He leido los terminos de privacidad <span class="required">*</span></label>
+                    </div>
+                    <button class="borrar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="delete" value="delete">BORRAR</button>
+                    <button class="capturar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="submit" value="Submit">CAPTURAR</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-banner">
+            <div class="container">
+                <p class="text-center">
+                    <span class="footer-mail">
+                       <i class="fa fa-envelope"></i>
+                        <span class="text">compartiendosonrisas@fa-vacationclub.com</span>
+                    </span>
+                    <span class="footer-phone">
+                       <i class="fa fa-phone"></i>
+                        <span class="text">01 55-5434-3454</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row nav-container-row">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li> <a href="#">INICIO</a> </li>
+                            <li> <a href="#">INFORMACIÓN</a> </li>
+                            <li> <a href="#">PROMOCIONES</a> </li>
+                            <li> <a href="#">CAPTURAR REFERIDO</a> </li>
+                            <li> <a href="#">CONSULTAR REFERIDOS</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="copyrights">
+                        <div class="pull-right">
+                            <a href="#" class="footer-copyrights">AVISO DE PRIVACIDAD</a>
+                            <a href="#" class="footer-copyrights">ACERCA DE NOSOTROS</a>
+                        </div>
+                        <div class="pull-left">
+                            <span>© Fiesta Americana Vacation Club, Compartiendo Sonrisas. Todos los derechos reservados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html
