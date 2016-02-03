@@ -107,6 +107,7 @@
                   margin-bottom: 0;
                   font-weight: lighter;
                   font-size: 34px;
+                  text-shadow: 0 1px 4px rgba(0,0,0,0.60);
               }
               h2 {
                   color: #FFF;
@@ -120,6 +121,7 @@
     }
     .main-section {
         margin-top: 30px;
+        margin-bottom: 30px;
         h1, h2 {
             font-weight: lighter;
         }
@@ -127,6 +129,9 @@
             p {
                 color: #8d7f75;
                 font-size: 14px;
+            }
+            h1 {
+                margin-bottom: 20px;
             }
         }
         .aside-content {
@@ -241,9 +246,11 @@
                 background-color: #ca3092;
                 padding: 5px 20px;
                 h1 {
+                    text-shadow: none;
                     font-size: 24px;
                 }
                 h2 {
+                    line-height: 140%;
                     font-size: 14px;
                     padding-bottom: 0;
                 }
