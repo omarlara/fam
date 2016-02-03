@@ -26,16 +26,7 @@
 
 <body>
     <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+
 
     <div class="fiesta">
         <div class="user">
@@ -141,8 +132,10 @@
                 <h1>Promociones</h1>
                 <div class="row tile-container">
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
-                        <div class="tile-content" style="background-image:url('img/pic03.jpg')">
-                            <h3>Estados unidos</h3>
+                        <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -167,7 +160,9 @@
                     </div>
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
                         <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
-                            <h3>Estados unidos</h3>
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -191,8 +186,10 @@
                         </div>
                     </div>
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
-                        <div class="tile-content" style="background-image:url('img/Austin-Skyline_Ed-Schipul-1500x500.jpg')">
-                            <h3>Estados unidos</h3>
+                        <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -216,8 +213,10 @@
                         </div>
                     </div>
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
-                        <div class="tile-content" style="background-image:url('img/67520a18d1b125ef0b5a0aef4b86b0be.jpg')">
-                            <h3>Estados unidos</h3>
+                        <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -241,8 +240,10 @@
                         </div>
                     </div>
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
-                        <div class="tile-content" style="background-image:url('img//Austin-Skyline_Ed-Schipul-1500x500.jpg')">
-                            <h3>Estados unidos</h3>
+                        <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -266,8 +267,10 @@
                         </div>
                     </div>
                     <div class="tile col-lg-4 col-md-4 col-sm-6">
-                        <div class="tile-content" style="background-image:url('img/67520a18d1b125ef0b5a0aef4b86b0be.jpg')">
-                            <h3>Estados unidos</h3>
+                        <div class="tile-content" style="background-image:url('img/golden_taj_mahal-HD-1500x500.jpg')">
+                            <a href="#">
+                                <h3>Estados unidos</h3>
+                            </a>
                         </div>
                         <div class="share-control text-right">
                             <span class="text">
@@ -345,6 +348,19 @@
     <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
     <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="scripts/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        });
+    </script>
 </body>
 
 </html
