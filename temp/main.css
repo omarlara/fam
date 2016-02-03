@@ -699,6 +699,8 @@ footer {
       -webkit-transition: all 0.5s;
       /* Safari */
       transition: all 0.5s; }
+    .tile .tile-content:hover .tile-content {
+      opacity: 0.8; }
     .tile .tile-content:hover h3 {
       background-color: rgba(0, 0, 0, 0.5); }
   .tile .share-control {
@@ -727,5 +729,16 @@ footer {
     margin-bottom: 16px; }
     .tile .share-control {
       text-align: center; } }
+.toggle-control > span {
+  cursor: pointer;
+  display: block;
+  width: 50%;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 6px 20px;
+  font-family: "Roboto", Sans-serif;
+  text-align: center; }
+  .toggle-control > span.active {
+    background-color: yellow; }
 
 /*# sourceMappingURL=main.css.map */
