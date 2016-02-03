@@ -346,7 +346,8 @@ button.home-input {
     color: #FFF;
     margin-bottom: 0;
     font-weight: lighter;
-    font-size: 34px; }
+    font-size: 34px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
   .presentation-block .item .img-content h2 {
     color: #FFF;
     padding-right: 15px;
@@ -354,12 +355,15 @@ button.home-input {
     font-size: 28px;
     padding-bottom: 20px; }
 .presentation-block .main-section {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .presentation-block .main-section h1, .presentation-block .main-section h2 {
     font-weight: lighter; }
   .presentation-block .main-section .main-content p {
     color: #8d7f75;
     font-size: 14px; }
+  .presentation-block .main-section .main-content h1 {
+    margin-bottom: 20px; }
   .presentation-block .main-section .aside-content {
     background-color: #f8f7f4;
     padding: 1px 30px;
@@ -420,8 +424,10 @@ button.home-input {
     background-color: #ca3092;
     padding: 5px 20px; }
     .presentation-block .item .img-content h1 {
+      text-shadow: none;
       font-size: 24px; }
     .presentation-block .item .img-content h2 {
+      line-height: 140%;
       font-size: 14px;
       padding-bottom: 0; } }
 .form-feedback .success {
