@@ -150,7 +150,7 @@
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <label for="inputTipoReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Elige un tipo de referidor <span class="required">*</span></label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputTipoReferidor" name="TipoReferidor" placeholder=" " class="form-control" required>
+                            
                         </div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                         <label for="inputPais" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Pais <span class="required">*</span></label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <select id="inputPais" name="pais" placeholder="México" class="form-control" required>
-                                <option selected value="">Seleccione estado</option>
+                                <option selected value="">Seleccione pais</option>
                                 <option value="AR">Argentina</option>
                                 <option value="MX">México</option>
                                 <option value="PR">Peru</option>
@@ -242,16 +242,19 @@
                 <div class="row capturar">
                     <p class="capturar-titulo">PRIVACIDAD</p>
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                            <input type="checkbox" id="inputReferidoAnon" name="ReferidoAnonimo" class="form-control">
+                        <div class="checkbox">
+                            <input type="checkbox" id="inputReferidoAnon" name="ReferidoAnonimo" />
+                            <label for="inputReferidoAnon"><span></span></label>
                         </div>
-                        <label for="inputReferidoAnon" class="col-lg-11 col-md-11 col-sm-11 col-xs-11 control-label">Socio desea permanecer anónimo</label>
+                        <label for="inputReferidoAnon" class="control-label">Socio desea permanecer anónimo</label>
                     </div>
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                            <input type="checkbox" id="inputPrivacy" name="Privacy" class="form-control" required>
+                        <div class="checkbox">
+                            <input type="checkbox" id="inputPrivacy" name="Privacy" />
+                            <label for="inputPrivacy" class="control-label">He leido los terminos de privacidad </label>
                         </div>
-                        <label for="inputPrivacy" class="col-lg-11 col-md-11 col-sm-11 col-xs-11 control-label">He leido los terminos de privacidad <span class="required">*</span></label>
+                        
+                        <span class="required">*</span>
                     </div>
                     <button class="borrar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="delete" value="delete">BORRAR</button>
                     <button class="capturar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="submit" value="Submit">CAPTURAR</button>

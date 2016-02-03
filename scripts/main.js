@@ -21,6 +21,7 @@ $(function () {
     });
     
     $(".form-capturar").validate({
+    ignore: [],
     rules: {
         name: {
           required: true
@@ -84,7 +85,7 @@ $(function () {
           required: "Campo requerido"
         },
         pais: {
-            required: "Favor de elegir una opción."
+            required: "Favor de elegir una opción"
         },
         Estado: {
           required: "Campo requerido"
@@ -99,7 +100,7 @@ $(function () {
             required: "Campo requerido"
         },
         TipoReferidor: {
-            required: "Favor de elegir una opción."
+            required: "Favor de elegir una opción"
         },
         Privacy: {
             required: "Campo requerido"
