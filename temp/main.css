@@ -248,6 +248,8 @@ button.home-input {
       .user span.drop-down:hover ul {
         display: block;
         width: 100%; }
+    .user span.drop-down span.name > a {
+      font-weight: normal; }
     .user span.drop-down ul {
       border: 1px solid #927E6D;
       position: absolute;

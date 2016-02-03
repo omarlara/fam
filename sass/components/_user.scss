@@ -66,6 +66,9 @@
                 width: 100%;
             }
         }
+        span.name > a {
+            font-weight: normal;
+        }
         ul {
             border: 1px solid #927E6D;
             position: absolute;
@@ -105,8 +108,8 @@
         span.drop-down {
             margin-left: 0;
             .name,
-            .fa-caret-down {
-                display: none;
+            .fa-caret-down {    
+                display: none;                
             }
             &:hover {
                 ul {
