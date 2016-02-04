@@ -21,6 +21,7 @@ $(function () {
     });
 
     $(".form-capturar").validate({
+    ignore: [],
         rules: {
             name: {
                 required: true
@@ -104,7 +105,6 @@ $(function () {
             Privacy: {
                 required: "Campo requerido"
             }
-
         }
     });
 

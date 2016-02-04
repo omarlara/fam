@@ -2,6 +2,7 @@
 .form-feedback {
     
     .form-capturar {
+        margin-bottom: 30px;
         h1, p {
            text-align: left; 
         }        
@@ -10,8 +11,9 @@
             border-bottom: 1px solid #edebeb;
             p {
                 text-align: left;
-                padding-left: 30px;
-                padding-top: 30px;
+            }
+            p.capturar-titulo {
+                padding: 15px 0 0 30px;
             }
             .form-group {
                 min-height: 78px;
@@ -20,11 +22,21 @@
                 }
                 textarea {
                     width: 100%;
+                    border-radius: 0;
+                }
+                input[type="checkbox"] {
+                    display: none;
                 }
             }
         }
         .row.capturar {
-            border-bottom: none;
+            min-height: auto;
+            .form-group {
+                min-height: auto;
+                .checkbox {
+                    padding-left: 15px;
+                }
+            }
         }
         
     }
