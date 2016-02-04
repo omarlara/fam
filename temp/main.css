@@ -103,7 +103,7 @@ button.home-input {
   padding: 6px 47px; }
   .form-capturar button.capturar-referido:hover, .form-capturar button.capturar-referido:focus, .form-capturar button.capturar-referido:active, .form-capturar button.capturar-referido.active {
     background-color: #F8971D; }
-.form-capturar input[type="checkbox"] + label span {
+.form-capturar input[type="checkbox"] + label {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -120,7 +120,7 @@ button.home-input {
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
-.form-capturar input[type="checkbox"]:checked + label span {
+.form-capturar input[type="checkbox"]:checked + label {
   background: url(../img/checkbox-tick.svg) 0 no-repeat; }
 
 @media (min-width: 1200px) {
@@ -465,6 +465,14 @@ button.home-input {
       color: #8d7f75;
       font-size: 18px; }
 
+.minivacs-block #minivacs-image {
+  background: url(../img/67520a18d1b125ef0b5a0aef4b86b0be.jpg) no-repeat center center fixed;
+  height: 460px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 @media (max-width: 991px) {
   .hero #hero-carousel .item img.img-responsive {
     max-width: inherit !important;
@@ -495,7 +503,8 @@ button.home-input {
     position: static !important;
     text-align: center !important;
     background-color: #00a5e3 !important;
-    padding: 20px 0 40px 0 !important; }
+    padding: 20px 0 40px 0 !important;
+    max-width: 100% !important; }
     .hero #hero-carousel .carousel-content h1 {
       margin-top: 0;
       font-size: 24px; }
@@ -522,33 +531,47 @@ button.home-input {
     .presentation-block .item .img-content h2 {
       line-height: 140%;
       font-size: 14px;
-      padding-bottom: 0; } }
-.form-feedback .form-capturar {
+      padding-bottom: 0; }
+
+  .minivacs-block #minivacs-image {
+    background: none; } }
+.form-feedback form.form-capturar {
   margin-bottom: 30px; }
-  .form-feedback .form-capturar h1, .form-feedback .form-capturar p {
+  .form-feedback form.form-capturar h1, .form-feedback form.form-capturar p {
     text-align: left; }
-  .form-feedback .form-capturar .row {
+  .form-feedback form.form-capturar .row {
     background-color: #fdfcfb;
     border-bottom: 1px solid #edebeb; }
-    .form-feedback .form-capturar .row p {
+    .form-feedback form.form-capturar .row p {
       text-align: left; }
-    .form-feedback .form-capturar .row p.capturar-titulo {
+    .form-feedback form.form-capturar .row p.capturar-titulo {
       padding: 15px 0 0 30px; }
-    .form-feedback .form-capturar .row .form-group {
+    .form-feedback form.form-capturar .row .form-group {
       min-height: 78px; }
-      .form-feedback .form-capturar .row .form-group .control-label {
+      .form-feedback form.form-capturar .row .form-group .control-label {
         text-align: left; }
-      .form-feedback .form-capturar .row .form-group textarea {
+      .form-feedback form.form-capturar .row .form-group textarea {
         width: 100%;
         border-radius: 0; }
-      .form-feedback .form-capturar .row .form-group input[type="checkbox"] {
+      .form-feedback form.form-capturar .row .form-group input[type="checkbox"] {
         display: none; }
-  .form-feedback .form-capturar .row.capturar {
+  .form-feedback form.form-capturar .row.capturar {
     min-height: auto; }
-    .form-feedback .form-capturar .row.capturar .form-group {
+    .form-feedback form.form-capturar .row.capturar .form-group {
       min-height: auto; }
-      .form-feedback .form-capturar .row.capturar .form-group .checkbox {
+      .form-feedback form.form-capturar .row.capturar .form-group .checkbox {
         padding-left: 15px; }
+.form-feedback form.form-minivacs h1, .form-feedback form.form-minivacs p {
+  text-align: left !important;
+  color: #FFF; }
+.form-feedback form.form-minivacs .row p {
+  text-align: left !important;
+  color: #FFF; }
+.form-feedback form.form-minivacs .row .form-group {
+  min-height: 78px; }
+  .form-feedback form.form-minivacs .row .form-group .control-label {
+    text-align: left;
+    color: #FFF; }
 .form-feedback .success {
   display: none;
   text-align: center; }
@@ -606,7 +629,16 @@ button.home-input {
   form.form-inline .form-group input {
     max-width: 100% !important; }
   form.form-inline .form-group select {
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+
+  form.form-minivacs h1, form.form-minivacs p {
+    color: #8D7F75 !important; }
+  form.form-minivacs .row p {
+    color: #8D7F75 !important; }
+  form.form-minivacs .row .form-group {
+    min-height: 78px; }
+    form.form-minivacs .row .form-group .control-label {
+      color: #8D7F75 !important; } }
 .nav-container-row {
   text-align: center; }
 
