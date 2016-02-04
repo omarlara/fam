@@ -387,10 +387,12 @@ button.home-input {
     padding: 15px 0; }
     .hero #hero-carousel .item .carousel-content .carousel-share span {
       padding: 0 5px; }
-    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i, .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i {
+    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i,
+    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i {
       color: #FDB823;
       font-size: 28px; }
-      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i:hover, .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i:hover {
+      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i:hover,
+      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i:hover {
         color: #eba102;
         text-decoration: none; }
 .hero .owl-theme .owl-controls {
@@ -414,7 +416,8 @@ button.home-input {
     border: 3px solid #fff;
     border-radius: 10px;
     background: #fff; }
-  .hero .owl-theme .owl-controls .owl-page.active span, .hero .owl-theme .owl-controls .owl-page:hover span {
+  .hero .owl-theme .owl-controls .owl-page.active span,
+  .hero .owl-theme .owl-controls .owl-page:hover span {
     background-color: #fdb924; }
 .hero div.fb_iframe_widget {
   left: -32px; }
@@ -423,7 +426,9 @@ button.home-input {
     height: 24px !important;
     margin: -9px 0 0 -12px !important; }
 
-.presentation-block h1, .presentation-block h2, .presentation-block p {
+.presentation-block h1,
+.presentation-block h2,
+.presentation-block p {
   font-family: "Roboto", Sans-serif; }
 .presentation-block .item img.img-responsive {
   max-height: 460px;
@@ -450,7 +455,8 @@ button.home-input {
 .presentation-block .main-section {
   margin-top: 30px;
   margin-bottom: 30px; }
-  .presentation-block .main-section h1, .presentation-block .main-section h2 {
+  .presentation-block .main-section h1,
+  .presentation-block .main-section h2 {
     font-weight: lighter; }
   .presentation-block .main-section .main-content p {
     color: #8d7f75;
