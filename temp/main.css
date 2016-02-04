@@ -125,7 +125,10 @@ button.home-input {
 
 @media (min-width: 1200px) {
   button.home-input {
-    margin: 20px 60px 30px 0; } }
+    margin: 20px 60px 30px 0; }
+
+  .minivacs-block button.home-input {
+    margin: 20px 15px 30px 0; } }
 @media (max-width: 767px) {
   button.home-input {
     padding: 6px 42px; } }
@@ -245,7 +248,11 @@ button.home-input {
   .navbar-toggle {
     float: right;
     display: block;
-    margin: 8px 0 0 0; } }
+    margin: 8px 0 0 0; }
+
+  .navbar-collapse.collapsing {
+    padding: 0 !important;
+    margin: 0 !important; } }
 @media (max-width: 320px) {
   div.fiesta a.navbar-brand {
     max-width: 210px;
@@ -471,13 +478,16 @@ button.home-input {
       color: #8d7f75;
       font-size: 18px; }
 
-.minivacs-block #minivacs-image {
-  background: url(../img/67520a18d1b125ef0b5a0aef4b86b0be.jpg) no-repeat center center fixed;
+.minivacs-block .minivacs-image {
+  background: url(../img/FCC_45390062_Kambu_Restaurant.jpg) no-repeat center center;
   height: 460px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  left: 0; }
 
 @media (max-width: 991px) {
   .hero #hero-carousel .item img.img-responsive {
@@ -539,7 +549,7 @@ button.home-input {
       font-size: 14px;
       padding-bottom: 0; }
 
-  .minivacs-block #minivacs-image {
+  .minivacs-block .minivacs-image {
     background: none; } }
 .form-feedback form.form-capturar {
   margin-bottom: 30px; }
@@ -569,15 +579,19 @@ button.home-input {
         padding-left: 15px; }
 .form-feedback form.form-minivacs h1, .form-feedback form.form-minivacs p {
   text-align: left !important;
-  color: #FFF; }
+  color: #FFF;
+  padding-left: 15px; }
 .form-feedback form.form-minivacs .row p {
   text-align: left !important;
-  color: #FFF; }
+  color: #FFF;
+  padding-left: 30px; }
 .form-feedback form.form-minivacs .row .form-group {
   min-height: 78px; }
   .form-feedback form.form-minivacs .row .form-group .control-label {
     text-align: left;
     color: #FFF; }
+  .form-feedback form.form-minivacs .row .form-group .toggle-control {
+    border: none; }
 .form-feedback .success {
   display: none;
   text-align: center; }
@@ -637,14 +651,20 @@ button.home-input {
   form.form-inline .form-group select {
     max-width: 100% !important; }
 
-  form.form-minivacs h1, form.form-minivacs p {
-    color: #8D7F75 !important; }
-  form.form-minivacs .row p {
-    color: #8D7F75 !important; }
-  form.form-minivacs .row .form-group {
-    min-height: 78px; }
-    form.form-minivacs .row .form-group .control-label {
-      color: #8D7F75 !important; } }
+  .minivacs-form.container {
+    padding-right: 0;
+    padding-left: 0; }
+    .minivacs-form.container form.form-minivacs {
+      padding-right: 0;
+      padding-left: 0; }
+      .minivacs-form.container form.form-minivacs h1, .minivacs-form.container form.form-minivacs p {
+        color: #8D7F75 !important; }
+      .minivacs-form.container form.form-minivacs .row p {
+        color: #8D7F75 !important; }
+      .minivacs-form.container form.form-minivacs .row .form-group {
+        min-height: 78px; }
+        .minivacs-form.container form.form-minivacs .row .form-group .control-label {
+          color: #8D7F75 !important; } }
 .nav-container-row {
   text-align: center; }
 

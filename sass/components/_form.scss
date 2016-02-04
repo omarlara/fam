@@ -45,17 +45,22 @@
         h1, p {
             text-align: left !important;
             color: #FFF;
+            padding-left: 15px;
         }        
         .row {
             p {
                 text-align: left !important;
                 color: #FFF;
+                padding-left: 30px;
             }
             .form-group {
                 min-height: 78px;
                 .control-label {
                     text-align: left;
                     color: #FFF;
+                }
+                .toggle-control {
+                    border: none;
                 }
             }
         }
@@ -140,21 +145,28 @@
         }
       }
     }
-    
-    form.form-minivacs {
-        h1, p {
-            color: #8D7F75 !important;
-        }        
-        .row {
-            p {
-                color: #8D7F75!important;
-            }
-            .form-group {
-                min-height: 78px;
-                .control-label {
-                    color: #8D7F75 !important;
+ 
+    .minivacs-form.container {
+        padding-right: 0;
+        padding-left: 0;
+        form.form-minivacs {
+            padding-right: 0;
+            padding-left: 0;
+            h1, p {
+                color: #8D7F75 !important;
+            }        
+            .row {
+                p {
+                    color: #8D7F75!important;
+                }
+                .form-group {
+                    min-height: 78px;
+                    .control-label {
+                        color: #8D7F75 !important;
+                    }
                 }
             }
         }
     }
+    
   }

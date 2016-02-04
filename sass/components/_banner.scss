@@ -152,13 +152,16 @@
 }
 
 .minivacs-block {
-    #minivacs-image {
-          background: url(../img/67520a18d1b125ef0b5a0aef4b86b0be.jpg) no-repeat center center fixed;
+    .minivacs-image {
+          background: url(../img/FCC_45390062_Kambu_Restaurant.jpg) no-repeat center center;
           height: 460px;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
+          position: absolute;
+          width: 100%;
+          left: 0;
     }
 }
 
@@ -272,10 +275,9 @@
             }
         }
     }
-    
     .minivacs-block {
-        #minivacs-image {
-            background: none;
+        .minivacs-image {
+              background: none;
         }
     }
 }

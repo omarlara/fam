@@ -121,18 +121,24 @@
             </nav>
         </div>
         <div class="minivacs-block">
-            <div id="minivacs-image">
-                <div class="minivacs-form">
-                    <div class="form-feedback container">
-                        <form class="form-inline form-minivacs col-lg-8 col-lg-offset-2">
+            <div class="minivacs-form container">
+                <div class="minivacs-image"></div>
+                <div class="form-feedback ">
+                    <form class="form-inline form-minivacs col-lg-8 col-lg-offset-2">
                             <h1>BUSCAR REFERIDOS</h1>
                             <p>Los campos marcados con asterisco (<span class="red">*</span>) son obligatorios</p>
                             <h2 class="success">Los datos se han enviado correctamente. </h2>
                             <div class="row">
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label for="inputTipoReferidor" class="col-lg-3 col-md-4 col-sm-4 col-xs-12 control-label required">Elige el Tipo de Referidor <span class="required">*</span></label>
-                                    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
-
+                                    <label for="inputTipoReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label required">Elige el Tipo de Referidor <span class="required">*</span></label>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="toggle-control">
+                                            <span class="active">Socio</span>
+                                            <span>No Socio</span>
+                                            <div class="hidden">
+                                                <input type="text" required value="socio" id="inputTipoReferidor" name="TipoReferidor" placeholder=" " class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -159,9 +165,8 @@
                             </div>
                             <button class="home-input" type="submit" type="submit" value="Submit">ENVIAR</button>
                         </form>
-                    </div>
                 </div>
-            </div>
+            </div>        
         </div>
         <div class="footer-banner">
             <div class="container">
