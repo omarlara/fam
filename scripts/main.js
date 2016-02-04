@@ -162,8 +162,6 @@ $(function () {
 
     $(".toggle-control > span").on("click", function () {
         $(this).parent().find('span').removeClass('active');
-        //var thisUser = $(this).text();
-        // console.log(thisUser);
         $(this).parent().find('input').val($(this).text());
         $(this).addClass('active');
 
