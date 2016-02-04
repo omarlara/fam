@@ -788,16 +788,26 @@ footer {
     margin-bottom: 16px; }
     .tile .share-control {
       text-align: center; } }
-.toggle-control > span {
-  cursor: pointer;
-  display: block;
-  width: 50%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 6px 20px;
-  font-family: "Roboto", Sans-serif;
-  text-align: center; }
-  .toggle-control > span.active {
-    background-color: yellow; }
+.toggle-control {
+  border: 1px solid #ccc;
+  overflow: hidden; }
+  .toggle-control > span {
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    float: left;
+    border-right: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    padding: 6px 20px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #8D7F75;
+    background-color: #F4F1ED; }
+    .toggle-control > span.active {
+      background-color: #FDB823;
+      color: #fff; }
+  .toggle-control > span + span {
+    border: 0 none; }
 
 /*# sourceMappingURL=main.css.map */
