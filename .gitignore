@@ -33,23 +33,8 @@ node_modules
 .node_repl_history
 
 # Dependency directory
-bower_components
-css/posadas.css
-temp/main.css
-temp/main.css.map
+bower_components/
 .sass-cache/
-
-index.html.orig
-css/posadas.css.BACKUP.14372.css
-css/posadas.css.BASE.14372.css
-css/posadas.css.LOCAL.14372.css
-css/posadas.css.REMOTE.14372.css
-sass/components/_form.scss.BACKUP.12548.scss
-sass/components/_form.scss.BASE.12548.scss
-sass/components/_form.scss.LOCAL.12548.scss
-sass/components/_form.scss.REMOTE.12548.scss
-sass/components/_form.scss.orig
-sass/components/_navigation.scss.orig
 css/*.css
 temp/*.css
-
+*.orig
