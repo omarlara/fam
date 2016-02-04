@@ -151,6 +151,17 @@
     }
 }
 
+.minivacs-block {
+    #minivacs-image {
+          background: url(../img/67520a18d1b125ef0b5a0aef4b86b0be.jpg) no-repeat center center fixed;
+          height: 460px;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+    }
+}
+
 @media (max-width: 991px) {
     .hero {
         #hero-carousel {
@@ -215,6 +226,7 @@
                 text-align: center !important;
                 background-color: #00a5e3 !important;
                 padding: 20px 0 40px 0 !important;
+                max-width: 100% !important;
                 h1 {
                     margin-top: 0;
                     font-size: 24px;
@@ -258,6 +270,12 @@
                     padding-bottom: 0;
                 }
             }
+        }
+    }
+    
+    .minivacs-block {
+        #minivacs-image {
+            background: none;
         }
     }
 }

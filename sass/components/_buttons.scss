@@ -60,7 +60,7 @@ button.home-input {
             background-color:  #F8971D;
         }
     }
-    input[type="checkbox"] + label span {
+    input[type="checkbox"] + label {
         display:inline-block;
         width:24px;
         height:24px;
@@ -79,7 +79,7 @@ button.home-input {
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     }
     
-    input[type="checkbox"]:checked + label span {
+    input[type="checkbox"]:checked + label {
         background:url(../img/checkbox-tick.svg) 0 no-repeat;
     }
 }
