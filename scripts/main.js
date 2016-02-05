@@ -1,7 +1,12 @@
 'use strict';
 
 $(function () {
-    
+
+    $('#table_id').DataTable({
+        ordering: true,
+        responsive: true
+    });
+
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();
         $form.find('input:text, input:password, select, textarea').val('');
@@ -29,11 +34,11 @@ $(function () {
     $(".form-capturar").validate({
         ignore: [],
         errorElement: 'span',
-        errorPlacement: function(error, element) {
-            if (element.attr("name") === "Privacy" ) {
-              error.insertAfter("label[for='inputPrivacy']");
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "Privacy") {
+                error.insertAfter("label[for='inputPrivacy']");
             } else {
-              error.insertAfter(element);
+                error.insertAfter(element);
             }
         },
         rules: {
