@@ -21,7 +21,7 @@ $(function () {
     });
 
     $(".form-capturar").validate({
-    ignore: [],
+        ignore: [],
         rules: {
             name: {
                 required: true
@@ -164,6 +164,31 @@ $(function () {
         $(this).parent().find('span').removeClass('active');
         $(this).parent().find('input').val($(this).text());
         $(this).addClass('active');
+
+    });
+
+    $('.submit-minivacs').on("click", function () {});
+
+    $("form.form-minivacs").submit(function (event) {
+
+        var nombres = $('#inputNombres').val();
+        var email = $('#inputEmail').val();
+        var apellidos = $('#inputApellidos').val();
+        var spanError = $("span.message-form").attr("data-error-message");
+        var spanSuccess = $("span.message-form").attr("data-success-message");
+
+        if (nombres.length || email.length || apellidos.length > 0) {
+            $(".message-form").removeClass('error-m').addClass('success-m');
+            $(".message-form").text("Hemos recibido los datos correctamente").fadeIn(500).show();
+            console.log("Paso");
+            event.preventDefault();
+        } else {
+            $(".message-form").removeClass('success-m').addClass('error-m');
+            $(".message-form").text("Al menos un campo es requerdo").fadeIn(500).show();
+            console.log("No Paso");
+            event.preventDefault();
+        }
+
 
     });
 

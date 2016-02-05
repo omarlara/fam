@@ -51,6 +51,19 @@ div.fb_iframe_widget {
   visibility: hidden;
   opacity: 0; }
 
+.message-form {
+  display: none;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  margin: 0 15px 10px;
+  padding: 5px 10px; }
+  .message-form.error-m {
+    border-color: #ff0000; }
+  .message-form.success-m {
+    border-color: darkgreen; }
+
 .btn-posadas {
   color: Red; }
 
