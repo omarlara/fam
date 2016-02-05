@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Fiesta Americana</title>
 
-    <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300' rel='stylesheet' type='text/css'>
     <link href="css/posadas.css" rel="stylesheet">
@@ -16,12 +15,6 @@
     <link rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -43,19 +36,11 @@
                            0155-5434-3454
                        </span>
                     </span>
-                    <span class="drop-down chat">
-                <span class="text" aria-haspopup="true">
-                  <i class="fa fa-comments"></i>
-                  <span class="name">
-                      <a href="#">Chat</a>
-                  </span>
-                    </span>
-
-                    </span>
                     <span class="drop-down notifications">
                          <span class="text" aria-haspopup="true">
-                              <i class="fa fa-bell"></i>
-                              <span class="name">Notificaciones</span>
+                              <span class="count">2</span>
+                    <i class="fa fa-bell"></i>
+                    <span class="name">Notificaciones</span>
                     </span>
                     <i class="fa fa-caret-down"></i>
                     <ul>
@@ -69,6 +54,15 @@
                             </a>
                         </li>
                     </ul>
+                    </span>
+                    <span class="drop-down chat">
+                <span class="text" aria-haspopup="true">
+                  <i class="fa fa-comments"></i>
+                  <span class="name">
+                      <a href="#">Chat</a>
+                  </span>
+                    </span>
+
                     </span>
                     <span class="drop-down user-action">
                        <span class="text" aria-haspopup="true">
@@ -107,7 +101,7 @@
                     </div>
                     <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
+                            <li class="">
                                 <a href="./">INFORMACIÓN <span class="sr-only">(current)</span></a>
                             </li>
                             <li><a href="#">PROMOCIONES</a></li>
@@ -120,6 +114,8 @@
                 <!--/.container-fluid -->
             </nav>
         </div>
+
+        <!-- here you need to add your html-->
         <div class="minivacs-block">
             <div class="minivacs-form container">
                 <div class="minivacs-image"></div>
@@ -147,13 +143,16 @@
                             <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <label for="inputEmail" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Numero de Socio / No socio <span class="required">*</span></label>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input id="inputEmail" name="email" type="email" placeholder="1234567890" class="form-control">
+                                    <input id="inputSocio" name="textsocio" type="text" placeholder="1234567890" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <label for="inputNombres" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombres <span class="required">*</span></label>
+                                <label for="inputNombres" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombres
+                                </label>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input id="inputNombres" name="phone" type="tel" placeholder="Juan" class="form-control">
+                                    <input id="inputNombres" name="textInput" type="text
+
+                                    el" placeholder="Juan" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -168,6 +167,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="footer-banner">
             <div class="container">
                 <p class="text-center">
@@ -208,14 +209,18 @@
                 </div>
             </div>
         </footer>
+
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
     <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="scripts/main.js"></script>
+
+
 </body>
 
-</html
+</html>
