@@ -608,6 +608,10 @@ button.home-input {
       min-height: auto; }
       .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox {
         padding-left: 15px; }
+        .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox span#Privacy-error {
+          position: absolute;
+          top: 25px;
+          left: 45px; }
 .form-feedback form.form-inline.form-minivacs {
   background-color: rgba(0, 0, 0, 0.2); }
   .form-feedback form.form-inline.form-minivacs h1, .form-feedback form.form-inline.form-minivacs p {

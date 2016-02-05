@@ -28,6 +28,7 @@ $(function () {
 
     $(".form-capturar").validate({
         ignore: [],
+        errorElement: 'span',
         rules: {
             name: {
                 required: true
