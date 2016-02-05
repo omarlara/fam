@@ -191,10 +191,13 @@
                 color: #8D7F75 !important;
             }        
             .row {
+                margin: 0;
                 p {
                     color: #8D7F75!important;
+                    padding: 0 15px;
                 }
                 .form-group {
+                    padding: 0;
                     min-height: 78px;
                     .control-label {
                         color: #8D7F75 !important;

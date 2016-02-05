@@ -707,12 +707,16 @@ button.home-input {
       padding-left: 0; }
       .minivacs-form.container form.form-minivacs h1, .minivacs-form.container form.form-minivacs p {
         color: #8D7F75 !important; }
-      .minivacs-form.container form.form-minivacs .row p {
-        color: #8D7F75 !important; }
-      .minivacs-form.container form.form-minivacs .row .form-group {
-        min-height: 78px; }
-        .minivacs-form.container form.form-minivacs .row .form-group .control-label {
-          color: #8D7F75 !important; }
+      .minivacs-form.container form.form-minivacs .row {
+        margin: 0; }
+        .minivacs-form.container form.form-minivacs .row p {
+          color: #8D7F75 !important;
+          padding: 0 15px; }
+        .minivacs-form.container form.form-minivacs .row .form-group {
+          padding: 0;
+          min-height: 78px; }
+          .minivacs-form.container form.form-minivacs .row .form-group .control-label {
+            color: #8D7F75 !important; }
 
   .capturar-referido .row {
     margin: 0 0;
