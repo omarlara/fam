@@ -1,7 +1,7 @@
 
 .form-feedback {
     
-    form.form-capturar {
+    form.form-inline.form-capturar {
         margin-bottom: 30px;
         h1, p {
            text-align: left; 
@@ -41,15 +41,16 @@
         
     }
     
-    form.form-minivacs {
+    form.form-inline.form-minivacs {
+        background-color: rgba(0,0,0,.2);
         h1, p {
-            text-align: left !important;
+            text-align: left;
             color: #FFF;
             padding-left: 15px;
         }        
         .row {
             p {
-                text-align: left !important;
+                text-align: left;
                 color: #FFF;
                 padding-left: 30px;
             }
@@ -113,6 +114,7 @@
             font-family: $font-primary;
             padding-top: 0;
             padding-right: 0;
+            font-weight: 700;
         }
         input {
           border-radius: 0;
@@ -150,6 +152,7 @@
         padding-right: 0;
         padding-left: 0;
         form.form-minivacs {
+            background-color: transparent;
             padding-right: 0;
             padding-left: 0;
             h1, p {

@@ -103,25 +103,37 @@ button.home-input {
   padding: 6px 47px; }
   .form-capturar button.capturar-referido:hover, .form-capturar button.capturar-referido:focus, .form-capturar button.capturar-referido:active, .form-capturar button.capturar-referido.active {
     background-color: #F8971D; }
-.form-capturar input[type="checkbox"] + label {
-  display: inline-block;
+.form-capturar [type="checkbox"]:not(:checked) + label,
+.form-capturar [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer; }
+.form-capturar [type="checkbox"]:not(:checked) + label:before,
+.form-capturar [type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 24px;
   height: 24px;
-  margin: -1px 4px 0 0;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
   border: 1px solid #ccc;
+  background: #FFF;
   border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
-.form-capturar input[type="checkbox"]:checked + label {
-  background: url(../img/checkbox-tick.svg) 0 no-repeat; }
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+.form-capturar [type="checkbox"]:not(:checked) + label:after,
+.form-capturar [type="checkbox"]:checked + label:after {
+  content: "";
+  background: url(../img/checkbox-tick.svg) -1px no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #45b50d; }
+.form-capturar [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0; }
+.form-capturar [type="checkbox"]:checked + label:after {
+  opacity: 1; }
 
 @media (min-width: 1200px) {
   button.home-input {
@@ -551,47 +563,49 @@ button.home-input {
 
   .minivacs-block .minivacs-image {
     background: none; } }
-.form-feedback form.form-capturar {
+.form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
-  .form-feedback form.form-capturar h1, .form-feedback form.form-capturar p {
+  .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
     text-align: left; }
-  .form-feedback form.form-capturar .row {
+  .form-feedback form.form-inline.form-capturar .row {
     background-color: #fdfcfb;
     border-bottom: 1px solid #edebeb; }
-    .form-feedback form.form-capturar .row p {
+    .form-feedback form.form-inline.form-capturar .row p {
       text-align: left; }
-    .form-feedback form.form-capturar .row p.capturar-titulo {
+    .form-feedback form.form-inline.form-capturar .row p.capturar-titulo {
       padding: 15px 0 0 30px; }
-    .form-feedback form.form-capturar .row .form-group {
+    .form-feedback form.form-inline.form-capturar .row .form-group {
       min-height: 78px; }
-      .form-feedback form.form-capturar .row .form-group .control-label {
+      .form-feedback form.form-inline.form-capturar .row .form-group .control-label {
         text-align: left; }
-      .form-feedback form.form-capturar .row .form-group textarea {
+      .form-feedback form.form-inline.form-capturar .row .form-group textarea {
         width: 100%;
         border-radius: 0; }
-      .form-feedback form.form-capturar .row .form-group input[type="checkbox"] {
+      .form-feedback form.form-inline.form-capturar .row .form-group input[type="checkbox"] {
         display: none; }
-  .form-feedback form.form-capturar .row.capturar {
+  .form-feedback form.form-inline.form-capturar .row.capturar {
     min-height: auto; }
-    .form-feedback form.form-capturar .row.capturar .form-group {
+    .form-feedback form.form-inline.form-capturar .row.capturar .form-group {
       min-height: auto; }
-      .form-feedback form.form-capturar .row.capturar .form-group .checkbox {
+      .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox {
         padding-left: 15px; }
-.form-feedback form.form-minivacs h1, .form-feedback form.form-minivacs p {
-  text-align: left !important;
-  color: #FFF;
-  padding-left: 15px; }
-.form-feedback form.form-minivacs .row p {
-  text-align: left !important;
-  color: #FFF;
-  padding-left: 30px; }
-.form-feedback form.form-minivacs .row .form-group {
-  min-height: 78px; }
-  .form-feedback form.form-minivacs .row .form-group .control-label {
+.form-feedback form.form-inline.form-minivacs {
+  background-color: rgba(0, 0, 0, 0.2); }
+  .form-feedback form.form-inline.form-minivacs h1, .form-feedback form.form-inline.form-minivacs p {
     text-align: left;
-    color: #FFF; }
-  .form-feedback form.form-minivacs .row .form-group .toggle-control {
-    border: none; }
+    color: #FFF;
+    padding-left: 15px; }
+  .form-feedback form.form-inline.form-minivacs .row p {
+    text-align: left;
+    color: #FFF;
+    padding-left: 30px; }
+  .form-feedback form.form-inline.form-minivacs .row .form-group {
+    min-height: 78px; }
+    .form-feedback form.form-inline.form-minivacs .row .form-group .control-label {
+      text-align: left;
+      color: #FFF; }
+    .form-feedback form.form-inline.form-minivacs .row .form-group .toggle-control {
+      border: none; }
 .form-feedback .success {
   display: none;
   text-align: center; }
@@ -630,7 +644,8 @@ button.home-input {
     text-align: right;
     font-family: "Roboto", Sans-serif;
     padding-top: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    font-weight: 700; }
   .form-feedback form.form-inline .form-group input {
     border-radius: 0;
     max-width: 340px;
@@ -655,6 +670,7 @@ button.home-input {
     padding-right: 0;
     padding-left: 0; }
     .minivacs-form.container form.form-minivacs {
+      background-color: transparent;
       padding-right: 0;
       padding-left: 0; }
       .minivacs-form.container form.form-minivacs h1, .minivacs-form.container form.form-minivacs p {

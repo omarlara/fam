@@ -1,6 +1,12 @@
 'use strict';
 
 $(function () {
+    
+    $(".borrar-referidoconfigreset").on("click", function () {
+        event.stopPropagation();
+        $form.find('input:text, input:password, select, textarea').val('');
+        $form.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
+    });
 
     $("#hero-carousel").owlCarousel({
 
