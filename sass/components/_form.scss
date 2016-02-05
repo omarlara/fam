@@ -13,7 +13,8 @@
                 text-align: left;
             }
             p.capturar-titulo {
-                padding: 15px 0 0 30px;
+                padding: 0 0 0 30px;
+                color: #8d7f75;
             }
             .form-group {
                 min-height: 78px;
@@ -47,7 +48,8 @@
             text-align: left;
             color: #FFF;
             padding-left: 15px;
-        }        
+            font-weight: lighter;
+        }
         .row {
             p {
                 text-align: left;
@@ -59,6 +61,7 @@
                 .control-label {
                     text-align: left;
                     color: #FFF;
+                    font-weight: normal;
                 }
                 .toggle-control {
                     border: none;
@@ -133,6 +136,35 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    form.form-inline.form-minivacs {
+        padding: 0;
+        background-color: transparent !important;
+        h1, p {
+            padding-left: 0;
+        }        
+        .row {
+            p {
+                padding-left: 0;
+            }
+            .form-group {
+                .control-label {
+                }
+                .toggle-control {
+                }
+            }
+        }
+    }
+    
+    .capturar-referido {
+        .row.capturar {
+            button {
+                padding: 6px 25px;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
         form.form-inline {
         .form-group {
@@ -159,16 +191,45 @@
                 color: #8D7F75 !important;
             }        
             .row {
+                margin: 0;
                 p {
                     color: #8D7F75!important;
+                    padding: 0 15px;
                 }
                 .form-group {
+                    padding: 0;
                     min-height: 78px;
                     .control-label {
                         color: #8D7F75 !important;
                     }
                 }
             }
+        }
+    }
+    
+    .capturar-referido {
+        .row {
+            .form-group {
+                margin: 0;
+                padding: 0;
+            }
+            margin: 0 0;
+            padding: 10px 0;
+        }
+        .row.capturar {
+            .checkbox {
+                padding-left: 10px;
+            }
+            .form-buttons {
+                text-align: center;
+                button {
+                    border-bottom: none;
+                    padding: 10px 28px;
+                    width: inherit;
+                    margin: 0;
+                    float: inherit;
+                }
+            }            
         }
     }
     

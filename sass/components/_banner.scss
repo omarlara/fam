@@ -151,19 +151,29 @@
     }
 }
 
-.minivacs-block {
-    .minivacs-image {
-          background: url(../img/FCC_45390062_Kambu_Restaurant.jpg) no-repeat center center;
-          height: 460px;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          position: absolute;
-          width: 100%;
-          left: 0;
+.busqueda {
+    .minivacs-block {
+        .minivacs-image {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            max-height: 501px;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            background: url("../img/FCC_45390062_Kambu_Restaurant.jpg") 50% 50% / cover no-repeat;
+        }
+    }
+    .footer-banner {
+        position: relative;
+    }
+    footer.footer {
+        position: relative;
     }
 }
+
 
 @media (max-width: 991px) {
     .hero {
@@ -277,7 +287,7 @@
     }
     .minivacs-block {
         .minivacs-image {
-              background: none;
+            background: transparent !important;
         }
     }
 }
