@@ -29,6 +29,13 @@ $(function () {
     $(".form-capturar").validate({
         ignore: [],
         errorElement: 'span',
+        errorPlacement: function(error, element) {
+            if (element.attr("name") === "Privacy" ) {
+              error.insertAfter("label[for='inputPrivacy']");
+            } else {
+              error.insertAfter(element);
+            }
+        },
         rules: {
             name: {
                 required: true
