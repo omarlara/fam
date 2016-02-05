@@ -503,16 +503,21 @@ button.home-input {
       color: #8d7f75;
       font-size: 18px; }
 
-.minivacs-block .minivacs-image {
-  background: url(../img/FCC_45390062_Kambu_Restaurant.jpg) no-repeat center center;
-  height: 460px;
+.busqueda .minivacs-block .minivacs-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  max-height: 501px;
+  height: 100%;
   position: absolute;
   width: 100%;
-  left: 0; }
+  left: 0px;
+  background: url("../img/FCC_45390062_Kambu_Restaurant.jpg") 50% 50%/cover no-repeat; }
+.busqueda .footer-banner {
+  position: relative; }
+.busqueda footer.footer {
+  position: relative; }
 
 @media (max-width: 991px) {
   .hero #hero-carousel .item img.img-responsive {
@@ -575,7 +580,7 @@ button.home-input {
       padding-bottom: 0; }
 
   .minivacs-block .minivacs-image {
-    background: none; } }
+    background: transparent !important; } }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
   .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
@@ -586,7 +591,8 @@ button.home-input {
     .form-feedback form.form-inline.form-capturar .row p {
       text-align: left; }
     .form-feedback form.form-inline.form-capturar .row p.capturar-titulo {
-      padding: 15px 0 0 30px; }
+      padding: 0 0 0 30px;
+      color: #8d7f75; }
     .form-feedback form.form-inline.form-capturar .row .form-group {
       min-height: 78px; }
       .form-feedback form.form-inline.form-capturar .row .form-group .control-label {
@@ -607,7 +613,8 @@ button.home-input {
   .form-feedback form.form-inline.form-minivacs h1, .form-feedback form.form-inline.form-minivacs p {
     text-align: left;
     color: #FFF;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-weight: lighter; }
   .form-feedback form.form-inline.form-minivacs .row p {
     text-align: left;
     color: #FFF;
@@ -616,7 +623,8 @@ button.home-input {
     min-height: 78px; }
     .form-feedback form.form-inline.form-minivacs .row .form-group .control-label {
       text-align: left;
-      color: #FFF; }
+      color: #FFF;
+      font-weight: normal; }
     .form-feedback form.form-inline.form-minivacs .row .form-group .toggle-control {
       border: none; }
 .form-feedback .success {
@@ -671,6 +679,17 @@ button.home-input {
     width: 100%;
     font-family: "Roboto", Sans-serif; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  form.form-inline.form-minivacs {
+    padding: 0;
+    background-color: transparent !important; }
+    form.form-inline.form-minivacs h1, form.form-inline.form-minivacs p {
+      padding-left: 0; }
+    form.form-inline.form-minivacs .row p {
+      padding-left: 0; }
+
+  .capturar-referido .row.capturar button {
+    padding: 6px 25px; } }
 @media (max-width: 767px) {
   form.form-inline .form-group label.control-label {
     text-align: left !important; }
@@ -693,7 +712,24 @@ button.home-input {
       .minivacs-form.container form.form-minivacs .row .form-group {
         min-height: 78px; }
         .minivacs-form.container form.form-minivacs .row .form-group .control-label {
-          color: #8D7F75 !important; } }
+          color: #8D7F75 !important; }
+
+  .capturar-referido .row {
+    margin: 0 0;
+    padding: 10px 0; }
+    .capturar-referido .row .form-group {
+      margin: 0;
+      padding: 0; }
+  .capturar-referido .row.capturar .checkbox {
+    padding-left: 10px; }
+  .capturar-referido .row.capturar .form-buttons {
+    text-align: center; }
+    .capturar-referido .row.capturar .form-buttons button {
+      border-bottom: none;
+      padding: 10px 28px;
+      width: inherit;
+      margin: 0;
+      float: inherit; } }
 .nav-container-row {
   text-align: center; }
 
