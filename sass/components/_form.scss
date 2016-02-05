@@ -35,6 +35,11 @@
             .form-group {
                 min-height: auto;
                 .checkbox {
+                    span#Privacy-error {
+                        position: absolute;
+                        top: 25px;
+                        left: 45px;
+                    }
                     padding-left: 15px;
                 }
             }
