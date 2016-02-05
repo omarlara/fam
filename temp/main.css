@@ -37,7 +37,11 @@ section h1 {
 @media (max-width: 767px) {
   section h1 {
     font-size: 24px;
-    margin: 10px 0 30px 0; } }
+    margin: 10px 0 30px 0; }
+
+  .message-form {
+    background-color: transparent;
+    color: #666; } }
 @media (min-width: 1025px) {
   section h1 {
     margin: 30px 0 60px 0; } }
