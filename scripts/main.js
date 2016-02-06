@@ -131,14 +131,7 @@ $(function () {
         }
     });
 
-    $(".form-inline").validate({
-        errorPlacement: function (error, element) {
-            if (element.attr("name") === "numSocio" || element.attr("name") === "name" || element.attr("name") === "lastName") {
-                error.insertAfter("#campoBusquedaRequerido");
-            } else {
-                error.insertAfter(element);
-            }
-        },
+    $(".form-inline").validate({ 
         rules: {
             name: {
                 required: true
@@ -195,8 +188,7 @@ $(function () {
             numSocio: {
                 required: "Campo requerido."
             }
-
-        }
+        }        
     });
 
     $(".toggle-control > span").on("click", function () {
@@ -207,7 +199,7 @@ $(function () {
     });
 
 
-   /* $('.submit-minivacs').on("click", function () {});
+    $('.submit-minivacs').on("click", function () {});
 
     $("form.form-minivacs").submit(function (event) {
 
@@ -231,5 +223,5 @@ $(function () {
 
 
     });
-*/
+
 });
