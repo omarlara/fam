@@ -83,40 +83,44 @@ $(function () {
         success: function () {
             //$('.success').show();
         },
+        //success: "valid",
+        submitHandler: function() {
+            $('.success').show()
+        },
         highlight: function () {
 
         },
         messages: {
             name: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             aPaterno: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             aMaterno: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             email: {
-                required: "Campo requerido",
+                required: "Campo requerido.",
                 email: "Este correo es inválido."
             },
             phone: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             pais: {
                 required: "Favor de elegir una opción."
             },
             Estado: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             Ciudad: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             PromoCode: {
-                required: "Campo requerido"
+                required: "Favor de elegir una opción."
             },
             NumeroReferidor: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             TipoReferidor: {
                 required: "Favor de elegir una opción."
@@ -128,6 +132,13 @@ $(function () {
     });
 
     $(".form-inline").validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "numSocio" || element.attr("name") === "name" || element.attr("name") === "lastName") {
+                error.insertAfter("#campoBusquedaRequerido");
+            } else {
+                error.insertAfter(element);
+            }
+        },
         rules: {
             name: {
                 required: true
@@ -146,34 +157,43 @@ $(function () {
             },
             city: {
                 required: true
+            },
+            numSocio: {
+                required: true           
             }
 
         },
         success: function () {
-            //$('.success').show();
+          //  $('.success').show();
+        },
+        submitHandler: function() {
+             $('.success').show()
         },
         highlight: function () {
 
         },
         messages: {
             name: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             lastName: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             email: {
-                required: "Campo requerido",
+                required: "Campo requerido.",
                 email: "Este correo es inválido."
             },
             phone: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             },
             state: {
                 required: "Favor de elegir una opción."
             },
             city: {
-                required: "Campo requerido"
+                required: "Campo requerido."
+            },
+            numSocio: {
+                required: "Campo requerido."
             }
 
         }
@@ -186,29 +206,30 @@ $(function () {
 
     });
 
-    $('.submit-minivacs').on("click", function () {});
+
+   /* $('.submit-minivacs').on("click", function () {});
 
     $("form.form-minivacs").submit(function (event) {
 
         var nombres = $('#inputNombres').val();
-        var email = $('#inputEmail').val();
+        var socio = $('#inputNumSocio').val();
         var apellidos = $('#inputApellidos').val();
         var spanError = $("span.message-form").attr("data-error-message");
         var spanSuccess = $("span.message-form").attr("data-success-message");
 
-        if (nombres.length || email.length || apellidos.length > 0) {
+        if (nombres.length || socio.length || apellidos.length > 0) {
             $(".message-form").removeClass('error-m').addClass('success-m');
             $(".message-form").text("Hemos recibido los datos correctamente").fadeIn(500).show();
             console.log("Paso");
             event.preventDefault();
         } else {
             $(".message-form").removeClass('success-m').addClass('error-m');
-            $(".message-form").text("Al menos un campo es requerdo").fadeIn(500).show();
+            $(".message-form").text("Llena al menos uno de los siguientes campos para ver los referidos").fadeIn(500).show();
             console.log("No Paso");
             event.preventDefault();
         }
 
 
     });
-
+*/
 });

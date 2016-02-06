@@ -62,11 +62,15 @@ div.fb_iframe_widget {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   margin: 0 15px 10px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  border: 1px solid rgba(49, 133, 6, 0.45);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
   .message-form.error-m {
-    border-color: #ff0000; }
+    background-color: rgba(248, 44, 29, 0.7);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    border: none; }
   .message-form.success-m {
-    border-color: darkgreen; }
+    background-color: rgba(69, 181, 13, 0.45); }
 
 .btn-posadas {
   color: Red; }
@@ -100,14 +104,14 @@ button.home-input {
   font-family: "Roboto", Sans-serif;
   float: right;
   border-radius: 0;
-  background-color: #f4f1ed;
+  background-color: #f8f7f4;
   border: 1px solid #cccccc;
   color: #000;
   font-size: 16px;
   margin: 20px 15px 30px 0;
   padding: 6px 47px; }
   .form-capturar button.borrar-referido:hover, .form-capturar button.borrar-referido:focus, .form-capturar button.borrar-referido:active, .form-capturar button.borrar-referido.active {
-    background-color: #a69b93; }
+    background-color: #8d7f75; }
 .form-capturar button.capturar-referido {
   font-family: "Roboto", Sans-serif;
   float: right;
@@ -585,22 +589,27 @@ button.home-input {
 
   .minivacs-block .minivacs-image {
     background: transparent !important; } }
+.form-feedback form.form-inline.form-capturar:first-child .row:first-of-type p.capturar-titulo {
+  border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
   .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
     text-align: left; }
   .form-feedback form.form-inline.form-capturar .row {
-    background-color: #fdfcfb;
-    border-bottom: 1px solid #edebeb; }
+    background-color: #fdfcfb; }
     .form-feedback form.form-inline.form-capturar .row p {
       text-align: left; }
     .form-feedback form.form-inline.form-capturar .row p.capturar-titulo {
-      padding: 0 0 0 30px;
-      color: #8d7f75; }
+      font-size: 10px;
+      padding: 10px 0 0 0;
+      margin: 0 30px;
+      color: #8d7f75;
+      border-top: 1px solid #edebeb; }
     .form-feedback form.form-inline.form-capturar .row .form-group {
       min-height: 78px; }
       .form-feedback form.form-inline.form-capturar .row .form-group .control-label {
-        text-align: left; }
+        text-align: left;
+        font-weight: normal; }
       .form-feedback form.form-inline.form-capturar .row .form-group textarea {
         width: 100%;
         border-radius: 0; }
@@ -612,6 +621,8 @@ button.home-input {
       min-height: auto; }
       .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox {
         padding-left: 15px; }
+        .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox label.control-label {
+          padding-top: 3px; }
         .form-feedback form.form-inline.form-capturar .row.capturar .form-group .checkbox span#Privacy-error {
           position: absolute;
           top: 25px;
@@ -635,17 +646,28 @@ button.home-input {
       font-weight: normal; }
     .form-feedback form.form-inline.form-minivacs .row .form-group .toggle-control {
       border: none; }
+.form-feedback input[aria-invalid="true"] label.error {
+  display: none; }
 .form-feedback .success {
   display: none;
-  text-align: center; }
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  margin: 0 15px 10px;
+  padding: 5px 10px;
+  background-color: rgba(69, 181, 13, 0.45);
+  border: 1px solid rgba(49, 133, 6, 0.45);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
 .form-feedback .required {
   color: #f82c1d;
   font-size: 16px;
   vertical-align: middle; }
 .form-feedback .error {
-  color: #f82c1d;
+  color: #FFF;
   font-weight: normal;
-  font-size: 11px; }
+  font-size: 11px;
+  background-color: rgba(248, 44, 29, 0.7);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
 .form-feedback .red {
   color: #f82c1d;
   font-size: 16px;
@@ -697,7 +719,10 @@ button.home-input {
       padding-left: 0; }
 
   .capturar-referido .row.capturar button {
-    padding: 6px 25px; } }
+    padding: 6px 25px; }
+
+  form.form-inline.form-capturar .row p.capturar-titulo {
+    margin: 0 0 0 30px !important; } }
 @media (max-width: 767px) {
   form.form-inline .form-group label.control-label {
     text-align: left !important; }

@@ -87,10 +87,14 @@ div.fb_iframe_widget {
     color: #fff;
     margin: 0 15px 10px;
     padding: 5px 10px;
+    border: 1px solid rgba(49,133,6,.45);
+    text-shadow: 0 0 3px rgba(0,0,0,.6);
     &.error-m {
-        border-color: #ff0000;
+        background-color: rgba(248,44,29,.7);
+        text-shadow: 0 0 3px rgba(0,0,0,.6);
+        border: none;
     }
     &.success-m {
-        border-color: darkgreen;
+        background-color: rgba(69,181,13,.45);
     }
 }

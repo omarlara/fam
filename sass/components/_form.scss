@@ -1,25 +1,36 @@
 
 .form-feedback {
     
+    form.form-inline.form-capturar:first-child {
+        .row:first-of-type {
+            p.capturar-titulo {
+                border-top: none !important;
+            }
+        }        
+    }
     form.form-inline.form-capturar {
         margin-bottom: 30px;
         h1, p {
            text-align: left; 
-        }        
+        }
         .row {
             background-color: #fdfcfb;
-            border-bottom: 1px solid #edebeb;
             p {
                 text-align: left;
             }
             p.capturar-titulo {
-                padding: 0 0 0 30px;
+                font-size: 10px;
+                padding: 10px 0 0 0;
+                margin: 0 30px;
                 color: #8d7f75;
+                border-top: 1px solid #edebeb;
             }
+            
             .form-group {
                 min-height: 78px;
                 .control-label {
-                    text-align: left;
+                    text-align: left;                   
+                    font-weight: normal;
                 }
                 textarea {
                     width: 100%;
@@ -35,6 +46,9 @@
             .form-group {
                 min-height: auto;
                 .checkbox {
+                    label.control-label {
+                        padding-top: 3px;;
+                    }
                     span#Privacy-error {
                         position: absolute;
                         top: 25px;
@@ -75,9 +89,21 @@
         }
     }
     
+    input[aria-invalid="true"] {
+        label.error {
+            display: none;
+        }
+    }
     .success {
         display: none;
         text-align: center;
+        color: #FFF;
+        font-size: 14px;
+        margin: 0 15px 10px;
+        padding: 5px 10px;
+        background-color: rgba(69,181,13,.45);
+        border: 1px solid rgba(49,133,6,.45);
+        text-shadow: 0 0 3px rgba(0,0,0,.6);
     }
     .required {
         color: #f82c1d;
@@ -85,9 +111,13 @@
         vertical-align: middle;
     }
     .error {
-        color: #f82c1d;
+        color: #FFF;
         font-weight: normal;
         font-size: 11px;
+        //padding: 3px 12px;
+        background-color: rgba(248,44,29,.7);
+        //border: 1px solid rgba(197,38,26,.7);
+        text-shadow: 0 0 3px rgba(0,0,0,.6);
     }
     .red {
         color: #f82c1d;
@@ -166,6 +196,14 @@
             button {
                 padding: 6px 25px;
             }
+        }
+    }
+    form.form-inline.form-capturar {
+        .row {
+            p.capturar-titulo {
+                margin: 0 0 0 30px !important;
+            }
+                
         }
     }
 }
