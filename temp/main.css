@@ -612,7 +612,8 @@ button.home-input {
         font-weight: normal; }
       .form-feedback form.form-inline.form-capturar .row .form-group textarea {
         width: 100%;
-        border-radius: 0; }
+        border-radius: 0;
+        resize: none; }
       .form-feedback form.form-inline.form-capturar .row .form-group input[type="checkbox"] {
         display: none; }
   .form-feedback form.form-inline.form-capturar .row.capturar {
@@ -663,11 +664,9 @@ button.home-input {
   font-size: 16px;
   vertical-align: middle; }
 .form-feedback .error {
-  color: #FFF;
+  color: #f82c1d;
   font-weight: normal;
-  font-size: 11px;
-  background-color: rgba(248, 44, 29, 0.7);
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
+  font-size: 11px; }
 .form-feedback .red {
   color: #f82c1d;
   font-size: 16px;
@@ -762,7 +761,6 @@ button.home-input {
   .capturar-referido .row.capturar .form-buttons {
     text-align: center; }
     .capturar-referido .row.capturar .form-buttons button {
-      border-bottom: none;
       padding: 10px 28px;
       width: inherit;
       margin: 0;
