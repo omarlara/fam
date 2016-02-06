@@ -35,6 +35,7 @@
                 textarea {
                     width: 100%;
                     border-radius: 0;
+                    resize: none;
                 }
                 input[type="checkbox"] {
                     display: none;
@@ -111,13 +112,11 @@
         vertical-align: middle;
     }
     .error {
-        color: #FFF;
+        color: #f82c1d;
         font-weight: normal;
         font-size: 11px;
         //padding: 3px 12px;
-        background-color: rgba(248,44,29,.7);
         //border: 1px solid rgba(197,38,26,.7);
-        text-shadow: 0 0 3px rgba(0,0,0,.6);
     }
     .red {
         color: #f82c1d;
@@ -266,7 +265,6 @@
             .form-buttons {
                 text-align: center;
                 button {
-                    border-bottom: none;
                     padding: 10px 28px;
                     width: inherit;
                     margin: 0;
