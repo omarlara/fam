@@ -335,9 +335,12 @@ button.home-input {
     position: absolute;
     display: block;
     margin: -5px 0 0 8px;
-    width: 16px;
+    width: 17px;
+    font-size: 11px;
     text-align: center;
-    height: 16px; }
+    height: 17px;
+    font-weight: 500;
+    line-height: 1.6; }
     .user span.drop-down.notifications .count .inner {
       font-size: 11px;
       width: 100%;
@@ -767,7 +770,7 @@ button.home-input {
       width: inherit;
       margin: 0;
       float: inherit; } }
-.nav-container-row {
+nav-container-row {
   text-align: center; }
 
 footer {
