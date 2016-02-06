@@ -36,14 +36,14 @@ button.home-input {
         font-family: $font-primary;
         float: right;
         border-radius: 0;
-        background-color: #f4f1ed ;
+        background-color: #f8f7f4 ;
         border: 1px solid #cccccc;
         color: #000;
         font-size: 16px;
         margin: 20px 15px 30px 0;
         padding: 6px 47px;
         &:hover, &:focus, &:active, &.active {
-            background-color:  #a69b93 ;
+            background-color:  #8d7f75 ;
         }
     }
     button.capturar-referido {
