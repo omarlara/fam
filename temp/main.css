@@ -110,7 +110,7 @@ button.home-input {
     border: none;
     padding: 0;
     margin: 0; }
-    .consultar .modal.fade .modal-content .modal-header h2 {
+    .consultar .modal.fade .modal-content .modal-header h1 {
       font-family: "Roboto", Sans-serif;
       font-weight: normal;
       margin-bottom: 20px; }
@@ -216,7 +216,20 @@ button.home-input {
     margin: 20px 15px 30px 0; } }
 @media (max-width: 767px) {
   button.home-input {
-    padding: 6px 42px; } }
+    padding: 6px 42px; }
+
+  .consultar .modal.fade .modal-content {
+    padding: 15px; }
+    .consultar .modal.fade .modal-content .modal-header h1 {
+      margin-bottom: 10px; }
+    .consultar .modal.fade .modal-content .modal-body .radio {
+      margin-bottom: 25px; }
+    .consultar .modal.fade .modal-content .modal-footer button {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-right: auto;
+      width: 100%;
+      max-width: 300px; } }
 .navbar {
   margin: 15px 0; }
 

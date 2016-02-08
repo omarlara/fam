@@ -43,7 +43,7 @@ button.home-input {
                 border: none;
                 padding: 0;
                 margin: 0;
-                h2 {
+                h1 {
                     font-family: $font-primary;
                     font-weight: normal;
                     margin-bottom: 20px;
@@ -182,4 +182,35 @@ button.home-input {
     button.home-input{
         padding: 6px 42px;
     } 
+    .consultar {
+        .modal.fade {
+            .modal-content {
+                padding: 15px;
+                .modal-header {
+                    h1 {
+                        margin-bottom: 10px;
+                    }
+                }
+                .modal-body {
+                    .radio {
+                        margin-bottom: 25px;
+                    }
+                }
+                .modal-footer {
+                    button {
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        margin-right: auto;
+                        width: 100%;                       
+                        max-width: 300px;
+                    }
+                }
+
+                .btn-cerrar-recompensas {
+                }
+                .btn-guardar-recompensas {
+                }    
+            }        
+        }   
+    }
 }
