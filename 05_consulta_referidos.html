@@ -29,13 +29,85 @@
                         <tr>
                             <td>Perros</td>
                             <td>Perros</td>
+                            <td>                                
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                  Launch demo modal
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Gatos</td>
                             <td>Gatos</td>
+                            <td>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                  Launch demo modal
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title" id="myModalLabel">SOLICITAR RECOMPENSAS</h1>
+                      </div>
+                      <div class="modal-body">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            $100 DLL aplicables en el pago de la membresía
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            $100 DLL para uso de Globo
+                          </label>
+                        </div>
+                          <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+                            $350 DLL para pago de la membresía
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                            2200 puntos adicionales en su membresía
+                          </label>
+                        </div>
+                          <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked>
+                            7000 puntos en su cuenta Fiesta Rewards
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                            5000 km en Aeroméxico
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                            $3500 MXN en vales para tiendas departamentales
+                          </label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-guardar-recompensas">GUARDAR</button>
+                        <button type="button" class="btn btn-cerrar-recompensas" data-dismiss="modal">CERRAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
 

@@ -86,6 +86,7 @@ $(function () {
         //success: "valid",
         submitHandler: function() {
             $('.success').show()
+            $('body').scrollTo('h2.success')           
         },
         highlight: function () {
 
@@ -161,6 +162,7 @@ $(function () {
         },
         submitHandler: function() {
              $('.success').show()
+             $('body').scrollTo('h2.success')
         },
         highlight: function () {
 
