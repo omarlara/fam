@@ -35,6 +35,6 @@ node_modules
 # Dependency directory
 bower_components/
 .sass-cache/
-css/*.css
-temp/*.css
+
+
 *.orig
