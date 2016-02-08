@@ -100,6 +100,58 @@ button.home-input {
   button.home-input:hover, button.home-input:focus, button.home-input:active, button.home-input.active {
     background-color: #F8971D; }
 
+.consultar .modal.fade .modal-content {
+  padding: 60px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0; }
+  .consultar .modal.fade .modal-content .modal-header {
+    border: none;
+    padding: 0;
+    margin: 0; }
+    .consultar .modal.fade .modal-content .modal-header h2 {
+      font-family: "Roboto", Sans-serif;
+      font-weight: normal;
+      margin-bottom: 20px; }
+  .consultar .modal.fade .modal-content .modal-body {
+    border: none;
+    padding: 0;
+    margin: 0; }
+    .consultar .modal.fade .modal-content .modal-body .radio {
+      margin-bottom: 25px; }
+  .consultar .modal.fade .modal-content .modal-footer {
+    border: none;
+    padding: 0;
+    margin: 0; }
+    .consultar .modal.fade .modal-content .modal-footer button {
+      margin-bottom: 0;
+      margin-top: 0; }
+  .consultar .modal.fade .modal-content .btn-cerrar-recompensas {
+    font-family: "Roboto", Sans-serif;
+    float: right;
+    border-radius: 0;
+    background-color: #f8f7f4;
+    border: 1px solid #cccccc;
+    color: #000;
+    font-size: 16px;
+    margin: 20px 15px 30px 0;
+    padding: 6px 47px; }
+    .consultar .modal.fade .modal-content .btn-cerrar-recompensas:hover, .consultar .modal.fade .modal-content .btn-cerrar-recompensas:focus, .consultar .modal.fade .modal-content .btn-cerrar-recompensas:active, .consultar .modal.fade .modal-content .btn-cerrar-recompensas.active {
+      background-color: #8d7f75; }
+  .consultar .modal.fade .modal-content .btn-guardar-recompensas {
+    font-family: "Roboto", Sans-serif;
+    float: right;
+    border-radius: 0;
+    background-color: #FDB924;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 20px 15px 30px 0;
+    padding: 6px 47px; }
+    .consultar .modal.fade .modal-content .btn-guardar-recompensas:hover, .consultar .modal.fade .modal-content .btn-guardar-recompensas:focus, .consultar .modal.fade .modal-content .btn-guardar-recompensas:active, .consultar .modal.fade .modal-content .btn-guardar-recompensas.active {
+      background-color: #F8971D; }
+
 .form-capturar button.borrar-referido {
   font-family: "Roboto", Sans-serif;
   float: right;
