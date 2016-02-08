@@ -227,7 +227,6 @@ button.home-input {
     margin: 8px 15px 0 0; }
 
   .navbar-collapse {
-    margin-left: -30px !important;
     border-color: transparent !important; }
 
   .navbar-collapse.collapse {
@@ -596,7 +595,8 @@ button.home-input {
   border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
-  .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
+  .form-feedback form.form-inline.form-capturar h1,
+  .form-feedback form.form-inline.form-capturar p {
     text-align: left; }
   .form-feedback form.form-inline.form-capturar .row {
     background-color: #fdfcfb; }
@@ -633,7 +633,8 @@ button.home-input {
           left: 45px; }
 .form-feedback form.form-inline.form-minivacs {
   background-color: rgba(0, 0, 0, 0.2); }
-  .form-feedback form.form-inline.form-minivacs h1, .form-feedback form.form-inline.form-minivacs p {
+  .form-feedback form.form-inline.form-minivacs h1,
+  .form-feedback form.form-inline.form-minivacs p {
     text-align: left;
     color: #FFF;
     padding-left: 15px;
@@ -715,7 +716,8 @@ button.home-input {
   form.form-inline.form-minivacs {
     padding: 0;
     background-color: transparent !important; }
-    form.form-inline.form-minivacs h1, form.form-inline.form-minivacs p {
+    form.form-inline.form-minivacs h1,
+    form.form-inline.form-minivacs p {
       padding-left: 0; }
     form.form-inline.form-minivacs .row p {
       padding-left: 0; }
@@ -726,6 +728,9 @@ button.home-input {
   form.form-inline.form-capturar .row p.capturar-titulo {
     margin: 0 0 0 30px !important; } }
 @media (max-width: 767px) {
+  .form-feedback form.form-inline h1 {
+    margin-top: 30px; }
+
   form.form-inline .form-group label.control-label {
     text-align: left !important; }
   form.form-inline .form-group input {
@@ -740,7 +745,8 @@ button.home-input {
       background-color: transparent;
       padding-right: 0;
       padding-left: 0; }
-      .minivacs-form.container form.form-minivacs h1, .minivacs-form.container form.form-minivacs p {
+      .minivacs-form.container form.form-minivacs h1,
+      .minivacs-form.container form.form-minivacs p {
         color: #8D7F75 !important; }
       .minivacs-form.container form.form-minivacs .row {
         margin: 0; }
