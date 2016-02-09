@@ -2,13 +2,21 @@
 
 $(function () {
 
-    $('#table_id').DataTable({
+    $('#tablaConsulta').DataTable({
         ordering: true,
         responsive: true
     });
     
+    $('#tablaCaptura').DataTable({
+        ordering: true,
+        responsive: true
+    });
     
-
+    $('#tablaListado').DataTable({
+        ordering: true,
+        responsive: true
+    });
+    
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();
         $form.find('input:text, input:password, select, textarea').val('');

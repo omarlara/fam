@@ -75,6 +75,31 @@ div.fb_iframe_widget {
 .btn-posadas {
   color: Red; }
 
+.modal.fade .btn-cerrar-recompensas, .modal.fade .btn-cerrar {
+  font-family: "Roboto", Sans-serif;
+  float: right;
+  border-radius: 0;
+  background-color: #f8f7f4;
+  border: 1px solid #cccccc;
+  color: #000;
+  font-size: 16px;
+  margin: 20px 15px 30px 0;
+  padding: 6px 47px; }
+  .modal.fade .btn-cerrar-recompensas:hover, .modal.fade .btn-cerrar-recompensas:focus, .modal.fade .btn-cerrar-recompensas:active, .modal.fade .btn-cerrar-recompensas.active, .modal.fade .btn-cerrar:hover, .modal.fade .btn-cerrar:focus, .modal.fade .btn-cerrar:active, .modal.fade .btn-cerrar.active {
+    background-color: #8d7f75; }
+.modal.fade .btn-guardar-recompensas {
+  font-family: "Roboto", Sans-serif;
+  float: right;
+  border-radius: 0;
+  background-color: #FDB924;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 20px 15px 30px 0;
+  padding: 6px 47px; }
+  .modal.fade .btn-guardar-recompensas:hover, .modal.fade .btn-guardar-recompensas:focus, .modal.fade .btn-guardar-recompensas:active, .modal.fade .btn-guardar-recompensas.active {
+    background-color: #F8971D; }
+
 .listadoReferidos .print.pull-right a {
   font-family: "Roboto", Sans-serif;
   color: #FDB924;
@@ -1331,40 +1356,42 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   content: '-';
   background-color: #FDB924 !important; }
 
-table.display.responsive.no-wrap thead tr {
-  background-color: #aca095;
-  color: white; }
-  table.display.responsive.no-wrap thead tr th {
+table.display.responsive.no-wrap {
+  border: 1px solid #ccc; }
+  table.display.responsive.no-wrap thead tr {
+    background-color: #aca095;
+    color: white; }
+    table.display.responsive.no-wrap thead tr th {
+      font-family: "Roboto", Sans-serif;
+      font-weight: normal; }
+    table.display.responsive.no-wrap thead tr th.sorting {
+      background-image: url(../img/sort-up-down.svg);
+      background-position: 98% 50%; }
+    table.display.responsive.no-wrap thead tr th.sorting_asc {
+      background-image: url(../img/sort-up.svg);
+      background-position: 98% 50%; }
+    table.display.responsive.no-wrap thead tr th.sorting_desc {
+      background-image: url(../img/sort-down.svg);
+      background-position: 98% 50%; }
+  table.display.responsive.no-wrap tbody tr.odd {
+    background-color: #FBF9F8 !important; }
+    table.display.responsive.no-wrap tbody tr.odd td.sorting_1 {
+      background-color: inherit !important; }
+  table.display.responsive.no-wrap tbody tr.even {
+    background-color: #FFF !important; }
+    table.display.responsive.no-wrap tbody tr.even td.sorting_1 {
+      background-color: inherit !important; }
+  table.display.responsive.no-wrap tbody tr td {
     font-family: "Roboto", Sans-serif;
-    font-weight: normal; }
-  table.display.responsive.no-wrap thead tr th.sorting {
-    background-image: url(../img/sort-up-down.svg);
-    background-position: 98% 50%; }
-  table.display.responsive.no-wrap thead tr th.sorting_asc {
-    background-image: url(../img/sort-up.svg);
-    background-position: 98% 50%; }
-  table.display.responsive.no-wrap thead tr th.sorting_desc {
-    background-image: url(../img/sort-down.svg);
-    background-position: 98% 50%; }
-table.display.responsive.no-wrap tbody tr.odd {
-  background-color: #FBF9F8 !important; }
-  table.display.responsive.no-wrap tbody tr.odd td.sorting_1 {
-    background-color: inherit !important; }
-table.display.responsive.no-wrap tbody tr.even {
-  background-color: #FFF !important; }
-  table.display.responsive.no-wrap tbody tr.even td.sorting_1 {
-    background-color: inherit !important; }
-table.display.responsive.no-wrap tbody tr td {
-  font-family: "Roboto", Sans-serif;
-  font-weight: normal;
-  color: #8D7F75; }
-  table.display.responsive.no-wrap tbody tr td a {
-    color: #FDB924;
-    cursor: pointer; }
-  table.display.responsive.no-wrap tbody tr td a.inactiveStatus {
-    color: inherit;
-    cursor: default;
-    text-decoration: none; }
+    font-weight: normal;
+    color: #8D7F75; }
+    table.display.responsive.no-wrap tbody tr td a {
+      color: #FDB924;
+      cursor: pointer; }
+    table.display.responsive.no-wrap tbody tr td a.inactiveStatus {
+      color: inherit;
+      cursor: default;
+      text-decoration: none; }
 
 .consultar tbody tr td {
   font-family: "Roboto", Sans-serif;
@@ -1408,30 +1435,6 @@ table.display.responsive.no-wrap tbody tr td {
     .consultar .modal.fade .modal-content .modal-footer button {
       margin-bottom: 0;
       margin-top: 0; }
-  .consultar .modal.fade .modal-content .btn-cerrar-recompensas {
-    font-family: "Roboto", Sans-serif;
-    float: right;
-    border-radius: 0;
-    background-color: #f8f7f4;
-    border: 1px solid #cccccc;
-    color: #000;
-    font-size: 16px;
-    margin: 20px 15px 30px 0;
-    padding: 6px 47px; }
-    .consultar .modal.fade .modal-content .btn-cerrar-recompensas:hover, .consultar .modal.fade .modal-content .btn-cerrar-recompensas:focus, .consultar .modal.fade .modal-content .btn-cerrar-recompensas:active, .consultar .modal.fade .modal-content .btn-cerrar-recompensas.active {
-      background-color: #8d7f75; }
-  .consultar .modal.fade .modal-content .btn-guardar-recompensas {
-    font-family: "Roboto", Sans-serif;
-    float: right;
-    border-radius: 0;
-    background-color: #FDB924;
-    border: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    margin: 20px 15px 30px 0;
-    padding: 6px 47px; }
-    .consultar .modal.fade .modal-content .btn-guardar-recompensas:hover, .consultar .modal.fade .modal-content .btn-guardar-recompensas:focus, .consultar .modal.fade .modal-content .btn-guardar-recompensas:active, .consultar .modal.fade .modal-content .btn-guardar-recompensas.active {
-      background-color: #F8971D; }
 
 .listadoReferidos .dataTables_wrapper .dataTables_paginate {
   float: none;

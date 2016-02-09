@@ -20,7 +20,7 @@
             <button class="capturarReferido" href="#">CAPTURAR REFERIDO</button>
             <div class="consultar">
                 <form>
-                    <table id="table_id" class="display responsive no-wrap">
+                    <table id="tablaConsulta" class="display responsive no-wrap">
                         <thead>
                             <tr>
                                 <th>NOMBRE</th>
@@ -40,9 +40,9 @@
                                 <td>1234 56 78 90, 123 456 78 90, +52 1 1234 56 78 90</td>
                                 <td>maria.rodriguez.villarreal@correo.com</td>
                                 <td>Venta de Paquete</td>
-                                <td><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+                                <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
                                 <td><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
-                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
                             </tr>
                             <tr>
                                 <td>Pedro</td>
@@ -50,9 +50,9 @@
                                 <td>1234 56 78 90</td>
                                 <td>pedro.gonzalez@correo.com</td>
                                 <td>Seguimiento Contacto</td>
-                                <td><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+                                <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
                                 <td><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
-                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
                             </tr>
                             <tr>
                                 <td>Rosa</td>
@@ -60,9 +60,9 @@
                                 <td>1234 56 78 90, 123 456 78 90, +52 1 1234 56 78 90</td>
                                 <td>rosa.martinez@correo.com</td>
                                 <td>Venta de Paquete</td>
-                                <td><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+                                <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
                                 <td><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
-                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
                             </tr>
                             <tr>
                                 <td>Ana Lucia</td>
@@ -70,9 +70,9 @@
                                 <td>1234 56 78 90, 123 456 78 90, +52 1 1234 56 78 90</td>
                                 <td>ana.lucia.rodriguez.velazquez@correo.com</td>
                                 <td>No acepto aviso privacidad / Ya es socio</td>
-                                <td><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+                                <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
                                 <td><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
-                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
                             </tr>
                             <tr>
                                 <td>David</td>
@@ -80,14 +80,14 @@
                                 <td>1234 56 78 90</td>
                                 <td>david.alcantar.jimenez@correo.com</td>
                                 <td>No contesta</td>
-                                <td><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+                                <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
                                 <td><a href="#"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
-                                <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span> Solicitar</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </form>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal fade" id="modalRecompensas" tabindex="-1" role="dialog" aria-labelledby="modalRecompensas">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -140,6 +140,23 @@
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-guardar-recompensas">GUARDAR</button>
                                 <button type="button" class="btn btn-cerrar-recompensas" data-dismiss="modal">CERRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalComentario" tabindex="-1" role="dialog" aria-labelledby="modalComentario">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="comentariosUser">ROSA MARTINES LOPEZ</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Comentarios</h3>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eget lorem lacus. Suspendisse eget suscipit elit. Nulla egestas purus risus, eu lobortis felis dictum sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec fringilla vitae velit et cursus. Vivamus gravida diam vel turpis facilisis maximus. Cras et nibh ornare, pretium urna ac, gravida est. </p>                      
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-cerrar" data-dismiss="modal">CERRAR</button>
                             </div>
                         </div>
                     </div>

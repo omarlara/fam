@@ -23,6 +23,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     background-color: #FDB924 !important;
 }
 table.display.responsive.no-wrap {
+    border: 1px solid #ccc;
     thead {
         tr {
             background-color: #aca095;
@@ -135,35 +136,6 @@ table.display.responsive.no-wrap {
                 button {
                     margin-bottom: 0;
                     margin-top: 0;
-                }
-            }
-
-            .btn-cerrar-recompensas {
-                font-family: $font-primary;
-                float: right;
-                border-radius: 0;
-                background-color: #f8f7f4 ;
-                border: 1px solid #cccccc;
-                color: #000;
-                font-size: 16px;
-                margin: 20px 15px 30px 0;
-                padding: 6px 47px;
-                &:hover, &:focus, &:active, &.active {
-                    background-color:  #8d7f75 ;
-                }
-            }
-            .btn-guardar-recompensas {
-                font-family: $font-primary;
-                float: right;
-                border-radius: 0;
-                background-color: #FDB924 ;
-                border: none;
-                color: #FFFFFF;
-                font-size: 16px;
-                margin: 20px 15px 30px 0;
-                padding: 6px 47px;
-                &:hover, &:focus, &:active, &.active {
-                    background-color:  #F8971D;
                 }
             }    
         }        
