@@ -14,7 +14,7 @@ $(function () {
     });
 
     $("#hero-carousel").owlCarousel({
-
+        
         //autoPlay : 3000,
         navigation: false,
         slideSpeed: 300,
@@ -86,7 +86,6 @@ $(function () {
         //success: "valid",
         submitHandler: function() {
             $('.success').show()
-            $('body').scrollTo('h2.success')           
         },
         highlight: function () {
 
@@ -162,7 +161,6 @@ $(function () {
         },
         submitHandler: function() {
              $('.success').show()
-             $('body').scrollTo('h2.success')
         },
         highlight: function () {
 
