@@ -17,7 +17,10 @@
         <!-- here you need to add your html-->
         <section class="container listadoReferidos">
             <h1>LISTADO DE REFERIDOS</h1>
-            <button class="capturarReferido" href="#">LISTADO DE REFERIDOS</button>
+            <div class="print pull-right">
+                <a href="#" class="printListado"><i class="fa fa-download"></i>Descargar</a>
+                <a href="#" class="downloadListado"><i class="fa fa-print"></i>Imprimir</a>
+            </div>
             <div class="consultar">
                 <form>
                     <table id="table_id" class="display responsive no-wrap">
@@ -217,6 +220,7 @@
                         </tbody>
                     </table>
                 </form>
+                <button class="guardarListado pull-right" href="#">GUARDAR CAMBIOS</button>
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">

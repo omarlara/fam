@@ -75,6 +75,16 @@ div.fb_iframe_widget {
 .btn-posadas {
   color: Red; }
 
+.listadoReferidos .print.pull-right a {
+  font-family: "Roboto", Sans-serif;
+  color: #FDB924;
+  font-size: 16px;
+  padding: 0 10px; }
+  .listadoReferidos .print.pull-right a:hover, .listadoReferidos .print.pull-right a:focus, .listadoReferidos .print.pull-right a:active, .listadoReferidos .print.pull-right a.active {
+    color: #F8971D; }
+  .listadoReferidos .print.pull-right a i.fa {
+    padding: 0 10px; }
+
 .btn.btn-primary.home-slide {
   font-family: "Roboto", Sans-serif;
   border-radius: 0;
@@ -1422,6 +1432,12 @@ table.display.responsive.no-wrap tbody tr td {
     padding: 6px 47px; }
     .consultar .modal.fade .modal-content .btn-guardar-recompensas:hover, .consultar .modal.fade .modal-content .btn-guardar-recompensas:focus, .consultar .modal.fade .modal-content .btn-guardar-recompensas:active, .consultar .modal.fade .modal-content .btn-guardar-recompensas.active {
       background-color: #F8971D; }
+
+.listadoReferidos .dataTables_wrapper .dataTables_paginate {
+  float: none;
+  text-align: center; }
+.listadoReferidos button.guardarListado.pull-right {
+  margin-top: -30px; }
 
 @media (max-width: 767px) {
   .consultar .modal.fade .modal-content {

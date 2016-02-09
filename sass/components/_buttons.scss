@@ -2,6 +2,23 @@
     color: Red;
 }
 
+.listadoReferidos {
+    .print.pull-right {
+        a {
+            font-family: $font-primary;
+            color: #FDB924 ;
+            font-size: 16px;
+            padding: 0 10px;
+            &:hover, &:focus, &:active, &.active {
+                color:  #F8971D;
+            }
+            i.fa {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
 .btn.btn-primary.home-slide {
     font-family: $font-primary;
     border-radius: 0;

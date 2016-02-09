@@ -6,6 +6,8 @@ $(function () {
         ordering: true,
         responsive: true
     });
+    
+    
 
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();

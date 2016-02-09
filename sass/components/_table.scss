@@ -170,6 +170,15 @@ table.display.responsive.no-wrap {
     }   
 }
 
+.listadoReferidos {
+    .dataTables_wrapper .dataTables_paginate {
+        float: none;
+        text-align: center;
+    }
+     button.guardarListado.pull-right {
+        margin-top: -30px;
+    }
+}
 
 @media (max-width: 767px) {
     .consultar {
