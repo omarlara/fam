@@ -1,16 +1,23 @@
 'use strict';
 
 $(function () {
-
-    $('#table_id').DataTable({
+    
+    $('#tablaConsulta').DataTable({
         ordering: true,
         responsive: true
     });
-
+    
+    $('#tablaCaptura').DataTable({
+        ordering: true,
+        responsive: true
+    });
+    
+    $('#tablaListado').DataTable({
+        ordering: true,
+        responsive: true
+    });
+    
     $('input[type="search"]').attr('placeholder', 'buscar...');
-
-
-
 
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();
