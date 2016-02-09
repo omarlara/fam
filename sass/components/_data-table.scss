@@ -390,13 +390,25 @@ table.dataTable td {
     // Page length options
     .dataTables_length {
         float: left;
+        display: none;
     }
     // Filtering input
     .dataTables_filter {
         float: right;
         text-align: right;
+        margin-bottom: 30px;
+        margin-top: -31px;
         input {
             margin-left: 0.5em;
+        }
+        input[type='search'] {
+            border: 1px solid #ddd;
+            padding: 5px 20px 5px 10px;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 500;
+            background: url('../img/icon-search.png') right center scroll no-repeat transparent;
+            min-width: 300px;
         }
     }
     // Table info

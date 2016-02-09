@@ -882,7 +882,7 @@
             d = a.oLanguage,
             e = a.oPreviousSearch,
             f = a.aanFeatures,
-            g = '<input type="search" class="' + b.sFilterInput + '"/>',
+            g = '<input type="search"  class="s ' + b.sFilterInput + '"  placeholder="buscar..." />',
             j = d.sSearch,
             j = j.match(/_INPUT_/) ? j.replace("_INPUT_", g) : j + g,
             b = h("<div/>", {
@@ -3242,7 +3242,7 @@
             sLengthMenu: "Mostrar _MENU_ registros",
             sLoadingRecords: "Cargando...",
             sProcessing: "Procesando...",
-            sSearch: "Buscar:",
+            sSearch: "",
             sSearchPlaceholder: "",
             sUrl: "",
             sZeroRecords: "No se ha encontrado coincidencias"

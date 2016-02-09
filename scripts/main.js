@@ -6,8 +6,11 @@ $(function () {
         ordering: true,
         responsive: true
     });
-    
-    
+
+    $('input[type="search"]').attr('placeholder', 'buscar...');
+
+
+
 
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();
@@ -16,7 +19,7 @@ $(function () {
     });
 
     $("#hero-carousel").owlCarousel({
-        
+
         //autoPlay : 3000,
         navigation: false,
         slideSpeed: 300,
@@ -86,7 +89,7 @@ $(function () {
             //$('.success').show();
         },
         //success: "valid",
-        submitHandler: function() {
+        submitHandler: function () {
             $('.success').show()
         },
         highlight: function () {
@@ -133,7 +136,7 @@ $(function () {
         }
     });
 
-    $(".form-inline").validate({ 
+    $(".form-inline").validate({
         rules: {
             name: {
                 required: true
@@ -154,15 +157,15 @@ $(function () {
                 required: true
             },
             numSocio: {
-                required: true           
+                required: true
             }
 
         },
         success: function () {
-          //  $('.success').show();
+            //  $('.success').show();
         },
-        submitHandler: function() {
-             $('.success').show()
+        submitHandler: function () {
+            $('.success').show()
         },
         highlight: function () {
 
@@ -190,7 +193,7 @@ $(function () {
             numSocio: {
                 required: "Campo requerido."
             }
-        }        
+        }
     });
 
     $(".toggle-control > span").on("click", function () {
