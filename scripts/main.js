@@ -1,23 +1,45 @@
 'use strict';
 
 $(function () {
-    
+
     $('#tablaConsulta').DataTable({
         ordering: true,
         responsive: true
     });
-    
+
     $('#tablaCaptura').DataTable({
         ordering: true,
         responsive: true
     });
-    
-    $('#tablaListado').DataTable({
+
+
+    $('#tablaListado thead th').each(function () {
+        var title = $(this).text();
+        $(this).html('<div class="head-text">' + title + '</div>' + '<input type="text" placeholder="Buscar ' + title + '" />');
+    });
+
+    var table = $('#tablaListado').DataTable({
         ordering: true,
         responsive: true
     });
-    
+
+
+    table.columns().every(function () {
+        var that = this;
+
+        $('input', this.header()).on('keyup change', function () {
+            if (that.search() !== this.value) {
+                that
+                    .search(this.value)
+                    .draw();
+            }
+        });
+    });
+
     $('input[type="search"]').attr('placeholder', 'buscar...');
+
+
+
 
     $(".borrar-referidoconfigreset").on("click", function () {
         event.stopPropagation();
