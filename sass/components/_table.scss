@@ -1,8 +1,8 @@
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-    top: inherit !important;
-    left: inherit !important;
-    height: 20px !important;
-    width: 20px !important;
+    top: inherit!important;
+    left: inherit!important;
+    height: 20px!important;
+    width: 20px!important;
     display: block;
     position: absolute;
     color: #fff;
@@ -10,11 +10,11 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
     border-radius: 5px!important;
     box-shadow: none!important;
     box-sizing: content-box;
-    font-family: $font-primary !important;
+    font-family: Roboto,Sans-serif!important;
     font-size: 25px!important;
-    font-weight: 700!important;
-    text-indent: 4px!important;
-    line-height: 18px!important;
+    font-weight: 400!important;
+    text-indent: 3px!important;
+    line-height: 19px!important;
     margin-left: -25px;
     content: '+';
     background-color: #FDB924!important;
@@ -23,8 +23,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     content: '-';
     background-color: #FDB924 !important;
     font-size: 35px!important;
+    text-indent: 5px !important;
 }
-table.display.responsive.no-wrap {
+#tablaListado, #tablaCaptura, #tablaConsulta {
+    span.dtr-data {
+        word-break: break-word !important;
+    }
     border: 1px solid #ccc;
     thead {
         tr {
@@ -185,5 +189,21 @@ table.display.responsive.no-wrap {
                 }    
             }        
         }   
+    }
+    
+    .listadoReferidos {
+        button.guardarListado.pull-right {
+            margin: 0;
+            float: none !important;
+        }
+        #tablaListado {
+            #tablaListado_info {
+                float: inherit;
+            }
+            #tablaListado_paginate {
+                float: inherit;
+                margin-bottom: 15px;
+            }            
+        }
     }
 }

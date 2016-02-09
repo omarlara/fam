@@ -1361,11 +1361,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before, table
   border-radius: 5px !important;
   box-shadow: none !important;
   box-sizing: content-box;
-  font-family: "Roboto", Sans-serif !important;
+  font-family: Roboto, Sans-serif !important;
   font-size: 25px !important;
-  font-weight: 700 !important;
-  text-indent: 4px !important;
-  line-height: 18px !important;
+  font-weight: 400 !important;
+  text-indent: 3px !important;
+  line-height: 19px !important;
   margin-left: -25px;
   content: '+';
   background-color: #FDB924 !important; }
@@ -1373,41 +1373,44 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before, table
 table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
   content: '-';
   background-color: #FDB924 !important;
-  font-size: 35px !important; }
+  font-size: 35px !important;
+  text-indent: 5px !important; }
 
-table.display.responsive.no-wrap {
+#tablaListado, #tablaCaptura, #tablaConsulta {
   border: 1px solid #ccc; }
-  table.display.responsive.no-wrap thead tr {
+  #tablaListado span.dtr-data, #tablaCaptura span.dtr-data, #tablaConsulta span.dtr-data {
+    word-break: break-word !important; }
+  #tablaListado thead tr, #tablaCaptura thead tr, #tablaConsulta thead tr {
     background-color: #aca095;
     color: white; }
-    table.display.responsive.no-wrap thead tr th {
+    #tablaListado thead tr th, #tablaCaptura thead tr th, #tablaConsulta thead tr th {
       font-family: "Roboto", Sans-serif;
       font-weight: normal; }
-    table.display.responsive.no-wrap thead tr th.sorting {
+    #tablaListado thead tr th.sorting, #tablaCaptura thead tr th.sorting, #tablaConsulta thead tr th.sorting {
       background-image: url(../img/sort-up-down.svg);
       background-position: 98% 50%; }
-    table.display.responsive.no-wrap thead tr th.sorting_asc {
+    #tablaListado thead tr th.sorting_asc, #tablaCaptura thead tr th.sorting_asc, #tablaConsulta thead tr th.sorting_asc {
       background-image: url(../img/sort-up.svg);
       background-position: 98% 50%; }
-    table.display.responsive.no-wrap thead tr th.sorting_desc {
+    #tablaListado thead tr th.sorting_desc, #tablaCaptura thead tr th.sorting_desc, #tablaConsulta thead tr th.sorting_desc {
       background-image: url(../img/sort-down.svg);
       background-position: 98% 50%; }
-  table.display.responsive.no-wrap tbody tr.odd {
+  #tablaListado tbody tr.odd, #tablaCaptura tbody tr.odd, #tablaConsulta tbody tr.odd {
     background-color: #FBF9F8 !important; }
-    table.display.responsive.no-wrap tbody tr.odd td.sorting_1 {
+    #tablaListado tbody tr.odd td.sorting_1, #tablaCaptura tbody tr.odd td.sorting_1, #tablaConsulta tbody tr.odd td.sorting_1 {
       background-color: inherit !important; }
-  table.display.responsive.no-wrap tbody tr.even {
+  #tablaListado tbody tr.even, #tablaCaptura tbody tr.even, #tablaConsulta tbody tr.even {
     background-color: #FFF !important; }
-    table.display.responsive.no-wrap tbody tr.even td.sorting_1 {
+    #tablaListado tbody tr.even td.sorting_1, #tablaCaptura tbody tr.even td.sorting_1, #tablaConsulta tbody tr.even td.sorting_1 {
       background-color: inherit !important; }
-  table.display.responsive.no-wrap tbody tr td {
+  #tablaListado tbody tr td, #tablaCaptura tbody tr td, #tablaConsulta tbody tr td {
     font-family: "Roboto", Sans-serif;
     font-weight: normal;
     color: #8D7F75; }
-    table.display.responsive.no-wrap tbody tr td a {
+    #tablaListado tbody tr td a, #tablaCaptura tbody tr td a, #tablaConsulta tbody tr td a {
       color: #FDB924;
       cursor: pointer; }
-    table.display.responsive.no-wrap tbody tr td a.inactiveStatus {
+    #tablaListado tbody tr td a.inactiveStatus, #tablaCaptura tbody tr td a.inactiveStatus, #tablaConsulta tbody tr td a.inactiveStatus {
       color: inherit;
       cursor: default;
       text-decoration: none; }
@@ -1473,6 +1476,15 @@ table.display.responsive.no-wrap {
       margin-top: 10px;
       margin-right: auto;
       width: 100%;
-      max-width: 300px; } }
+      max-width: 300px; }
+
+  .listadoReferidos button.guardarListado.pull-right {
+    margin: 0;
+    float: none !important; }
+  .listadoReferidos #tablaListado #tablaListado_info {
+    float: inherit; }
+  .listadoReferidos #tablaListado #tablaListado_paginate {
+    float: inherit;
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

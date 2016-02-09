@@ -12,17 +12,15 @@ $(function () {
         responsive: true
     });
 
-
+    var table = $('#tablaListado').DataTable({
+        ordering: true,
+        "scrollX": true
+    });
+    
     $('#tablaListado thead th').each(function () {
         var title = $(this).text();
         $(this).html('<div class="head-text">' + title + '</div>' + '<input type="text" placeholder="Buscar ' + title + '" />');
     });
-
-    var table = $('#tablaListado').DataTable({
-        ordering: true,
-        responsive: true
-    });
-
 
     table.columns().every(function () {
         var that = this;
