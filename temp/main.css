@@ -323,6 +323,7 @@ button.home-input {
     margin: 8px 15px 0 0; }
 
   .navbar-collapse {
+    margin-left: -30px !important;
     border-color: transparent !important; }
 
   .navbar-collapse.collapse {
@@ -495,150 +496,203 @@ button.home-input {
       width: 140px;
       right: 0;
       margin-right: 0px; } }
-.navbar {
-  margin: 15px 0; }
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-  font-family: "Roboto", Sans-serif; }
-  .navbar-default .navbar-header button.navbar-toggle {
-    border: none;
-    background: none; }
-    .navbar-default .navbar-header button.navbar-toggle span.icon-bar {
-      background-color: #fdb924;
-      height: 4px;
-      width: 24px;
-      border-radius: 0; }
-    .navbar-default .navbar-header button.navbar-toggle:hover {
-      background: none; }
-  .navbar-default .navbar-header button.navbar-toggle[aria-expanded="true"] {
+.hero #hero-carousel .item img.img-responsive {
+  height: 460px;
+  width: 100%; }
+.hero #hero-carousel .item .carousel-content {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 15px;
+  max-width: 480px; }
+  .hero #hero-carousel .item .carousel-content h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: normal; }
+  .hero #hero-carousel .item .carousel-content h2 {
+    margin-top: 15px;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: normal; }
+  .hero #hero-carousel .item .carousel-content span.text-content {
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Roboto", Sans-serif; }
+  .hero #hero-carousel .item .carousel-content .carousel-share {
+    padding: 15px 0; }
+    .hero #hero-carousel .item .carousel-content .carousel-share span {
+      padding: 0 5px; }
+    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i,
+    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i {
+      color: #FDB823;
+      font-size: 28px; }
+      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i:hover,
+      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i:hover {
+        color: #eba102;
+        text-decoration: none; }
+.hero .owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none; }
+  .hero .owl-theme .owl-controls .owl-page span {
+    width: 14px;
+    height: 14px;
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background: #fff; }
+  .hero .owl-theme .owl-controls .owl-page.active span,
+  .hero .owl-theme .owl-controls .owl-page:hover span {
     background-color: #fdb924; }
-    .navbar-default .navbar-header button.navbar-toggle[aria-expanded="true"] span.icon-bar {
-      background-color: #FFF; }
-  .navbar-default .navbar-header .navbar-brand {
-    padding: 0; }
-  .navbar-default ul.nav li.active > a {
-    background-color: #FDB823;
-    color: #ffffff !important; }
-    .navbar-default ul.nav li.active > a:hover {
-      color: #ffffff !important;
-      background-color: #FDB823 !important; }
-  .navbar-default ul.nav li a {
-    font-family: "Roboto", Sans-serif;
-    text-align: center;
-    color: #323232 !important;
-    font-size: 18px;
-    font-weight: 500; }
-    .navbar-default ul.nav li a:hover {
-      background-color: transparent !important;
-      color: #666 !important; }
+.hero div.fb_iframe_widget {
+  left: -32px; }
+  .hero div.fb_iframe_widget iframe {
+    width: 24px !important;
+    height: 24px !important;
+    margin: -9px 0 0 -12px !important; }
+
+.presentation-block h1,
+.presentation-block h2,
+.presentation-block p {
+  font-family: "Roboto", Sans-serif; }
+.presentation-block .item img.img-responsive {
+  max-height: 460px;
+  width: 100%; }
+.presentation-block .item .img-content {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  text-align: left;
+  width: inherit; }
+  .presentation-block .item .img-content h1 {
+    color: #FFF;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-size: 34px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
+  .presentation-block .item .img-content h2 {
+    color: #FFF;
+    padding-right: 15px;
+    font-weight: lighter;
+    font-size: 28px;
+    padding-bottom: 20px; }
+.presentation-block .main-section {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .presentation-block .main-section h1,
+  .presentation-block .main-section h2 {
+    font-weight: lighter; }
+  .presentation-block .main-section .main-content p {
+    color: #8d7f75;
+    font-size: 14px; }
+  .presentation-block .main-section .main-content h1 {
+    margin-bottom: 20px; }
+  .presentation-block .main-section .aside-content {
+    background-color: #f8f7f4;
+    padding: 1px 30px;
+    margin: 20px 0; }
+    .presentation-block .main-section .aside-content p {
+      color: #8d7f75;
+      font-size: 18px; }
+
+.busqueda .minivacs-block .minivacs-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-height: 501px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  background: url("../img/FCC_45390062_Kambu_Restaurant.jpg") 50% 50%/cover no-repeat; }
+.busqueda .footer-banner {
+  position: relative; }
+.busqueda footer.footer {
+  position: relative; }
 
 @media (max-width: 991px) {
-  .fiesta.container {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
+  .hero #hero-carousel .item img.img-responsive {
+    max-width: inherit !important;
+    width: initial; }
 
-  .navbar-header {
-    float: none;
-    min-height: 55px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    width: 750px; }
-
-  .navbar-toggle {
-    float: right;
-    display: block;
-    margin: 8px 15px 0 0; }
-
-  .navbar-collapse {
-    border-color: transparent !important; }
-
-  .navbar-collapse.collapse {
-    display: none !important;
-    padding: 0; }
-
-  .navbar-collapse.collapsing {
-    padding: 0;
-    margin: 0; }
-
-  .navbar-nav {
-    float: none !important;
-    margin: 0;
-    margin-top: 15px; }
-
-  .navbar-nav > li {
-    float: none; }
-
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e7e7e7; }
-    .navbar-nav > li > a br {
-      display: none; }
-
-  .navbar-collapse.collapse.in {
-    display: block !important;
-    padding: 0; }
-
-  .navbar-default ul.nav li a {
-    min-height: 50px;
-    padding: 17px; }
-
-  nav.navbar.navbar-default {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    nav.navbar.navbar-default .container {
-      width: 100%;
-      margin: 0;
-      padding: 0; } }
+  .presentation-block .item .img-content h1 {
+    font-size: 24px; }
+  .presentation-block .item .img-content h2 {
+    font-size: 20px; }
+  .presentation-block .main-section .main-content h1 {
+    font-size: 28px; }
+  .presentation-block .main-section .main-content h2 {
+    font-size: 24px; }
+  .presentation-block .main-section .main-content p {
+    font-size: 14px; }
+  .presentation-block .main-section .aside-content h2 {
+    font-size: 18px; }
+  .presentation-block .main-section .aside-content p {
+    font-size: 14px; } }
 @media (max-width: 767px) {
-  div.fiesta a.navbar-brand {
-    display: block;
-    float: left;
-    max-width: 230px; }
-  div.fiesta .navbar-header {
-    min-height: 55px;
-    width: 100%; }
+  .hero #hero-carousel .item img.img-responsive {
+    min-height: 170px;
+    height: inherit;
+    width: 100% !important; }
+  .hero #hero-carousel .owl-wrapper-outer {
+    max-height: inherit; }
+  .hero #hero-carousel .carousel-content {
+    position: static !important;
+    text-align: center !important;
+    background-color: #00a5e3 !important;
+    padding: 20px 0 40px 0 !important;
+    max-width: 100% !important; }
+    .hero #hero-carousel .carousel-content h1 {
+      margin-top: 0;
+      font-size: 24px; }
+    .hero #hero-carousel .carousel-content h2 {
+      font-size: 20px; }
+    .hero #hero-carousel .carousel-content .carousel-share {
+      text-align: center; }
+  .hero div.fb_iframe_widget iframe {
+    margin: -9px 0 0 -10px !important; }
 
-  .navbar-toggle {
-    float: right;
-    display: block;
-    margin: 8px 0 0 0; }
+  .presentation-block .main-content {
+    padding-bottom: 30px; }
+  .presentation-block .item .information-img.container {
+    padding: 0; }
+  .presentation-block .item img.img-responsive {
+    min-height: 170px; }
+  .presentation-block .item .img-content {
+    position: static !important;
+    background-color: #ca3092;
+    padding: 5px 20px; }
+    .presentation-block .item .img-content h1 {
+      text-shadow: none;
+      font-size: 24px; }
+    .presentation-block .item .img-content h2 {
+      line-height: 140%;
+      font-size: 14px;
+      padding-bottom: 0; }
 
-  .navbar-collapse.collapsing {
-    padding: 0 !important;
-    margin: 0 !important; } }
-@media (max-width: 320px) {
-  div.fiesta a.navbar-brand {
-    max-width: 210px;
-    margin-top: 3px; } }
-@media (min-width: 768px) and (max-width: 991px) {
-  .navbar-toggle {
-    margin-top: 13px; } }
-@media (min-width: 992px) {
-  .navbar-default ul.nav > li {
-    min-height: 70px;
-    display: table;
-    vertical-align: middle;
-    max-width: 170px; }
-    .navbar-default ul.nav > li > a {
-      min-height: 70px !important;
-      display: table-cell;
-      height: 100%;
-      vertical-align: middle; } }
+  .minivacs-block .minivacs-image {
+    background: transparent !important; } }
 .form-feedback form.form-inline.form-capturar:first-child .row:first-of-type p.capturar-titulo {
   border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
-  .form-feedback form.form-inline.form-capturar h1,
-  .form-feedback form.form-inline.form-capturar p {
+  .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
     text-align: left; }
   .form-feedback form.form-inline.form-capturar .row {
     background-color: #fdfcfb; }
@@ -675,8 +729,7 @@ button.home-input {
           left: 45px; }
 .form-feedback form.form-inline.form-minivacs {
   background-color: rgba(0, 0, 0, 0.2); }
-  .form-feedback form.form-inline.form-minivacs h1,
-  .form-feedback form.form-inline.form-minivacs p {
+  .form-feedback form.form-inline.form-minivacs h1, .form-feedback form.form-inline.form-minivacs p {
     text-align: left;
     color: #FFF;
     padding-left: 15px;
@@ -758,8 +811,7 @@ button.home-input {
   form.form-inline.form-minivacs {
     padding: 0;
     background-color: transparent !important; }
-    form.form-inline.form-minivacs h1,
-    form.form-inline.form-minivacs p {
+    form.form-inline.form-minivacs h1, form.form-inline.form-minivacs p {
       padding-left: 0; }
     form.form-inline.form-minivacs .row p {
       padding-left: 0; }
@@ -770,9 +822,6 @@ button.home-input {
   form.form-inline.form-capturar .row p.capturar-titulo {
     margin: 0 0 0 30px !important; } }
 @media (max-width: 767px) {
-  .form-feedback form.form-inline h1 {
-    margin-top: 30px; }
-
   form.form-inline .form-group label.control-label {
     text-align: left !important; }
   form.form-inline .form-group input {
@@ -787,8 +836,7 @@ button.home-input {
       background-color: transparent;
       padding-right: 0;
       padding-left: 0; }
-      .minivacs-form.container form.form-minivacs h1,
-      .minivacs-form.container form.form-minivacs p {
+      .minivacs-form.container form.form-minivacs h1, .minivacs-form.container form.form-minivacs p {
         color: #8D7F75 !important; }
       .minivacs-form.container form.form-minivacs .row {
         margin: 0; }
