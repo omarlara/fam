@@ -1778,7 +1778,7 @@ div#tablaListado_wrapper {
   div#tablaListado_wrapper thead tr > th.sorting,
   div#tablaListado_wrapper thead tr > th.sorting_asc,
   div#tablaListado_wrapper thead tr > th.sorting_desc {
-    background-position-y: 20%; }
+    background-position-y: 25%; }
   div#tablaListado_wrapper tbody td {
     padding: 10px; }
 
