@@ -598,7 +598,7 @@ div#tablaListado_wrapper {
                 color: #FDB924 !important;
                 width: 100%;
                 border: 1px solid #6E5F53;
-                background-color: #8D7F75;
+                background-color: #8d7f75;
                 padding: 2px 3px;
                 font-size: 11px;
             }
@@ -1208,7 +1208,7 @@ div#tablaListado_wrapper {
     thead {
         th {
             vertical-align: middle;
-            padding: 10px;
+            padding: 10px 15px;
             &.sorting {}
             .head-text {
                 &.first,
@@ -1228,7 +1228,7 @@ div#tablaListado_wrapper {
         tr > th.sorting,
         tr > th.sorting_asc,
         tr > th.sorting_desc {
-            background-position-y: 25%;
+            background-position-y: 35%;
         }
     }
     tbody {
