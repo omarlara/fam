@@ -74,6 +74,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 font-family: $font-primary;
                 font-weight: normal;
                 color: #8D7F75;
+                padding: 30px 0 30px 30px;
                 a {
                     color: #FDB924;
                     cursor: pointer;
@@ -136,6 +137,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 h3 {                    
                     font-family: $font-primary;
                     font-weight: normal;
+                }
+                select {
+                    border-radius: 0;
                 }
             }
             
@@ -207,11 +211,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                         max-width: 300px;
                     }
                 }
-
-                .btn-cerrar-recompensas {
-                }
-                .btn-guardar-recompensas {
-                }    
             }        
         }   
     }

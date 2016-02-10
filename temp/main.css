@@ -101,7 +101,7 @@ div.fb_iframe_widget {
   border: none;
   color: #FFFFFF;
   font-size: 16px;
-  margin: 20px 15px 30px 0;
+  margin: 20px 0 0 0;
   padding: 7px 47px; }
   .modal.fade .btn-guardar-recompensas:hover, .modal.fade .btn-guardar-recompensas:focus, .modal.fade .btn-guardar-recompensas:active, .modal.fade .btn-guardar-recompensas.active,
   .modal.fade .guardar-Listado:hover,
@@ -1370,7 +1370,15 @@ table.dataTable td {
     float: none;
     text-align: center; }
   .dataTables_wrapper .dataTables_paginate {
-    margin-top: 0.5em; } }
+    margin-top: 0.5em; }
+
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: center; }
+  .dataTables_wrapper .dataTables_filter {
+    margin-top: 30px !important;
+    float: none !important; } }
 @media screen and (max-width: 640px) {
   .dataTables_wrapper .dataTables_length,
   .dataTables_wrapper .dataTables_filter {
@@ -1845,7 +1853,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   #tablaListado tbody tr td, #tablaCaptura tbody tr td, #tablaConsulta tbody tr td {
     font-family: "Roboto", Sans-serif;
     font-weight: normal;
-    color: #8D7F75; }
+    color: #8D7F75;
+    padding: 30px 0 30px 30px; }
     #tablaListado tbody tr td a, #tablaCaptura tbody tr td a, #tablaConsulta tbody tr td a {
       color: #FDB924;
       cursor: pointer; }
@@ -1889,6 +1898,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     .consultar .modal.fade .modal-content .modal-body h3, .Listadoreferidos .modal.fade .modal-content .modal-body h3, .capturar .modal.fade .modal-content .modal-body h3 {
       font-family: "Roboto", Sans-serif;
       font-weight: normal; }
+    .consultar .modal.fade .modal-content .modal-body select, .Listadoreferidos .modal.fade .modal-content .modal-body select, .capturar .modal.fade .modal-content .modal-body select {
+      border-radius: 0; }
   .consultar .modal.fade .modal-content .modal-footer, .Listadoreferidos .modal.fade .modal-content .modal-footer, .capturar .modal.fade .modal-content .modal-footer {
     border: none;
     padding: 15px 0 0 0;

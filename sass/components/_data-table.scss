@@ -553,6 +553,17 @@ table.dataTable td {
             margin-top: 0.5em;
         }
     }
+    .dataTables_wrapper {
+        .dataTables_length,
+        .dataTables_filter {
+            float: none;
+            text-align: center;
+        }
+        .dataTables_filter {
+            margin-top: 30px !important;
+            float: none !important;
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
