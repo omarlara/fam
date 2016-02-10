@@ -25,6 +25,13 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     font-size: 35px!important;
     text-indent: 5px !important;
 }
+#tablaConsulta, #tablaCaptura {
+    tr > th.sorting, 
+    tr > th.sorting_asc,
+    tr > th.sorting_desc {
+        background-position: 98% 50% !important;
+    }
+}
 #tablaListado, #tablaCaptura, #tablaConsulta {
     span.dtr-data {
         word-break: break-word !important;
@@ -32,7 +39,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     border: 1px solid #ccc;
     thead {
         tr {
-            background-color: #aca095;
+            background-color: #7f7063;
             color: white;
             th {
                 font-family: $font-primary;
@@ -40,15 +47,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
             }
             th.sorting {
                 background-image: url(../img/sort-up-down.svg);
-                background-position: 98% 50%;
             }
             th.sorting_asc {
                 background-image: url(../img/sort-up.svg);
-                background-position: 98% 50%;
             }
             th.sorting_desc {
                 background-image: url(../img/sort-down.svg);
-                background-position: 98% 50%;
             }
         }
     }
@@ -84,7 +88,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     }
 }
 
-.consultar {
+.consultar, .Listadoreferidos, .capturar  {
     
     tbody {
         tr {
@@ -137,7 +141,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
             
             .modal-footer {
                 border: none;
-                padding: 0;
+                padding: 15px 0 0 0;
                 margin: 0;
                 button {
                     margin-bottom: 0;
@@ -157,7 +161,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
         margin-right: 50px;
     }
      button.guardarListado.pull-right {
-        margin-top: -30px;
+        margin-top: 0px;
         margin-bottom: 15px;
     }
     th.search-bar.sorting input {
@@ -174,7 +178,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 }
 
 @media (max-width: 767px) {
-    .consultar {
+    .consultar, .Listadoreferidos, .capturar {
         .modal.fade {
             .modal-content {
                 padding: 15px;
@@ -186,6 +190,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 .modal-body {
                     .radio {
                         margin-bottom: 25px;
+                    }
+                    select {
+                        width: 100%;
                     }
                 }
                 .modal-footer {
