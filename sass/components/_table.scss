@@ -153,8 +153,23 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
         float: none;
         text-align: center;
     }
+    #tablaListado_paginate {
+        margin-right: 50px;
+    }
      button.guardarListado.pull-right {
         margin-top: -30px;
+        margin-bottom: 15px;
+    }
+    th.search-bar.sorting input {
+        background-color: lightgrey;
+    }
+}
+
+@media (max-width: 991px) {
+    .listadoReferidos {
+        button.guardarListado.pull-right {
+            padding: 12px 10px;
+        }
     }
 }
 
@@ -193,8 +208,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     
     .listadoReferidos {
         button.guardarListado.pull-right {
-            margin: 0;
+            margin: 15px !important;
             float: none !important;
+            padding: 12px 10px;
         }
         #tablaListado {
             #tablaListado_info {
