@@ -208,7 +208,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                         margin-top: 10px;
                         margin-right: auto;
                         width: 100%;                       
-                        max-width: 300px;
+                        max-width: inherit;
                     }
                 }
             }        

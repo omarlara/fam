@@ -1938,7 +1938,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       margin-top: 10px;
       margin-right: auto;
       width: 100%;
-      max-width: 300px; }
+      max-width: inherit; }
 
   .listadoReferidos button.guardarListado.pull-right {
     margin: 15px !important;
