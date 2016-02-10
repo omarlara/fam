@@ -110,7 +110,7 @@ div.fb_iframe_widget {
   .listadoReferidos .print.pull-right a i.fa {
     padding: 0 10px; }
 
-.btn.btn-primary.home-slide {
+.btn.btn-primary.home-slide, .guardarListado, .capturarReferido {
   font-family: "Roboto", Sans-serif;
   border-radius: 0;
   background-color: #fdb924;
@@ -119,7 +119,7 @@ div.fb_iframe_widget {
   font-size: 16px;
   height: 44px;
   padding: 12px 50px; }
-  .btn.btn-primary.home-slide:hover, .btn.btn-primary.home-slide:focus, .btn.btn-primary.home-slide:active, .btn.btn-primary.home-slide.active {
+  .btn.btn-primary.home-slide:hover, .btn.btn-primary.home-slide:focus, .btn.btn-primary.home-slide:active, .btn.btn-primary.home-slide.active, .guardarListado:hover, .guardarListado:focus, .guardarListado:active, .guardarListado.active, .capturarReferido:hover, .capturarReferido:focus, .capturarReferido:active, .capturarReferido.active {
     background-color: #F8971D; }
 
 button.home-input {
@@ -1201,7 +1201,7 @@ table.dataTable td {
       font-size: 14px;
       font-weight: 500;
       background: url("../img/icon-search.png") right center scroll no-repeat transparent;
-      min-width: 300px; }
+      min-width: 270px; }
   .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
@@ -1608,7 +1608,7 @@ table.dataTable td {
       font-size: 14px;
       font-weight: 500;
       background: url("../img/icon-search.png") right center scroll no-repeat transparent;
-      min-width: 300px; }
+      min-width: 270px; }
   .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
@@ -1894,9 +1894,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 .listadoReferidos .dataTables_wrapper .dataTables_paginate {
   float: none;
   text-align: center; }
+.listadoReferidos #tablaListado_paginate {
+  margin-right: 50px; }
 .listadoReferidos button.guardarListado.pull-right {
-  margin-top: -30px; }
+  margin-top: -30px;
+  margin-bottom: 15px; }
+.listadoReferidos th.search-bar.sorting input {
+  background-color: lightgrey; }
 
+@media (max-width: 991px) {
+  .listadoReferidos button.guardarListado.pull-right {
+    padding: 12px 10px; } }
 @media (max-width: 767px) {
   .consultar .modal.fade .modal-content {
     padding: 15px; }
@@ -1912,8 +1920,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       max-width: 300px; }
 
   .listadoReferidos button.guardarListado.pull-right {
-    margin: 0;
-    float: none !important; }
+    margin: 15px !important;
+    float: none !important;
+    padding: 12px 10px; }
   .listadoReferidos #tablaListado #tablaListado_info {
     float: inherit; }
   .listadoReferidos #tablaListado #tablaListado_paginate {
