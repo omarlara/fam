@@ -38,7 +38,7 @@ $(function () {
         });
     });
 
-    $('input[type="search"]').attr('placeholder', 'buscar...');
+    $('input[type="search"]').attr('placeholder', 'Buscar');
 
 
 

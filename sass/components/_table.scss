@@ -153,6 +153,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 }
 
 .listadoReferidos {
+    .print.pull-right {
+        margin-bottom: 30px;
+    }
     .dataTables_wrapper .dataTables_paginate {
         float: none;
         text-align: center;
