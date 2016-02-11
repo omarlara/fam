@@ -499,7 +499,7 @@ button.home-input {
 .hero #hero-carousel .item img.img-responsive {
   height: 460px;
   width: 100%; }
-.hero #hero-carousel .item .carousel-content {
+.hero #hero-carousel .item .carousel-content, .hero #hero-carousel .item .detalle-promocion {
   position: absolute;
   top: 20%;
   right: 10%;
@@ -507,31 +507,33 @@ button.home-input {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0 15px;
   max-width: 480px; }
-  .hero #hero-carousel .item .carousel-content h1 {
+  .hero #hero-carousel .item .carousel-content h1, .hero #hero-carousel .item .detalle-promocion h1 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #FFF;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     font-weight: normal; }
-  .hero #hero-carousel .item .carousel-content h2 {
+  .hero #hero-carousel .item .carousel-content h2, .hero #hero-carousel .item .detalle-promocion h2 {
     margin-top: 15px;
     color: #FFF;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     font-weight: normal; }
-  .hero #hero-carousel .item .carousel-content span.text-content {
+  .hero #hero-carousel .item .carousel-content span.text-content, .hero #hero-carousel .item .detalle-promocion span.text-content {
     font-size: 16px;
     color: #FFF;
     font-family: "Roboto", Sans-serif; }
-  .hero #hero-carousel .item .carousel-content .carousel-share {
+  .hero #hero-carousel .item .carousel-content .carousel-share, .hero #hero-carousel .item .detalle-promocion .carousel-share {
     padding: 15px 0; }
-    .hero #hero-carousel .item .carousel-content .carousel-share span {
+    .hero #hero-carousel .item .carousel-content .carousel-share span, .hero #hero-carousel .item .detalle-promocion .carousel-share span {
       padding: 0 5px; }
     .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i,
-    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i {
+    .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i, .hero #hero-carousel .item .detalle-promocion .carousel-share span.carousel-email i,
+    .hero #hero-carousel .item .detalle-promocion .carousel-share span.carousel-facebook i {
       color: #FDB823;
       font-size: 28px; }
       .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-email i:hover,
-      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i:hover {
+      .hero #hero-carousel .item .carousel-content .carousel-share span.carousel-facebook i:hover, .hero #hero-carousel .item .detalle-promocion .carousel-share span.carousel-email i:hover,
+      .hero #hero-carousel .item .detalle-promocion .carousel-share span.carousel-facebook i:hover {
         color: #eba102;
         text-decoration: none; }
 .hero .owl-theme .owl-controls {
@@ -572,6 +574,42 @@ button.home-input {
 .presentation-block .item img.img-responsive {
   max-height: 460px;
   width: 100%; }
+.presentation-block .item .detalle-promocion {
+  background-color: rgba(0, 0, 0, 0.2); }
+  .presentation-block .item .detalle-promocion .img-content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    padding: 0 15px;
+    max-width: 480px;
+    text-align: right; }
+  .presentation-block .item .detalle-promocion h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: normal; }
+  .presentation-block .item .detalle-promocion h2 {
+    margin-top: 15px;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: normal; }
+  .presentation-block .item .detalle-promocion span.text-content {
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Roboto", Sans-serif; }
+  .presentation-block .item .detalle-promocion .carousel-share {
+    padding: 15px 0; }
+    .presentation-block .item .detalle-promocion .carousel-share span {
+      padding: 0 5px; }
+    .presentation-block .item .detalle-promocion .carousel-share span.carousel-email i,
+    .presentation-block .item .detalle-promocion .carousel-share span.carousel-facebook i {
+      color: #FDB823;
+      font-size: 28px; }
+      .presentation-block .item .detalle-promocion .carousel-share span.carousel-email i:hover,
+      .presentation-block .item .detalle-promocion .carousel-share span.carousel-facebook i:hover {
+        color: #eba102;
+        text-decoration: none; }
 .presentation-block .item .img-content {
   padding: 0;
   position: absolute;
@@ -1033,6 +1071,16 @@ footer {
       text-decoration: none; }
     .tile .share-control span.drop-down.email {
       margin-right: 15px; }
+
+.promocionDetalle .tile .share-control {
+  position: absolute;
+  padding: 30px 15px;
+  border: 1px solid #ddd;
+  font-family: Roboto,Sans-serif;
+  left: 25%;
+  bottom: -30%;
+  background-color: #FFF;
+  margin-bottom: 50px; }
 
 @media (max-width: 767px) {
   .tile {
@@ -1997,5 +2045,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .listadoReferidos #tablaListado #tablaListado_paginate {
     float: inherit;
     margin-bottom: 15px; } }
+.promocionDetalle .reminders {
+  margin-top: 20px; }
+.promocionDetalle .detalle-block {
+  background-color: #8d7f75; }
 
 /*# sourceMappingURL=main.css.map */

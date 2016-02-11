@@ -72,6 +72,19 @@
     }
 }
 
+.promocionDetalle {
+    .tile .share-control {
+        position: absolute;
+        padding: 30px 15px;
+        border: 1px solid #ddd;
+        font-family: Roboto,Sans-serif;
+        left: 25%;
+        bottom: -30%;
+        background-color: #FFF;
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 767px) {
     .tile {
         margin-bottom: 16px;
