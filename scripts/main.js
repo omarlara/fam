@@ -1,6 +1,11 @@
 'use strict';
 
 $(function () {
+    
+    
+    //$('.share-control').matchHeight(options);
+    
+    //$('.share-control').matchHeight._update();
 
     $('#tablaConsulta').DataTable({
         ordering: true,
