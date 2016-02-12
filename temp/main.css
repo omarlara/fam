@@ -120,6 +120,7 @@ div.fb_iframe_widget {
   .listadoReferidos .print.pull-right a i.fa {
     padding: 0 10px; }
 
+.btn-primary,
 .btn.btn-primary.home-slide,
 .guardarListado,
 .capturarReferido {
@@ -131,7 +132,11 @@ div.fb_iframe_widget {
   font-size: 16px;
   height: 44px;
   padding: 12px 50px; }
-  .btn.btn-primary.home-slide:hover, .btn.btn-primary.home-slide:focus, .btn.btn-primary.home-slide:active, .btn.btn-primary.home-slide.active,
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+  .btn.btn-primary.home-slide:hover,
+  .btn.btn-primary.home-slide:focus,
+  .btn.btn-primary.home-slide:active,
+  .btn.btn-primary.home-slide.active,
   .guardarListado:hover,
   .guardarListado:focus,
   .guardarListado:active,
@@ -1996,6 +2001,58 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     float: inherit; }
   .listadoReferidos #tablaListado #tablaListado_paginate {
     float: inherit;
+    margin-bottom: 15px; } }
+.tablero {
+  margin-bottom: 30px; }
+  .tablero * {
+    font-family: "Roboto", Sans-serif; }
+  .tablero .inner-content {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background: #FBF9F7;
+    box-shadow: 0px 0px 3px #ccc; }
+  .tablero i {
+    color: #FDB823; }
+  .tablero .rate {
+    float: left;
+    width: 30%;
+    padding: 26px 0; }
+    .tablero .rate .number {
+      display: block;
+      font-size: 60px;
+      font-weight: 300;
+      color: #C5BFB9;
+      line-height: 1;
+      text-align: center; }
+      .tablero .rate .number span.text {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        color: #C5BFB9;
+        margin-top: 10px; }
+  .tablero .description {
+    background-color: #fff;
+    float: right;
+    width: 70%;
+    padding: 20px 20px; }
+    .tablero .description h3 {
+      margin: 0px 0 0;
+      padding: 0;
+      font-size: 22px;
+      font-weight: 400;
+      color: #323232; }
+    .tablero .description label {
+      display: block;
+      font-size: 12px;
+      color: #8D7F75;
+      margin: 7px 0 15px;
+      font-weight: 400; }
+    .tablero .description .btn-primary {
+      height: auto;
+      padding: 6px 25px; }
+
+@media (max-width: 767px) {
+  .tablero {
     margin-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,65 @@
+.tablero {
+    margin-bottom: 30px;
+    * {
+        font-family: $font-primary;
+    }
+    .inner-content {
+        border: 1px solid #ddd;
+        overflow: hidden;
+        background: #FBF9F7;
+        box-shadow: 0px 0px 3px #ccc;
+    }
+    i {
+        color: $color-yellow;
+    }
+    .rate {
+        float: left;
+        width: 30%;
+        padding: 26px 0;
+        .number {
+            display: block;
+            font-size: 60px;
+            font-weight: 300;
+            color: #C5BFB9;
+            line-height: 1;
+            text-align: center;
+            span.text {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                color: #C5BFB9;
+                margin-top: 10px;
+            }
+        }
+    }
+    .description {
+        background-color: #fff;
+        float: right;
+        width: 70%;
+        padding: 20px 20px;
+        h3 {
+            margin: 0px 0 0;
+            padding: 0;
+            font-size: 22px;
+            font-weight: 400;
+            color: #323232;
+        }
+        label {
+            display: block;
+            font-size: 12px;
+            color: #8D7F75;
+            margin: 7px 0 15px;
+            font-weight: 400;
+        }
+        .btn-primary {
+            height: auto;
+            padding: 6px 25px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tablero {
+        margin-bottom: 15px;
+    }
+}
