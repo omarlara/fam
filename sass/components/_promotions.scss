@@ -1,8 +1,59 @@
 .promocionDetalle {
+    .detalle-promocion {
+        color: #FFF;
+        font-weight: normal;
+        font-family: $font-primary;
+    }
+    .detalle-promociones {
+        h1 {
+            text-align: center;
+        }
+    }
     .reminders {
-        margin-top: 20px;
+        text-align: center;
     }
     .detalle-block {
+        word-break: break-word;
+        font-weight: normal;
+        text-align: center;
         background-color: #8d7f75;
+        color: #FFF;
+         i.fa {
+            font-size: 60px;
+            color: #FDB823;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .detalle-promocion {
+        padding: 0;
+        h2 {
+            padding-top: 10px;
+            margin-top: 0 !important;
+        }
+    }
+    .presentation-block .item .img-content {
+        max-width: 100% !important;
+        text-align: center !important;
+        .carousel-share {
+            text-align: center !important;
+        }
+    }
+    .detalle-block {
+        .tile-block {
+            i {
+                font-size: 30px !important;
+            }
+            h1 { 
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
     }
 }
