@@ -1,5 +1,11 @@
 .promocionDetalle {
+    img {
+        min-height: 370px;
+    }
     .detalle-promocion {
+        .img-content {
+            background-color: rgba(0,0,0,.2);
+        }
         color: #FFF;
         font-weight: normal;
         font-family: $font-primary;
@@ -27,6 +33,9 @@
 
 @media (max-width: 767px) {
     .detalle-promocion {
+        .img-content {
+            background-color: none;
+        }
         padding: 0;
         h2 {
             padding-top: 10px;
@@ -42,16 +51,34 @@
     }
     .detalle-block {
         .tile-block {
-            i {
-                font-size: 30px !important;
+            
+    list-style: none;
+            .icon {
+                
+    position: relative;
+                    display: inline-table;
+                    vertical-align: middle;
+                i {
+                    font-size: 30px !important;
+                }
             }
-            h1 { 
+            h1 {
+                
+    position: relative;
+                display: inline-table;
+                vertical-align: middle;
                 font-size: 24px;
             }
             p {
+                
+    position: relative;
+                display: list-item;
+                vertical-align: middle;
                 font-size: 14px;
             }
             h2 {
+                display: inline-table;
+                vertical-align: middle;
                 font-size: 18px;
             }
         }
