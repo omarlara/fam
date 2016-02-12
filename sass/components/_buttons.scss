@@ -18,7 +18,8 @@
         &:focus,
         &:active,
         &.active {
-            background-color: #8d7f75;
+            //background-color: #8d7f75;
+            background-color: darken( #f8f7f4, 10% ); 
         }
     }
     .btn-guardar-recompensas,
