@@ -19,7 +19,7 @@ $(function () {
 
     var table = $('#tablaListado').DataTable({
         ordering: true,
-        //"scrollX": true,
+        //scrollX: true,
         responsive: false
     });
 

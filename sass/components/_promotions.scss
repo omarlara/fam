@@ -10,6 +10,7 @@
             }
             h3 {
                 font-weight: 300 !important;
+                margin-top: 0;
             }
         }
         color: #FFF;
@@ -19,14 +20,19 @@
     .detalle-promociones {
         h1 {
             text-align: center;
+            margin: 50px 0;
         }
     }
     .reminders {
         text-align: center;
+        p {
+            margin: 30px 0 50px 0;
+        }
     }
     .detalle-block {
         h1.title {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            margin-top: 30px;
             font-weight: lighter;
         }
         word-break: break-word;
@@ -39,17 +45,24 @@
             margin-right: auto;
             .tile-block-xs { 
                 .info {
+                    h1 {
+                        margin-bottom: 0;
+                    }
                       p {
                           font-size: 22px;
                       }
-                 }
-                 i.fa {
+                }
+                h2 {
+                    font-weight: lighter;
+                }
+                i.fa {
                     font-size: 60px;
                     color: #FDB823;                     
                 }
             }
             p.block-text {
-                margin-top: 30px;
+                margin-top: 50px;
+                margin-bottom: 50px;
             }
         }
     }
@@ -75,13 +88,45 @@
                 }
             }
         }
+        .reminders {
+            margin-bottom: 75px;
+            p {
+                margin: 0;
+            }
+        }
+        p.block-text {
+            margin-top: 20px !important;
+            margin-bottom: 30px !important;
+            font-size: 10px;
+        }
     }
 }
 
 @media (max-width: 767px) {
-    .detalle-promocion {
+    .promocionDetalle {
+        .reminders {
+            .col-sm-12 {
+                padding: 0;
+            }
+            margin-bottom: 30px;
+            margin-top: 15px;
+            p {
+                margin: 0;
+            }
+        }
+        .detalle-promocion {
         .img-content {
             background-color: #00a5e3 !important;
+            max-width: 100%!important;
+            text-align: center!important;
+            h1 {
+                font-size: 35px;
+                text-shadow: 0 1px 4px rgba(0, 0, 0, 0.60);
+            }
+            h3 {
+                font-size: 20px;
+                text-shadow: 0 1px 4px rgba(0, 0, 0, 0.60);
+            }
         }
         padding: 0;
         h2 {
@@ -97,9 +142,13 @@
         }
     }
     .detalle-block {
+        h1.title {
+                margin-bottom: 20px;
+                font-size: 24px !important;
+        }
         .tile-block-xs {
             text-align: center;
-            margin: 5px 0;
+            margin: 5px 0;            
             .info {
                 text-align: left;
                 h1 {
@@ -109,7 +158,7 @@
                 }
                 p {
                     margin: 0;
-                    font-size: 14px;
+                    font-size: 14px !important;
                 }
             }
             h2 {
@@ -118,14 +167,18 @@
                 text-align: left;
             }
             .icon {
+                padding: 0;
                 i {
-                    font-size: 30px !important;
+                    font-size: 40px !important;
                 }
             }        
         }
         p.block-text {
-            margin-top: 25px;
+            margin-top: 20px !important;
+            margin-bottom: 30px !important;
             font-size: 10px;
         }
     }
+    }
+    
 }
