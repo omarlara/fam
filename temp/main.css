@@ -583,10 +583,10 @@ button.home-input {
   background-color: rgba(0, 0, 0, 0.2); }
   .presentation-block .item .detalle-promocion .img-content {
     position: absolute;
-    top: 20%;
+    top: 5%;
     right: 10%;
-    padding: 0 15px;
-    max-width: 480px;
+    padding: 20px 15px 0 0;
+    max-width: 300px;
     text-align: right; }
   .presentation-block .item .detalle-promocion h1 {
     margin-top: 0;
@@ -1090,7 +1090,8 @@ footer {
   z-index: 1; }
   .promocionDetalle .tile .share-control i.fa {
     width: 100%;
-    font-size: 30px; }
+    font-size: 30px;
+    padding-bottom: 10px; }
   .promocionDetalle .tile .share-control .text {
     margin: 0; }
 .promocionDetalle .detalle-promociones .tile-container {
@@ -2130,6 +2131,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   font-family: "Roboto", Sans-serif; }
   .promocionDetalle .detalle-promocion .img-content {
     background-color: rgba(0, 0, 0, 0.2); }
+    .promocionDetalle .detalle-promocion .img-content h1 {
+      font-weight: 700 !important; }
+    .promocionDetalle .detalle-promocion .img-content h3 {
+      font-weight: 300 !important; }
 .promocionDetalle .detalle-promociones h1 {
   text-align: center; }
 .promocionDetalle .reminders {
@@ -2144,11 +2149,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     font-size: 60px;
     color: #FDB823; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .promocionDetalle .detalle-block .tile-block h1 {
+    font-size: 24px; }
+  .promocionDetalle .detalle-block .tile-block h2 {
+    font-size: 18px; }
+  .promocionDetalle .detalle-block .tile-block p {
+    font-size: 14px; } }
 @media (max-width: 767px) {
   .detalle-promocion {
     padding: 0; }
     .detalle-promocion .img-content {
-      background-color: none; }
+      background-color: #00a5e3 !important; }
     .detalle-promocion h2 {
       padding-top: 10px;
       margin-top: 0 !important; }
@@ -2160,7 +2172,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       text-align: center !important; }
 
   .detalle-block .tile-block {
-    list-style: none; }
+    list-style: none;
+    text-align: left; }
     .detalle-block .tile-block .icon {
       position: relative;
       display: inline-table;
@@ -2171,15 +2184,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       position: relative;
       display: inline-table;
       vertical-align: middle;
-      font-size: 24px; }
+      font-size: 24px;
+      margin-top: 10px; }
     .detalle-block .tile-block p {
       position: relative;
       display: list-item;
       vertical-align: middle;
-      font-size: 14px; }
+      font-size: 14px;
+      margin-left: 30px; }
     .detalle-block .tile-block h2 {
       display: inline-table;
       vertical-align: middle;
-      font-size: 18px; } }
+      font-size: 18px; }
+  .detalle-block p.block-text {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

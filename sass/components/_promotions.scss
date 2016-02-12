@@ -5,6 +5,12 @@
     .detalle-promocion {
         .img-content {
             background-color: rgba(0,0,0,.2);
+            h1 {
+                font-weight: 700 !important;
+            }
+            h3 {
+                font-weight: 300 !important;
+            }
         }
         color: #FFF;
         font-weight: normal;
@@ -31,10 +37,28 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .promocionDetalle {
+        .detalle-block {
+            .tile-block {
+                h1 {
+                    font-size: 24px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .detalle-promocion {
         .img-content {
-            background-color: none;
+            background-color: #00a5e3 !important;
         }
         padding: 0;
         h2 {
@@ -51,36 +75,38 @@
     }
     .detalle-block {
         .tile-block {
-            
-    list-style: none;
+            list-style: none;
+            text-align: left;
             .icon {
-                
-    position: relative;
-                    display: inline-table;
-                    vertical-align: middle;
+                position: relative;
+                display: inline-table;
+                vertical-align: middle;
                 i {
                     font-size: 30px !important;
                 }
             }
             h1 {
-                
-    position: relative;
+                position: relative;
                 display: inline-table;
                 vertical-align: middle;
                 font-size: 24px;
+                margin-top: 10px;
             }
             p {
-                
-    position: relative;
+                position: relative;
                 display: list-item;
                 vertical-align: middle;
                 font-size: 14px;
+                margin-left: 30px;
             }
             h2 {
                 display: inline-table;
                 vertical-align: middle;
                 font-size: 18px;
-            }
+            }            
+        }
+        p.block-text {
+            font-size: 10px;
         }
     }
 }
