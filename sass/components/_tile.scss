@@ -73,6 +73,9 @@
 }
 
 .promocionDetalle {
+    * {
+        font-family: $font-primary;
+    }
     .tile .share-control {
         text-align: center;
         position: relative;
@@ -91,6 +94,7 @@
         }
         .text {
             margin: 0;
+            font-size: 12px;
         }
     }
     .detalle-promociones {
@@ -102,10 +106,7 @@
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             .tile {
-                
-                .share-control {
-                    
-                }
+                .share-control {}
             }
         }
     }
@@ -118,14 +119,12 @@
             text-align: center;
             padding: 10px 5px;
             background-color: #FFF;
-            margin: 0 !important; 
+            margin: 0 !important;
             z-index: 1;
         }
         .tile-content {
             height: 90px;
         }
     }
-    .promocionDetalle {
-        
-    }
+    .promocionDetalle {}
 }
