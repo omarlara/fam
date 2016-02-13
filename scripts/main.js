@@ -20,6 +20,7 @@ $(function () {
     var table = $('#tablaListado').DataTable({
         ordering: true,
         //scrollX: true,
+        //"sDom": '<"top"t><"bottom"p><"clear">',
         responsive: false
     });
 

@@ -2043,12 +2043,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   float: none;
   text-align: center; }
 .listadoReferidos #tablaListado_paginate {
-  margin-right: 50px; }
+  float: right; }
 .listadoReferidos button.guardarListado.pull-right {
   margin-top: 0px;
   margin-bottom: 15px; }
 .listadoReferidos th.search-bar.sorting input {
   background-color: lightgrey; }
+
+.Listadoreferidos #tablaListado_wrapper {
+  overflow-x: hidden !important; }
+  .Listadoreferidos #tablaListado_wrapper #tablaListado {
+    display: block !important;
+    overflow-x: auto !important; }
 
 @media (max-width: 991px) {
   .listadoReferidos button.guardarListado.pull-right {
@@ -2068,6 +2074,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       margin-right: auto;
       width: 100%;
       max-width: inherit; }
+
+  .listadoReferidos #tablaListado_paginate {
+    float: none !important; }
 
   .listadoReferidos button.guardarListado.pull-right {
     margin: 15px !important;
