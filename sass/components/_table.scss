@@ -45,6 +45,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 font-family: $font-primary;
                 font-weight: normal;
             }
+            th.search-bar.sorting, th.search-bar.sorting_asc, th.search-bar.sorting_desc {
+                max-width: 150px;
+            }
             th.sorting {
                 background-image: url(../img/sort-up-down.svg);
             }
@@ -69,12 +72,15 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 background-color: inherit !important;
             }
         }
+        tr.child td.child {
+            padding: 10px 15px !important;
+        }
         tr {
             td {
                 font-family: $font-primary;
                 font-weight: normal;
                 color: #8D7F75;
-                padding: 30px 0 30px 30px;
+                padding: 10px 0 10px 30px;
                 a {
                     color: #FDB924;
                     cursor: pointer;
@@ -165,7 +171,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
         text-align: center;
     }
     #tablaListado_paginate {
-        margin-right: 50px;
+        float: right;
     }
      button.guardarListado.pull-right {
         margin-top: 0px;
@@ -173,6 +179,16 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     }
     th.search-bar.sorting input {
         background-color: lightgrey;
+    }
+}
+
+.Listadoreferidos {
+    #tablaListado_wrapper {
+        overflow-x: hidden!important;
+        #tablaListado {
+            display: block !important;
+            overflow-x: auto !important;
+        }
     }
 }
 
@@ -214,7 +230,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
             }        
         }   
     }
-    
+    .listadoReferidos #tablaListado_paginate {
+        float: none !important;
+    }
     .listadoReferidos {
         button.guardarListado.pull-right {
             margin: 15px !important;
