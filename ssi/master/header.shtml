@@ -76,7 +76,11 @@
                 </button>
                 <a href="#" class="navbar-brand">
                     <img src="img/logo.png" class="img-responsive" alt="">
+                    <span>
+        Fiesta Americana Vacation Club
+    </span>
                 </a>
+
             </div>
             <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right">
