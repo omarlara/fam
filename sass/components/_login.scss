@@ -1,0 +1,47 @@
+.login {
+    .minivacs-block {
+        background: url('../img/FiestaAmericanaPuertoVallarta.jpg') no-repeat 0 0 / cover;
+        padding: 100px 0;
+    }
+    .form-login {
+        max-width: 370px;
+        margin: 0 auto;
+        .form-group{
+                min-height: 60px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .login {
+        .form-feedback form.form-inline.form-minivacs {
+            background-color: rgba(0, 0, 0, .2) !important;
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .login {
+        .minivacs-block {
+            background: none #ffffff;
+            padding: 30px 0;
+        }
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+    .login {
+        .minivacs-block {
+            padding: 0;
+        }
+        .form-minivacs {
+            min-height: 459px;
+            h1 {
+                padding-top: 70px;
+            }
+        }
+    }
+}

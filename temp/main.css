@@ -4,6 +4,12 @@
   *:before, *:after {
     box-sizing: border-box; }
 
+html {
+  background-color: #E9E3DB; }
+
+body {
+  background-color: #ffffff; }
+
 *:focus {
   outline: 0; }
 
@@ -412,6 +418,9 @@ button.home-input {
       display: table-cell;
       height: 100%;
       vertical-align: middle; } }
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar {
+    min-height: 112px; } }
 .user {
   background-color: #aca095;
   padding: 5px;
@@ -2266,5 +2275,30 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     margin-top: 20px !important;
     margin-bottom: 30px !important;
     font-size: 10px; } }
+.login .minivacs-block {
+  background: url("../img/FiestaAmericanaPuertoVallarta.jpg") no-repeat 0 0/cover;
+  padding: 100px 0; }
+.login .form-login {
+  max-width: 370px;
+  margin: 0 auto; }
+  .login .form-login .form-group {
+    min-height: 60px; }
+
+@media (min-width: 768px) {
+  .login .form-feedback form.form-inline.form-minivacs {
+    background-color: rgba(0, 0, 0, 0.2) !important; }
+    .login .form-feedback form.form-inline.form-minivacs h1 {
+      margin-top: 0; } }
+@media (max-width: 767px) {
+  .login .minivacs-block {
+    background: none #ffffff;
+    padding: 30px 0; } }
+@media (max-width: 991px) and (min-width: 768px) {
+  .login .minivacs-block {
+    padding: 0; }
+  .login .form-minivacs {
+    min-height: 459px; }
+    .login .form-minivacs h1 {
+      padding-top: 70px; } }
 
 /*# sourceMappingURL=main.css.map */
