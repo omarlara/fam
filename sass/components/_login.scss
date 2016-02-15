@@ -6,9 +6,27 @@
     .form-login {
         max-width: 370px;
         margin: 0 auto;
-        .form-group{
-                min-height: 60px;
+        h1 {
+            padding-top: 30px;
         }
+        .form-group {
+                min-height: 60px;
+            button {
+                margin: -5px 15px 0 0;
+            }
+            a {
+                padding-left: 9px;
+                font-size: 14px;
+                color: #fff;
+                font-family: $font-primary;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    footer {
+        padding-top: 40px;
     }
 }
 
@@ -25,9 +43,26 @@
 
 @media (max-width: 767px) {
     .login {
+        .form-login {
+            h1 {                
+                margin-top: 0 !important;
+            }
+        }
+        .form-group {
+            text-align: center;
+            min-height: 40px !important;
+            button {
+                float: none;
+                margin: 0 !important;
+            }
+            a {
+                color: #FDB924 !important;
+                padding-left: 0 !important;
+            }
+        }
         .minivacs-block {
             background: none #ffffff;
-            padding: 30px 0;
+            padding: 0;
         }
     }
 }
@@ -41,6 +76,11 @@
             min-height: 459px;
             h1 {
                 padding-top: 70px;
+            }
+        }
+        .form-group {
+            a { 
+                padding-left: 9px !important;
             }
         }
     }
