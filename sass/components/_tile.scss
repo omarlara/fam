@@ -2,6 +2,7 @@
     position: relative;
     height: auto;
     margin-bottom: 30px;
+    border: 1px solid #ddd;
     h3 {
         margin: 0;
         padding: 0;
@@ -15,9 +16,25 @@
         letter-spacing: 0.05em;
         font-size: 18px;
     }
+    .tile-content-description {
+        margin-left: 366px;
+        min-height: 222px;
+        padding: 20px;
+        overflow: hidden;
+        h2 {
+            margin: 0;
+        }
+        .place {
+            float: left;
+        }
+        .price {
+            float: right;
+        }
+    }
     .tile-content {
-        height: 208px;
+        height: 222px;
         position: relative;
+        //idth: 100%;
         background-size: cover;
         background-color: #ddd;
         background-position: center;

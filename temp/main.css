@@ -1039,7 +1039,8 @@ footer {
 .tile {
   position: relative;
   height: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border: 1px solid #ddd; }
   .tile h3 {
     margin: 0;
     padding: 0;
@@ -1052,8 +1053,19 @@ footer {
     color: #fff;
     letter-spacing: 0.05em;
     font-size: 18px; }
+  .tile .tile-content-description {
+    margin-left: 366px;
+    min-height: 222px;
+    padding: 20px;
+    overflow: hidden; }
+    .tile .tile-content-description h2 {
+      margin: 0; }
+    .tile .tile-content-description .place {
+      float: left; }
+    .tile .tile-content-description .price {
+      float: right; }
   .tile .tile-content {
-    height: 208px;
+    height: 222px;
     position: relative;
     background-size: cover;
     background-color: #ddd;
