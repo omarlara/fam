@@ -2145,6 +2145,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       margin-bottom: 0;
       margin-top: 0; }
 
+.listadoReferidos h1 {
+  margin: 30px 0 30px !important; }
 .listadoReferidos .print.pull-right {
   margin-bottom: 30px; }
 .listadoReferidos .dataTables_wrapper .dataTables_paginate {
