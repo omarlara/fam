@@ -465,6 +465,27 @@ table.dataTable td {
                 2%));
                 box-shadow: inset 0 0 3px #111;
             }
+            &.next,
+            &.previous {
+                width: 39px;
+                position: relative;
+                text-indent: -10000px;
+                &:before {
+                    content: "\f0da";
+                    font-family: FontAwesome;
+                    left: 17px;
+                    position: absolute;
+                    top: 0;
+                    line-height: 1.9;
+                    text-indent: 0;
+                    font-size: 19px;
+                }
+            }
+            &.previous {
+                &:before {
+                    content: "\f0d9";
+                }
+            }
         }
         .ellipsis {
             padding: 0 1em;
@@ -1251,4 +1272,12 @@ div#tablaListado_wrapper {
 
 table.dataTable {
     margin-bottom: 30px;
+}
+
+.head-text {
+    font-size: 13px;
+    line-height: 1.2;
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
 }

@@ -1,7 +1,8 @@
 <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300' rel='stylesheet' type='text/css'>
-<link href="css/posadas.css" rel="stylesheet">
+
 <link rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.carousel.css">
 <link rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.theme.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+<link href="css/posadas.css" rel="stylesheet">
