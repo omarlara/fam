@@ -1,130 +1,134 @@
-.tile {
-    position: relative;
-    height: auto;
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    h3 {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: #fff;
-        letter-spacing: 0.05em;
-        font-size: 18px;
-    }
-    .tile-content-description {
-        margin-left: 366px;
-        min-height: 222px;
-        padding: 20px;
-        overflow: hidden;
-        h2 {
-            margin: 0;
-        }
-        .place {
-            float: left;
-        }
-        .price {
-            float: right;
-        }
-    }
-    .tile-content {
-        height: 222px;
-        position: relative;
-        //idth: 100%;
-        background-size: cover;
-        background-color: #ddd;
-        background-position: center;
-        background-repeat: no-repeat;
-        a {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-        h3 {
-            text-transform: uppercase;
-            -webkit-transition: all 0.5s;
-            /* Safari */
-            transition: all 0.5s;
-        }
-        &:hover {
+section.promociones {
+    .tile-container {
+        .tile {            
+            margin-bottom: 30px;
+            -webkit-box-shadow: -1px 1px 1px 1px rgba(230,230,230,1);
+            -moz-box-shadow: -1px 1px 1px 1px rgba(230,230,230,1);
+            box-shadow: -1px 1px 1px 1px rgba(230,230,230,1);
+            .row {
+                 padding: 5px;
+            }
             .tile-content {
-                opacity: 0.8;
+                height: 210px;
+                position: relative;
+                background-size: cover;
+                background-color: #ddd;
+                background-position: center;
+                background-repeat: no-repeat;
             }
-            h3 {
-                background-color: rgba(0, 0, 0, 0.5);
+            .place {
+                h2, p {
+                    font-size: 24px;
+                    font-family: $font-primary;
+                }
+                h2 {
+                    font-weight: lighter;
+                }
+                p {
+                    font-weight: bold;
+                }
+                li {
+                    font-size: 14px;
+                    font-family: $font-primary;
+                    color: #8d7f75;
+                }
             }
-        }
-    }
-    .share-control {
-        padding: 5px 10px;
-        border: 1px solid #ddd;
-        font-family: $font-primary;
-        > span.text {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        i {
-            color: $color-yellow;
-            font-size: 18px;
-            position: relative;
-            top: 1px;
-            display: inline-block;
-            &:hover {
-                color: darken( $color-yellow, 10%);
-                text-decoration: none;
-            }
-        }
-        span.drop-down {
-            a {
-                text-decoration: none;
-            }
-            &.email {
-                margin-right: 15px;
+            .price {
+                text-align: right;
+                background-color: #fbf9f8;
+                min-height: 210px;
+                .headline {
+                    font-size: 12px;
+                    color: #8d7f75;
+                    font-family: $font-primary;
+                    padding-top: 20px;
+                }
+                h4 {
+                    margin-top: 0;
+                    font-family: $font-primary;
+                    font-size: 32px;
+                    font-weight: normal;
+                }
+                button {
+                    font-family: $font-primary;
+                    margin: 15px 0;
+                    height: auto;
+                    padding: 6px 57px;
+                }
+                .share-control {
+                    border: none;
+                    padding: 10px 0;
+                    > span.text {
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    .text {
+                        font-size: 14px;
+                        font-family: $font-primary;
+                    }
+                    i {
+                        color: $color-yellow;
+                        font-size: 18px;
+                        position: relative;
+                        top: 1px;
+                        display: inline-block;
+                        &:hover {
+                            color: darken( $color-yellow, 10%);
+                            text-decoration: none;
+                        }
+                    }
+                    i.fa {
+                        font-size: 24px;
+                    }
+                    span.drop-down {
+                        a {
+                            text-decoration: none;
+                        }
+                        &.email {
+                            margin-right: 15px;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-.promocionDetalle {
-    * {
-        font-family: $font-primary;
-    }
-    .tile .share-control {
-        text-align: center;
-        position: relative;
-        padding: 20px 10px;
-        border: 1px solid #ddd;
-        font-family: $font-primary;
-        background-color: #FFF;
-        margin-top: -40px;
-        margin-left: 30px;
-        margin-right: 30px;
-        z-index: 1;
-        //min-height: 130px;
-        i.fa {
-            width: 100%;
-            font-size: 30px;
-            padding-bottom: 10px;
-        }
-        .text {
-            margin: 0;
-            font-size: 12px;
-        }
-    }
-    .detalle-promociones {
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    section.promociones {
         .tile-container {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
             .tile {
-                .share-control {}
+                .tile-content {
+                    min-height: 170px;
+                    height: auto;
+                }
+                .place {
+                    h2, p {
+                        font-size: 18px;
+                    }
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                    li {
+                        font-size: 14px;
+                    }
+                }
+                .price {
+                    min-height: 170px;                    
+                    height: auto;
+                    h4 {
+                        font-size: 22px;
+                    }
+                    button {
+                        width: 100%;
+                        padding: 6px 0;
+                        margin: 10px 0;
+                    }
+                    .share-control {
+                        background-color: transparent;
+                    }
+                }
             }
         }
     }
@@ -144,5 +148,44 @@
             height: 90px;
         }
     }
-    .promocionDetalle {}
+    section.promociones {
+        .tile-container {
+            .tile {
+                .tile-content {
+                    height: auto;
+                    min-height: 160px;
+                }
+                .place {
+                    text-align: center;
+                    h2, p {
+                        font-size: 22px;
+                    }
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+                .price {
+                    padding: 0;
+                    min-height: auto;
+                    .headline, h4 {
+                        text-align: right;
+                        width: 50%;
+                    }
+                    h4 {
+                        font-size: 22px;
+                    }
+                    button {
+                        width: 42%;
+                        position: absolute;
+                        top: 7px;
+                        right: 15px;
+                        padding: 6px 0;
+                    }
+                    .share-control {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
