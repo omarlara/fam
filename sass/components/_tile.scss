@@ -23,9 +23,11 @@ section.promociones {
                 }
                 h2 {
                     font-weight: lighter;
+                    margin-bottom: 15px;
                 }
                 p {
-                    font-weight: bold;
+                    font-weight: 500;
+                    line-height: 120%;
                 }
                 li {
                     font-size: 14px;
@@ -108,7 +110,7 @@ section.promociones {
                         font-size: 18px;
                     }
                     h2 {
-                        margin-bottom: 0;
+                        margin-bottom: 5px;
                     }
                     li {
                         font-size: 14px;
@@ -158,10 +160,10 @@ section.promociones {
                 .place {
                     text-align: center;
                     h2, p {
-                        font-size: 22px;
+                        font-size: 18px !important;
                     }
                     h2 {
-                        margin-bottom: 0;
+                        margin-bottom: 5px;
                     }
                 }
                 .price {

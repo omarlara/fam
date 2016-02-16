@@ -479,7 +479,9 @@ button.home-input {
       background-color: #927E6D; }
       .user span.drop-down:hover ul {
         display: block;
-        width: 100%; }
+        width: 100%;
+        right: 5px;
+        min-width: 280px; }
     .user span.drop-down span.name > a {
       font-weight: normal; }
     .user span.drop-down ul {
@@ -508,7 +510,13 @@ button.home-input {
   .user .fam-phone .text {
     display: none; }
   .user span.drop-down {
-    margin-left: 0; }
+    margin-left: 0;
+    position: static; }
+    .user span.drop-down:hover ul {
+      width: 95% !important;
+      right: 0 !important;
+      left: 0 !important;
+      margin-left: 3% !important; }
     .user span.drop-down .name,
     .user span.drop-down .fa-caret-down {
       display: none; }
@@ -557,6 +565,28 @@ button.home-input {
       .hero #hero-carousel .item .detalle-promocion .carousel-share span.carousel-facebook i:hover {
         color: #eba102;
         text-decoration: none; }
+.hero #hero-carousel.inicio .ref-video .carousel-content {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  bottom: 15%;
+  right: 0; }
+  .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play {
+    background-color: #fdb924;
+    color: #FFF;
+    border: none;
+    padding: 30px;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    opacity: 0.8;
+    margin: 20px 0; }
+    .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play i.fa {
+      font-size: 30px;
+      position: absolute;
+      margin: -15px 0 0 -8px; }
 .hero .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center;
@@ -685,6 +715,9 @@ button.home-input {
 .busqueda footer.footer {
   position: relative; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero #hero-carousel.inicio .ref-video .carousel-content {
+    text-align: center; } }
 @media (max-width: 991px) {
   .hero #hero-carousel .item img.img-responsive {
     max-width: inherit !important;
@@ -705,6 +738,10 @@ button.home-input {
   .presentation-block .main-section .aside-content p {
     font-size: 14px; } }
 @media (max-width: 767px) {
+  .hero #hero-carousel.inicio .ref-video .carousel-content {
+    text-align: center; }
+    .hero #hero-carousel.inicio .ref-video .carousel-content a.btn.boton-play {
+      margin-top: -210px; }
   .hero #hero-carousel .item img.img-responsive {
     min-height: 170px;
     height: inherit;
@@ -1054,9 +1091,11 @@ section.promociones .tile-container .tile {
     font-size: 24px;
     font-family: "Roboto", Sans-serif; }
   section.promociones .tile-container .tile .place h2 {
-    font-weight: lighter; }
+    font-weight: lighter;
+    margin-bottom: 15px; }
   section.promociones .tile-container .tile .place p {
-    font-weight: bold; }
+    font-weight: 500;
+    line-height: 120%; }
   section.promociones .tile-container .tile .place li {
     font-size: 14px;
     font-family: "Roboto", Sans-serif;
@@ -1112,7 +1151,7 @@ section.promociones .tile-container .tile {
   section.promociones .tile-container .tile .place h2, section.promociones .tile-container .tile .place p {
     font-size: 18px; }
   section.promociones .tile-container .tile .place h2 {
-    margin-bottom: 0; }
+    margin-bottom: 5px; }
   section.promociones .tile-container .tile .place li {
     font-size: 14px; }
   section.promociones .tile-container .tile .price {
@@ -1144,9 +1183,9 @@ section.promociones .tile-container .tile {
   section.promociones .tile-container .tile .place {
     text-align: center; }
     section.promociones .tile-container .tile .place h2, section.promociones .tile-container .tile .place p {
-      font-size: 22px; }
+      font-size: 18px !important; }
     section.promociones .tile-container .tile .place h2 {
-      margin-bottom: 0; }
+      margin-bottom: 5px; }
   section.promociones .tile-container .tile .price {
     padding: 0;
     min-height: auto; }
@@ -2467,5 +2506,89 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       padding-top: 70px; }
   .login .form-group a {
     padding-left: 9px !important; } }
+.informacion .information-img .img-content {
+  text-align: center; }
+.informacion .main-section section.main-content {
+  text-align: center; }
+  .informacion .main-section section.main-content h1, .informacion .main-section section.main-content h2, .informacion .main-section section.main-content p {
+    font-family: "Roboto", Sans-serif; }
+  .informacion .main-section section.main-content h1 {
+    margin-top: 0; }
+  .informacion .main-section section.main-content h2 {
+    font-size: 18px; }
+  .informacion .main-section section.main-content .beneficios-block {
+    text-align: center;
+    margin-top: 30px; }
+    .informacion .main-section section.main-content .beneficios-block .icon i {
+      color: #FDB823;
+      font-size: 48px;
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      margin-bottom: 30px; }
+      .informacion .main-section section.main-content .beneficios-block .icon i:hover {
+        color: #eba102;
+        text-decoration: none; }
+    .informacion .main-section section.main-content .beneficios-block .text p {
+      font-size: 14px;
+      color: #8d7f75; }
+    .informacion .main-section section.main-content .beneficios-block .text mark {
+      background: none;
+      color: #FDB823;
+      font-weight: bold; }
+
+.acercaDe h1, .acercaDe li {
+  font-family: "Roboto", Sans-serif; }
+.acercaDe .information-img .img-content h1 {
+  margin-bottom: 50px; }
+.acercaDe section.acercaDe h1 {
+  margin-top: 30px;
+  font-size: 18px; }
+.acercaDe section.acercaDe ol {
+  padding-left: 15px; }
+  .acercaDe section.acercaDe ol li {
+    padding-left: 5px;
+    font-size: 14px;
+    color: #8d7f75;
+    margin: 10px 0; }
+
+@media (max-width: 767px) {
+  .informacion .information-img .img-content {
+    text-align: left; }
+  .informacion .main-section section.main-content {
+    text-align: left; }
+    .informacion .main-section section.main-content h1, .informacion .main-section section.main-content h2 {
+      margin-left: 15px;
+      margin-right: 15px; }
+    .informacion .main-section section.main-content h1 {
+      margin-top: 0; }
+    .informacion .main-section section.main-content h2 {
+      font-size: 18px; }
+    .informacion .main-section section.main-content .beneficios-block {
+      text-align: left; }
+      .informacion .main-section section.main-content .beneficios-block .icon {
+        text-align: center; }
+        .informacion .main-section section.main-content .beneficios-block .icon i {
+          font-size: 48px; }
+      .informacion .main-section section.main-content .beneficios-block .text p {
+        font-size: 14px; }
+
+  .acercaDe .information-img .img-content {
+    background-color: #00a5e3;
+    padding: 1px 20px; }
+    .acercaDe .information-img .img-content h1 {
+      font-size: 24px;
+      margin: 20px 0; }
+  .acercaDe section.acercaDe h1 {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 14px !important; }
+  .acercaDe section.acercaDe ol {
+    padding-left: 15px; }
+    .acercaDe section.acercaDe ol li {
+      padding-left: 5px;
+      font-size: 14px;
+      color: #8d7f75;
+      margin: 10px 0; } }
 
 /*# sourceMappingURL=main.css.map */

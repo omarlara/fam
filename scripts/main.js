@@ -53,7 +53,7 @@ $(function () {
 
     $("#hero-carousel").owlCarousel({
 
-        //autoPlay : 3000,
+        autoPlay : 3000,
         navigation: false,
         slideSpeed: 300,
         paginationSpeed: 400,
