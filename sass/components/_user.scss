@@ -54,6 +54,14 @@
             display: block;
         }
     }
+    span.drop-down.user-action {
+        &:hover {
+            background-color: #927E6D;
+            ul {
+                min-width: auto !important;
+            }
+        }
+    }
     span.drop-down {
         display: inline-block;
         position: relative;
@@ -108,6 +116,17 @@
         .fam-phone {
             .text {
                 display: none;
+            }
+        }
+        span.drop-down.user-action {
+            position: relative;
+            &:hover {
+                ul {
+                    width: auto!important;
+                    min-width: 140px !important;
+                    right: 0!important;
+                    left: auto!important;
+                }
             }
         }
         span.drop-down {

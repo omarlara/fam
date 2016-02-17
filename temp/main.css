@@ -467,6 +467,10 @@ button.home-input {
       height: 100%;
       line-height: 1.5;
       display: block; }
+  .user span.drop-down.user-action:hover {
+    background-color: #927E6D; }
+    .user span.drop-down.user-action:hover ul {
+      min-width: auto !important; }
   .user span.drop-down {
     display: inline-block;
     position: relative;
@@ -509,6 +513,13 @@ button.home-input {
 @media (max-width: 767px) {
   .user .fam-phone .text {
     display: none; }
+  .user span.drop-down.user-action {
+    position: relative; }
+    .user span.drop-down.user-action:hover ul {
+      width: auto !important;
+      min-width: 140px !important;
+      right: 0 !important;
+      left: auto !important; }
   .user span.drop-down {
     margin-left: 0;
     position: static; }
