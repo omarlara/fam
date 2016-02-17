@@ -2201,7 +2201,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     margin-bottom: 15px; } }
 .tablero {
   margin-bottom: 30px; }
-  .tablero * {
+  .tablero h1, .tablero h2, .tablero h3, .tablero a, .tablero p, .tablero h4, .tablero label {
     font-family: "Roboto", Sans-serif; }
   .tablero .inner-content {
     border: 1px solid #ddd;
