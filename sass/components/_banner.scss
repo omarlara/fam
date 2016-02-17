@@ -52,6 +52,36 @@
             }
         }
     }
+    
+    #hero-carousel.inicio {
+        .ref-video {
+            .carousel-content {
+                text-align: center;
+                margin: auto;
+                position: absolute;
+                top: 15%;
+                left: 0;
+                bottom: 15%;
+                right: 0;
+                a.boton-play {
+                    background-color: #fdb924;
+                    color: #FFF;
+                    border: none;
+                    padding: 30px;
+                    border-radius: 50%;
+                    height: auto;
+                    width: auto;
+                    opacity: 0.8;
+                    margin: 20px 0;
+                    i.fa {
+                        font-size: 30px;
+                        position: absolute;
+                        margin: -15px 0 0 -8px;
+                    }
+                }
+            }
+        }
+    }
     .owl-theme .owl-controls {
         margin-top: 10px;
         text-align: center;
@@ -220,6 +250,18 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        #hero-carousel.inicio {
+            .ref-video {
+                .carousel-content {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .hero {
         #hero-carousel {
@@ -268,6 +310,16 @@
 
 @media (max-width: 767px) {
     .hero {
+        #hero-carousel.inicio {
+        .ref-video {
+            .carousel-content {
+                text-align: center;
+                a.btn.boton-play {
+                    margin-top: -210px;
+                }
+            }
+        }
+    }
         #hero-carousel {
             .item {
                 img.img-responsive {

@@ -1,6 +1,6 @@
 .tablero {
     margin-bottom: 30px;
-    * {
+    h1, h2, h3, a, p, h4, label {
         font-family: $font-primary;
     }
     .inner-content {

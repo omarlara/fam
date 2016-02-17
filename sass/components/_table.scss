@@ -163,6 +163,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 }
 
 .listadoReferidos {
+    h1 {
+        margin: 30px 0 30px !important;
+    }
     .print.pull-right {
         margin-bottom: 30px;
     }
@@ -234,6 +237,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
         float: none !important;
     }
     .listadoReferidos {
+        h1 {
+            margin: 10px 0 30px !important;
+        }
         button.guardarListado.pull-right {
             margin: 15px !important;
             float: none !important;
