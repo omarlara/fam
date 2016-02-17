@@ -1,21 +1,21 @@
 'use strict';
 
 $(function () {
-    
-    if ($('#tablaConsulta').length) {        
+
+    if ($('#tablaConsulta').length) {
         $('#tablaConsulta').DataTable({
             ordering: true,
             responsive: true
         });
     }
-    
+
     if ($('#tablaCaptura').length) {
          $('#tablaCaptura').DataTable({
             ordering: true,
             responsive: true
         });
     }
-    
+
     if ($('#tablaListado').length) {
         var table = $('#tablaListado').DataTable({
             ordering: true,
@@ -40,9 +40,9 @@ $(function () {
                         .draw();
                 }
             });
-        }); 
+        });
     }
-   
+
     $('input[type="search"]').attr('placeholder', 'Buscar');
 
     $(".borrar-referidoconfigreset").on("click", function () {
@@ -62,7 +62,7 @@ $(function () {
 
     $("#presentation-image").owlCarousel({
 
-        //autoPlay : 3000,
+        autoPlay : 3000,
         navigation: false,
         slideSpeed: 0,
         paginationSpeed: 0,
@@ -168,7 +168,7 @@ $(function () {
             }
         }
     });
-    
+
     $(".form-inline").validate({
         rules: {
             name: {
@@ -228,16 +228,16 @@ $(function () {
             }
         }
     });
-    
+
     $(".toggle-control > span").on("click", function () {
         $(this).parent().find('span').removeClass('active');
         $(this).parent().find('input').val($(this).text());
         $(this).addClass('active');
 
     });
-    
+
     $('.submit-minivacs').on("click", function () {});
-    
+
     $("form.form-minivacs").submit(function (event) {
 
         var nombres = $('#inputNombres').val();

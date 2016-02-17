@@ -10,13 +10,13 @@
             padding-top: 30px;
         }
         .form-group {
-                min-height: 60px;
+            min-height: 60px;
             button {
                 margin: -5px 15px 0 0;
             }
             a {
-                padding-left: 9px;
-                font-size: 14px;
+                padding-left: 15px;
+                font-size: 12px;
                 color: #fff;
                 font-family: $font-primary;
                 &:hover {
@@ -44,7 +44,7 @@
 @media (max-width: 767px) {
     .login {
         .form-login {
-            h1 {                
+            h1 {
                 margin-top: 0 !important;
             }
         }
@@ -79,7 +79,7 @@
             }
         }
         .form-group {
-            a { 
+            a {
                 padding-left: 9px !important;
             }
         }
