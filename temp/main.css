@@ -166,7 +166,7 @@ button.home-input {
   border: none;
   color: #FFFFFF;
   font-size: 16px;
-  margin: 20px 15px 30px 0;
+  margin: 10px 0 30px 0;
   padding: 6px 47px; }
   button.home-input:hover, button.home-input:focus, button.home-input:active, button.home-input.active {
     background-color: #F8971D; }
@@ -248,9 +248,6 @@ button.home-input {
   opacity: 1; }
 
 @media (min-width: 1200px) {
-  button.home-input {
-    margin: 20px 60px 30px 0; }
-
   .minivacs-block button.home-input {
     margin: 20px 15px 30px 0; } }
 @media (max-width: 767px) {
@@ -905,6 +902,8 @@ button.home-input {
     padding-top: 0;
     padding-right: 0;
     font-weight: 700; }
+  .form-feedback form.form-inline .form-group label.control-label.pull-left {
+    text-align: left; }
   .form-feedback form.form-inline .form-group input {
     border-radius: 0;
     max-width: 340px;
@@ -2076,7 +2075,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 #tablaListado, #tablaCaptura, #tablaConsulta {
   border: 1px solid #ccc; }
   #tablaListado span.dtr-data, #tablaCaptura span.dtr-data, #tablaConsulta span.dtr-data {
-    word-break: break-word !important; }
+    word-break: break-word !important;
+    float: left;
+    width: 100%; }
+  #tablaListado tbody > tr.child ul li, #tablaCaptura tbody > tr.child ul li, #tablaConsulta tbody > tr.child ul li {
+    border-bottom: none !important;
+    z-index: 1; }
   #tablaListado thead tr, #tablaCaptura thead tr, #tablaConsulta thead tr {
     background-color: #7f7063;
     color: white; }
@@ -2105,7 +2109,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     font-family: "Roboto", Sans-serif;
     font-weight: normal;
     color: #8D7F75;
-    padding: 10px 0 10px 30px; }
+    padding: 10px 1px 10px 30px; }
     #tablaListado tbody tr td a, #tablaCaptura tbody tr td a, #tablaConsulta tbody tr td a {
       color: #FDB924;
       cursor: pointer; }
@@ -2120,6 +2124,75 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   color: #8D7F75; }
   .consultar tbody tr td a, .Listadoreferidos tbody tr td a, .capturar tbody tr td a {
     color: #FDB924; }
+  .consultar tbody tr td ul.progress-indicator.custom-complex, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex, .capturar tbody tr td ul.progress-indicator.custom-complex {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    list-style-type: square;
+    margin-top: 15px;
+    margin-right: 5px; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble:after, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble:before, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble:before {
+      background-color: #FFF;
+      border-color: #dfdfdf; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before {
+      display: block;
+      color: forestgreen;
+      padding-top: 5px; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li.status, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li.status, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble {
+      color: #FFF;
+      z-index: 2 !important; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble {
+      border-radius: 2px 0px 0px 2px; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble {
+      border-radius: 0px 2px 2px 0px; }
+    .consultar tbody tr td ul.progress-indicator.custom-complex li, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li, .capturar tbody tr td ul.progress-indicator.custom-complex li {
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      flex: 1;
+      list-style: none;
+      text-align: center;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      text-overflow: ellipsis;
+      color: #bbb;
+      display: block; }
+      .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble {
+        min-width: 30px;
+        height: 35px;
+        border-radius: 0;
+        box-shadow: 0px 0 4px rgba(0, 0, 0, 0.2);
+        background-color: #FFF;
+        display: block;
+        margin: 0 auto .5em; }
+      .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:before {
+        display: block;
+        position: absolute;
+        top: 9px;
+        width: 100%;
+        height: 3px;
+        content: '';
+        background-color: #bbb; }
+      .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:after {
+        display: none; }
+      .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:after {
+        right: 0; }
+  .consultar tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:before,
+  .consultar tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:before,
+  .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:after, .capturar tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:before,
+  .capturar tbody tr td ul.progress-indicator.custom-complex > li .bubble > i:after {
+    display: none; }
+  .consultar tbody tr td li.status .bubble, .consultar tbody tr td li.status .bubble:after, .consultar tbody tr td li.status .bubble:before, .Listadoreferidos tbody tr td li.status .bubble, .Listadoreferidos tbody tr td li.status .bubble:after, .Listadoreferidos tbody tr td li.status .bubble:before, .capturar tbody tr td li.status .bubble, .capturar tbody tr td li.status .bubble:after, .capturar tbody tr td li.status .bubble:before {
+    background-color: #FFF;
+    border-color: #dfdfdf;
+    -webkit-box-shadow: 0px 1px 1px 0px #323232 !important;
+    -moz-box-shadow: 0px 1px 1px 0px #323232 !important;
+    box-shadow: 0px 1px 1px 0px #323232 !important; }
 .consultar .modal.fade .modal-content, .Listadoreferidos .modal.fade .modal-content, .capturar .modal.fade .modal-content {
   padding: 30px;
   max-width: 560px;
@@ -2184,6 +2257,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .listadoReferidos button.guardarListado.pull-right {
     padding: 12px 10px; } }
 @media (max-width: 767px) {
+  .consultar tbody tr td ul.progress-indicator.custom-complex, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex, .capturar tbody tr td ul.progress-indicator.custom-complex {
+    margin-right: -10px; }
   .consultar .modal.fade .modal-content, .Listadoreferidos .modal.fade .modal-content, .capturar .modal.fade .modal-content {
     padding: 15px; }
     .consultar .modal.fade .modal-content .modal-header h1, .Listadoreferidos .modal.fade .modal-content .modal-header h1, .capturar .modal.fade .modal-content .modal-header h1 {
@@ -2570,6 +2645,40 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     color: #8d7f75;
     margin: 10px 0; }
 
+.home-content.container {
+  margin-top: 30px; }
+  .home-content.container .content {
+    text-align: center;
+    padding: 25px 20px 30px 20px;
+    margin-bottom: 30px;
+    background: url("../img/img-sonrisas-desktop.jpg") no-repeat 0 0/cover; }
+    .home-content.container .content h2, .home-content.container .content p {
+      color: #FFF;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+      text-align: center; }
+    .home-content.container .content h2 {
+      margin-top: 0;
+      font-weight: 400; }
+    .home-content.container .content p {
+      font-size: 18px; }
+    .home-content.container .content a.btn.btn-lg.btn-primary {
+      padding: 7px 30px;
+      height: auto; }
+  .home-content.container .form-feedback form.form-inline h1 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0 !important;
+    margin-bottom: 20px; }
+  .home-content.container .form-feedback form.form-inline p {
+    text-align: left; }
+  .home-content.container .form-feedback form.form-inline .form-group {
+    padding-right: 0; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-content.container .content {
+    background: url("../img/img-sonrisas-tablet.jpg") no-repeat 0 0/cover; }
+    .home-content.container .content p {
+      font-size: 14px; } }
 @media (max-width: 767px) {
   .informacion .information-img .img-content {
     text-align: left; }
@@ -2607,6 +2716,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       padding-left: 5px;
       font-size: 14px;
       color: #8d7f75;
-      margin: 10px 0; } }
+      margin: 10px 0; }
+
+  .home-content.container .content {
+    background: url("../img/img-sonrisas-smart.jpg") no-repeat 0 0/cover; }
+    .home-content.container .content p {
+      font-size: 14px; }
+  .home-content.container .form-feedback {
+    padding-left: 0;
+    padding-right: 0; }
+    .home-content.container .form-feedback form.form-inline h1 {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */

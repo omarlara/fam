@@ -153,6 +153,9 @@
             padding-right: 0;
             font-weight: 700;
         }
+        label.control-label.pull-left {
+            text-align: left;
+        }
         input {
           border-radius: 0;
           max-width: 340px;

@@ -35,6 +35,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 #tablaListado, #tablaCaptura, #tablaConsulta {
     span.dtr-data {
         word-break: break-word !important;
+        float: left;
+        width: 100%;
+    }
+    tbody > tr.child ul li {
+        border-bottom: none !important;
+        z-index: 1;
     }
     border: 1px solid #ccc;
     thead {
@@ -80,7 +86,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 font-family: $font-primary;
                 font-weight: normal;
                 color: #8D7F75;
-                padding: 10px 0 10px 30px;
+                padding: 10px 1px 10px 30px;
                 a {
                     color: #FDB924;
                     cursor: pointer;
@@ -105,6 +111,92 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 color: #8D7F75;
                 a {
                     color: #FDB924;
+                }
+                ul.progress-indicator.custom-complex {
+                    padding-left: 0;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    list-style-type: square;
+                    margin-top: 15px;
+                    margin-right: 5px;
+                    li.status .bubble, li.status .bubble:after, li.status .bubble:before {
+                        background-color: #FFF;
+                        border-color: #dfdfdf;
+                    }
+                    li.status .bubble i, li.status .bubble i:after, li.status .bubble i:before {
+                        display: block;
+                        color: forestgreen;
+                        padding-top: 5px;
+                    }
+                    li.status, li.status .bubble {
+                        color: #FFF;
+                        //height: 35px;
+                        //margin-top: -5px;
+                        z-index: 2 !important;
+                    }
+                    li:first-child {
+                        span.bubble {
+                            border-radius: 2px 0px 0px 2px;
+                        }
+                    }
+                    li:last-child {
+                        span.bubble {
+                            border-radius: 0px 2px 2px 0px;
+                        }
+                    }
+                    li {
+                        -ms-flex: 1;
+                        -webkit-flex: 1;
+                        -moz-flex: 1;
+                        flex: 1;
+                        list-style: none;
+                        text-align: center;
+                        width: auto;
+                        padding: 0;
+                        margin: 0;
+                        position: relative;
+                        text-overflow: ellipsis;
+                        color: #bbb;
+                        display: block;
+                        .bubble {                            
+                            min-width: 30px;
+                            height: 35px;
+                            border-radius: 0;
+                            box-shadow: 0px 0 4px rgba(0,0,0,.2);
+                            background-color: #FFF;
+                            display: block;
+                            margin: 0 auto .5em;
+                        }
+                        .bubble:after, .bubble:before {
+                            display: block;
+                            position: absolute;
+                            top: 9px;
+                            width: 100%;
+                            height: 3px;
+                            content: '';
+                            background-color: #bbb;
+                        }
+                        .bubble:before, .bubble:after {
+                            display: none;
+                        }
+                        .bubble:after {
+                            right: 0;
+                        }
+                    }
+                }
+                ul.progress-indicator.custom-complex > li .bubble > i:before,
+                ul.progress-indicator.custom-complex > li .bubble > i:after {
+                    display: none;                    
+                }
+                li.status .bubble, li.status .bubble:after, li.status .bubble:before {
+                    background-color: #FFF;
+                    border-color: #dfdfdf;
+                    -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 1) !important;
+                    -moz-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 1) !important;
+                    box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 1) !important;
                 }
             }
         }
@@ -205,6 +297,15 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 
 @media (max-width: 767px) {
     .consultar, .Listadoreferidos, .capturar {
+        tbody {
+            tr {
+                td {
+                    ul.progress-indicator.custom-complex {
+                        margin-right: -10px;
+                    }
+                }
+            }
+        }
         .modal.fade {
             .modal-content {
                 padding: 15px;

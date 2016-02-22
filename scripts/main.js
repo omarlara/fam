@@ -1,6 +1,16 @@
 'use strict';
 
 $(function () {
+    
+    $('[data-progress]').each(function() {
+        var progressVal = $(this).attr('data-progress');
+        $(this).children().each(function(i, element) {
+          if (progressVal > i) {
+            $(element).addClass('status');
+              $(element).children().find('i').addClass('fa-check');
+          }
+        });
+    }); 
 
     if ($('#tablaConsulta').length) {
         $('#tablaConsulta').DataTable({
@@ -140,28 +150,28 @@ $(function () {
             },
             email: {
                 required: "Campo requerido.",
-                email: "Este correo es inválido."
+                email: "Este correo es inv&aacute;lido."
             },
             phone: {
                 required: "Campo requerido."
             },
             pais: {
-                required: "Favor de elegir una opción."
+                required: "Favor de elegir una opci&oacute;n."
             },
             Estado: {
-                required: "Campo requerido."
+                required: "Favor de elegir una opci&oacute;n."
             },
             Ciudad: {
                 required: "Campo requerido."
             },
             PromoCode: {
-                required: "Favor de elegir una opción."
+                required: "Favor de elegir una opci&oacute;n."
             },
             NumeroReferidor: {
                 required: "Campo requerido."
             },
             TipoReferidor: {
-                required: "Favor de elegir una opción."
+                required: "Favor de elegir una opci&oacute;n."
             },
             Privacy: {
                 required: "Campo requerido"
@@ -212,13 +222,13 @@ $(function () {
             },
             email: {
                 required: "Campo requerido.",
-                email: "Este correo es inválido."
+                email: "Este correo es inv&aacute;lido."
             },
             phone: {
                 required: "Campo requerido."
             },
             state: {
-                required: "Favor de elegir una opción."
+                required: "Favor de elegir una opci&oacute;n."
             },
             city: {
                 required: "Campo requerido."

@@ -77,6 +77,60 @@
     }
 }
 
+.home-content.container {
+    margin-top: 30px;
+    .content {
+        text-align: center;
+        padding: 25px 20px 30px 20px;
+        margin-bottom: 30px;
+        background: url('../img/img-sonrisas-desktop.jpg') no-repeat 0 0 / cover;
+        h2, p {
+            color: #FFF;
+            text-shadow: 0 1px 4px rgba(0,0,0,.6);
+            text-align: center;
+        }
+        h2 {
+            margin-top: 0;
+            font-weight: 400;
+        }
+        p {
+            font-size: 18px;
+        }
+        a.btn.btn-lg.btn-primary {
+            padding: 7px 30px;
+            height: auto
+        }
+    }
+    .form-feedback {
+        form.form-inline {
+            h1 {
+                text-align: left;
+                font-size: 18px;
+                margin-top: 0 !important;
+                margin-bottom: 20px;
+            }
+            p {
+                text-align: left;
+            }
+            .form-group {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .home-content.container {
+        .content {
+            background: url('../img/img-sonrisas-tablet.jpg') no-repeat 0 0 / cover;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 767px) {
     .informacion {
         .information-img {
@@ -142,6 +196,24 @@
                     margin: 10px 0;
                 }
             }        
+        }
+    }
+    
+    .home-content.container {
+        .content {
+            background: url('../img/img-sonrisas-smart.jpg') no-repeat 0 0 / cover;
+            p {
+                font-size: 14px;
+            }
+        }
+        .form-feedback {
+            padding-left: 0;
+            padding-right: 0;
+            form.form-inline {
+                h1 {
+                    font-size: 14px;
+                }
+            }
         }
     }
 
