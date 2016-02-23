@@ -2,18 +2,21 @@
 
 $(function () {
     
-    $('[data-progress]').each(function() {
-        var progressVal = $(this).attr('data-progress');
+    $('[data-order]').each(function() {
+        var progressVal = $(this).attr('data-order');
         var statusVal = $(this).attr('data-status');
         $(this).children().each(function(i, element) {
             if (progressVal > i) {
                 if (statusVal > 0 && progressVal == (i+1)) {
                     $(element).addClass('status');
-                    $(element).children().find('i').addClass('fa-times');
+                    //$(element).children().find('i').addClass('fa-times');
+                    $(element).find('span').css("background", "url(img/icon-x.svg) center no-repeat");
+//.css( "background": "url(../img/checkbox-tick.svg) no-repeat" );
                 }
                 else {                     
                     $(element).addClass('status');
-                    $(element).children().find('i').addClass('fa-check');
+                    //$(element).children().find('i').addClass('fa-check');
+                    $(element).find('span').css("background", "url(img/checkbox-tick.svg) center no-repeat");
                 }
             }
         });

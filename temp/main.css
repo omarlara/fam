@@ -2123,6 +2123,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   font-family: "Roboto", Sans-serif;
   font-weight: normal;
   color: #8D7F75; }
+  .consultar tbody tr td .glyphicon, .consultar tbody tr td .fa, .Listadoreferidos tbody tr td .glyphicon, .Listadoreferidos tbody tr td .fa, .capturar tbody tr td .glyphicon, .capturar tbody tr td .fa {
+    padding-right: 5px; }
   .consultar tbody tr td a, .Listadoreferidos tbody tr td a, .capturar tbody tr td a {
     color: #FDB924; }
   .consultar tbody tr td ul.progress-indicator.custom-complex, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex, .capturar tbody tr td ul.progress-indicator.custom-complex {
@@ -2141,11 +2143,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:after, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i:before {
       display: block;
       color: forestgreen;
-      padding-top: 5px; }
+      padding-top: 3px;
+      font-size: 25px; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:after, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:before, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:after, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble i.fa-times:before {
       color: red !important; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li.status, .consultar tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li.status .bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li.status, .capturar tbody tr td ul.progress-indicator.custom-complex li.status .bubble {
       color: #FFF;
+      margin-bottom: 0;
+      background-color: #FFF !important;
       z-index: 2 !important; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble {
       border-radius: 2px 0px 0px 2px; }
@@ -2160,6 +2165,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       text-align: center;
       max-width: 42px;
       width: auto;
+      height: 35px;
       padding: 0;
       margin: 0;
       position: relative;
@@ -2170,8 +2176,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         min-width: 30px;
         height: 35px;
         border-radius: 0;
-        box-shadow: 0px 0 4px rgba(0, 0, 0, 0.2);
-        background-color: #FFF;
+        box-shadow: 0px 0 2px #dfdfdf;
+        background-color: #f4f1ed;
         display: block;
         margin: 0 auto .5em; }
       .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:before {
@@ -2194,9 +2200,27 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .consultar tbody tr td li.status .bubble, .consultar tbody tr td li.status .bubble:after, .consultar tbody tr td li.status .bubble:before, .Listadoreferidos tbody tr td li.status .bubble, .Listadoreferidos tbody tr td li.status .bubble:after, .Listadoreferidos tbody tr td li.status .bubble:before, .capturar tbody tr td li.status .bubble, .capturar tbody tr td li.status .bubble:after, .capturar tbody tr td li.status .bubble:before {
     background-color: #FFF;
     border-color: #dfdfdf;
-    -webkit-box-shadow: 0px 1px 1px 0px #323232 !important;
-    -moz-box-shadow: 0px 1px 1px 0px #323232 !important;
-    box-shadow: 0px 1px 1px 0px #323232 !important; }
+    -webkit-box-shadow: 0px 0px 3px 1px #dfdfdf !important;
+    -moz-box-shadow: 0px 0px 3px 1px #dfdfdf !important;
+    box-shadow: 0px 0px 3px 1px #dfdfdf !important; }
+.consultar #modalRecompensas .modal-content, .Listadoreferidos #modalRecompensas .modal-content, .capturar #modalRecompensas .modal-content {
+  padding-top: 0; }
+  .consultar #modalRecompensas .modal-content .modal-header, .Listadoreferidos #modalRecompensas .modal-content .modal-header, .capturar #modalRecompensas .modal-content .modal-header {
+    border: none;
+    padding: 0px;
+    margin: 5px -25px 0 -25px;
+    min-height: 150px;
+    background: url(../img/img-modal-recompensa-desk-tablet.jpg) center no-repeat; }
+    .consultar #modalRecompensas .modal-content .modal-header h3, .Listadoreferidos #modalRecompensas .modal-content .modal-header h3, .capturar #modalRecompensas .modal-content .modal-header h3 {
+      font-family: "Roboto", Sans-serif;
+      font-weight: normal;
+      margin-top: 110px;
+      margin-left: 25px; }
+  .consultar #modalRecompensas .modal-content .modal-body h4, .Listadoreferidos #modalRecompensas .modal-content .modal-body h4, .capturar #modalRecompensas .modal-content .modal-body h4 {
+    font-family: "Roboto", Sans-serif;
+    font-weight: normal;
+    margin-top: 25px;
+    color: #8d7f75; }
 .consultar .modal.fade .modal-content, .Listadoreferidos .modal.fade .modal-content, .capturar .modal.fade .modal-content {
   padding: 30px;
   max-width: 560px;
@@ -2264,6 +2288,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .consultar tbody tr td ul.progress-indicator.custom-complex, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex, .capturar tbody tr td ul.progress-indicator.custom-complex {
     margin-right: -10px; } }
 @media (max-width: 767px) {
+  #modalRecompensas .modal-content .modal-header {
+    background: url(../img/img-modal-recompensa-smart.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin: 5px -10px 0 -10px !important; }
+    #modalRecompensas .modal-content .modal-header h3 {
+      margin-left: 10px !important; }
+
+  .consultar tbody span.dtr-title, .Listadoreferidos tbody span.dtr-title, .capturar tbody span.dtr-title {
+    margin-top: 10px; }
   .consultar .modal.fade .modal-content, .Listadoreferidos .modal.fade .modal-content, .capturar .modal.fade .modal-content {
     padding: 15px; }
     .consultar .modal.fade .modal-content .modal-header h1, .Listadoreferidos .modal.fade .modal-content .modal-header h1, .capturar .modal.fade .modal-content .modal-header h1 {
@@ -2656,16 +2689,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     text-align: center;
     padding: 25px 20px 30px 20px;
     margin-bottom: 30px;
-    background: url("../img/img-sonrisas-desktop.jpg") no-repeat 0 0/cover; }
+    background: url("../img/img-sonrisas-desktop.jpg") no-repeat 0 0/cover;
+    min-height: 350px; }
     .home-content.container .content h2, .home-content.container .content p {
       color: #FFF;
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
       text-align: center; }
     .home-content.container .content h2 {
-      margin-top: 0;
-      font-weight: 400; }
+      margin-top: 45px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 32px; }
     .home-content.container .content p {
-      font-size: 18px; }
+      font-size: 19px;
+      margin-bottom: 25px; }
     .home-content.container .content a.btn.btn-lg.btn-primary {
       padding: 7px 30px;
       height: auto; }
@@ -2681,9 +2718,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
 @media (min-width: 768px) and (max-width: 991px) {
   .home-content.container .content {
+    min-height: auto !important;
     background: url("../img/img-sonrisas-tablet.jpg") no-repeat 0 0/cover; }
     .home-content.container .content p {
-      font-size: 14px; } }
+      font-size: 18px; } }
 @media (max-width: 767px) {
   .informacion .information-img .img-content {
     text-align: left; }
@@ -2727,6 +2765,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     background: url("../img/img-sonrisas-smart.jpg") no-repeat 0 0/cover; }
     .home-content.container .content p {
       font-size: 14px; }
+    .home-content.container .content h2 {
+      font-size: 30px; }
   .home-content.container .form-feedback {
     padding-left: 0;
     padding-right: 0; }
