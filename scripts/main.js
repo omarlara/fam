@@ -4,11 +4,18 @@ $(function () {
     
     $('[data-progress]').each(function() {
         var progressVal = $(this).attr('data-progress');
+        var statusVal = $(this).attr('data-status');
         $(this).children().each(function(i, element) {
-          if (progressVal > i) {
-            $(element).addClass('status');
-              $(element).children().find('i').addClass('fa-check');
-          }
+            if (progressVal > i) {
+                if (statusVal > 0 && progressVal == (i+1)) {
+                    $(element).addClass('status');
+                    $(element).children().find('i').addClass('fa-times');
+                }
+                else {                     
+                    $(element).addClass('status');
+                    $(element).children().find('i').addClass('fa-check');
+                }
+            }
         });
     }); 
 

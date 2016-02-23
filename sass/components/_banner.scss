@@ -5,7 +5,7 @@
         }
         .item {
             img.img-responsive {
-                height: 460px;
+                min-height: 590px;
                 width: 100%;
             }
             .carousel-content, .detalle-promocion {
@@ -129,7 +129,7 @@
     }
     .item {
         img.img-responsive {
-            max-height: 460px;
+            min-height: 590px;
             width: 100%;
         }
         .detalle-promocion {
@@ -141,6 +141,7 @@
                 padding: 20px 15px 0 0;
                 max-width: 300px;
                 text-align: right;
+                max-height: 350px;
             }
             h1 {
                 margin-top: 0;

@@ -131,6 +131,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                         color: forestgreen;
                         padding-top: 5px;
                     }
+                    li.status .bubble i.fa-times, li.status .bubble i.fa-times:after, li.status .bubble i.fa-times:before {
+                        color: red !important;
+                    }
                     li.status, li.status .bubble {
                         color: #FFF;
                         //height: 35px;
@@ -154,6 +157,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                         flex: 1;
                         list-style: none;
                         text-align: center;
+                        max-width: 42px;
                         width: auto;
                         padding: 0;
                         margin: 0;
@@ -295,7 +299,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 446px) {
     .consultar, .Listadoreferidos, .capturar {
         tbody {
             tr {
@@ -303,6 +307,17 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                     ul.progress-indicator.custom-complex {
                         margin-right: -10px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .consultar, .Listadoreferidos, .capturar {
+        tbody {
+            tr {
+                td {
                 }
             }
         }
