@@ -2286,7 +2286,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     padding: 12px 10px; } }
 @media (max-width: 446px) {
   .consultar tbody tr td ul.progress-indicator.custom-complex, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex, .capturar tbody tr td ul.progress-indicator.custom-complex {
-    margin-right: -10px; } }
+    margin-right: -20px; } }
 @media (max-width: 767px) {
   #modalRecompensas .modal-content .modal-header {
     background: url(../img/img-modal-recompensa-smart.jpg) no-repeat !important;

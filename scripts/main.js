@@ -142,8 +142,9 @@ $(function () {
             //$('.success').show();
         },
         //success: "valid",
-        submitHandler: function () {
-            $('.success').show()
+        submitHandler: function (form) {
+            $('.success').show();
+            form.submit();
         },
         highlight: function () {
 
@@ -217,8 +218,9 @@ $(function () {
         success: function () {
             //  $('.success').show();
         },
-        submitHandler: function () {
-            $('.success').show()
+        submitHandler: function (form) {
+            $('.success').show();
+            form.submit();
         },
         highlight: function () {
 
