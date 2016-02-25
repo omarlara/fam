@@ -101,19 +101,23 @@ $(function () {
         },
         rules: {
             name: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             aPaterno: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             aMaterno: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             email: {
                 required: true
             },
             phone: {
-                required: true
+                required: true,                
+                regex: /\D*([2-9]\d{2})(\D*)([2-9]\d{2})(\D*)(\d{4})\D*/
             },
             pais: {
                 required: true
@@ -122,13 +126,15 @@ $(function () {
                 required: true
             },
             Ciudad: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             PromoCode: {
                 required: true
             },
             NumeroReferidor: {
-                required: true
+                required: true,
+                regex: /\d+/
             },
             TipoReferidor: {
                 required: true
@@ -151,20 +157,24 @@ $(function () {
         },
         messages: {
             name: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             aPaterno: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             aMaterno: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             email: {
                 required: "Campo requerido.",
                 email: "Este correo es inv&aacute;lido."
             },
             phone: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Telefono invalido"
             },
             pais: {
                 required: "Favor de elegir una opci&oacute;n."
@@ -173,13 +183,15 @@ $(function () {
                 required: "Favor de elegir una opci&oacute;n."
             },
             Ciudad: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             PromoCode: {
                 required: "Favor de elegir una opci&oacute;n."
             },
             NumeroReferidor: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             TipoReferidor: {
                 required: "Favor de elegir una opci&oacute;n."
@@ -190,25 +202,38 @@ $(function () {
         }
     });
 
+    $.validator.addMethod(
+        "regex",
+        function (value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        },
+        "Verifice sus datos."
+    );
+    
     $(".form-inline").validate({
         rules: {
             name: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             lastName: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             email: {
                 required: true
             },
             phone: {
-                required: true
+                required: true,
+                regex: /\b\d{3}[- .]?\d{3}[- .]?\d{4}\b/
             },
             state: {
                 required: true
             },
             city: {
-                required: true
+                required: true,
+                regex: /[a-zA-Z]+/
             },
             numSocio: {
                 required: true
@@ -227,23 +252,27 @@ $(function () {
         },
         messages: {
             name: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             lastName: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             email: {
                 required: "Campo requerido.",
                 email: "Este correo es inv&aacute;lido."
             },
             phone: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Telefono invalido"
             },
             state: {
                 required: "Favor de elegir una opci&oacute;n."
             },
             city: {
-                required: "Campo requerido."
+                required: "Campo requerido.",
+                regex: "Formato incorrecto"
             },
             numSocio: {
                 required: "Campo requerido."

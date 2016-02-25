@@ -42,7 +42,7 @@
         li {
             &.active {
                 > a {
-                    background-color: $nav-active-color;
+                    background-color: #FDB823;
                     color: #ffffff !important;
                     &:hover {
                         color: #ffffff !important;
@@ -50,16 +50,18 @@
                     }
                 }
             }
+            &:hover {
+                > a {
+                    background-color: transparent!important;
+                    color: #666!important; 
+                }                    
+            }
             a {
                 font-family: $font-primary;
                 text-align: center;
                 color: #323232 !important;
                 font-size: 18px;
                 font-weight: 500;
-                &:hover {
-                    background-color: transparent !important;
-                    color: #666 !important;
-                }
             }
         }
     }

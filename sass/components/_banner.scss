@@ -73,6 +73,12 @@
                     width: auto;
                     opacity: 0.8;
                     margin: 20px 0;
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &.active {
+                        background-color: #F8971D;
+                    }
                     i.fa {
                         font-size: 30px;
                         position: absolute;
@@ -276,6 +282,10 @@
     }
     .presentation-block {
         .item {
+            img.img-responsive {                
+                max-width: inherit!important;
+                width: initial;
+            }
             .img-content {
                 h1 {
                     font-size: 24px;
@@ -366,6 +376,9 @@
             }
             img.img-responsive {
                 min-height: 170px;
+                height: inherit;
+                width: 100%!important;
+                max-width: inherit!important;
             }
             .img-content {
                 position: static !important;

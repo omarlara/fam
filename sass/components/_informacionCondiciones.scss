@@ -1,4 +1,8 @@
 .informacion {
+    .item img.img-responsive {        
+        max-width: inherit!important;
+        width: initial;
+    }
     .information-img {
         .img-content {
             text-align: center;
@@ -27,10 +31,6 @@
                         top: 1px;
                         display: inline-block;
                         margin-bottom: 30px;
-                        &:hover {
-                            color: darken( $color-yellow, 10%);
-                            text-decoration: none;
-                        }
                     }
                 }
                 .text {
@@ -123,7 +123,22 @@
     }
 }
 
+@media (min-width:992px) {
+    .informacion {
+        .lead {            
+            margin: 0 auto;
+            width: 80% !important;
+        }
+    }
+}
+
 @media (min-width:768px) and (max-width:991px) {
+    .informacion {
+        item img.img-responsive {
+            max-width: inherit!important;
+            width: initial;
+        }
+    }
     .home-content.container {
         .content {
             min-height: auto !important;
@@ -138,6 +153,12 @@
 
 @media (max-width: 767px) {
     .informacion {
+        .item img.img-responsive {
+            min-height: 170px;
+            height: inherit;
+            width: 100%!important;
+            max-width: inherit!important;
+        }
         .information-img {
             .img-content {
                 text-align: left;

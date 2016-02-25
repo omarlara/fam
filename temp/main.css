@@ -305,15 +305,15 @@ button.home-input {
     .navbar-default ul.nav li.active > a:hover {
       color: #ffffff !important;
       background-color: #FDB823 !important; }
+  .navbar-default ul.nav li:hover > a {
+    background-color: transparent !important;
+    color: #666 !important; }
   .navbar-default ul.nav li a {
     font-family: "Roboto", Sans-serif;
     text-align: center;
     color: #323232 !important;
     font-size: 18px;
     font-weight: 500; }
-    .navbar-default ul.nav li a:hover {
-      background-color: transparent !important;
-      color: #666 !important; }
 
 @media (max-width: 991px) {
   .fiesta.container {
@@ -594,6 +594,8 @@ button.home-input {
     width: auto;
     opacity: 0.8;
     margin: 20px 0; }
+    .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play:hover, .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play:focus, .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play:active, .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play.active {
+      background-color: #F8971D; }
     .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play i.fa {
       font-size: 30px;
       position: absolute;
@@ -735,6 +737,9 @@ button.home-input {
     max-width: inherit !important;
     width: initial; }
 
+  .presentation-block .item img.img-responsive {
+    max-width: inherit !important;
+    width: initial; }
   .presentation-block .item .img-content h1 {
     font-size: 24px; }
   .presentation-block .item .img-content h2 {
@@ -781,7 +786,10 @@ button.home-input {
   .presentation-block .item .information-img.container {
     padding: 0; }
   .presentation-block .item img.img-responsive {
-    min-height: 170px; }
+    min-height: 170px;
+    height: inherit;
+    width: 100% !important;
+    max-width: inherit !important; }
   .presentation-block .item .img-content {
     position: static !important;
     background-color: #ca3092;
@@ -811,9 +819,10 @@ button.home-input {
       padding: 10px 0 0 0;
       margin: 0 30px;
       color: #8d7f75;
-      border-top: 1px solid #edebeb; }
+      border-top: 1px solid #edebeb;
+      margin-top: 10px; }
     .form-feedback form.form-inline.form-capturar .row .form-group {
-      min-height: 78px; }
+      min-height: 75px; }
       .form-feedback form.form-inline.form-capturar .row .form-group .control-label {
         text-align: left;
         font-weight: normal; }
@@ -1226,7 +1235,7 @@ section.promociones .tile-container .tile {
     float: left;
     border-right: 1px solid #ccc;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    padding: 6px 20px;
+    padding: 6px 10px;
     font-family: "Roboto", Sans-serif;
     font-weight: 400;
     text-align: center;
@@ -2106,11 +2115,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       background-color: inherit !important; }
   #tablaListado tbody tr.child td.child, #tablaCaptura tbody tr.child td.child, #tablaConsulta tbody tr.child td.child {
     padding: 10px 15px !important; }
+  #tablaListado tbody tr td:first-child, #tablaCaptura tbody tr td:first-child, #tablaConsulta tbody tr td:first-child {
+    padding: 5px 1px 5px 35px; }
   #tablaListado tbody tr td, #tablaCaptura tbody tr td, #tablaConsulta tbody tr td {
     font-family: "Roboto", Sans-serif;
     font-weight: normal;
     color: #8D7F75;
-    padding: 10px 1px 10px 30px; }
+    padding: 10px 1px 10px 20px; }
     #tablaListado tbody tr td a, #tablaCaptura tbody tr td a, #tablaConsulta tbody tr td a {
       color: #FDB924;
       cursor: pointer; }
@@ -2153,9 +2164,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       background-color: #FFF !important;
       z-index: 2 !important; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li:first-child span.bubble {
-      border-radius: 2px 0px 0px 2px; }
+      border-radius: 4px 0px 0px 4px; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble, .capturar tbody tr td ul.progress-indicator.custom-complex li:last-child span.bubble {
-      border-radius: 0px 2px 2px 0px; }
+      border-radius: 0px 4px 4px 0px; }
     .consultar tbody tr td ul.progress-indicator.custom-complex li, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li, .capturar tbody tr td ul.progress-indicator.custom-complex li {
       -ms-flex: 1;
       -webkit-flex: 1;
@@ -2199,10 +2210,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     display: none; }
   .consultar tbody tr td li.status .bubble, .consultar tbody tr td li.status .bubble:after, .consultar tbody tr td li.status .bubble:before, .Listadoreferidos tbody tr td li.status .bubble, .Listadoreferidos tbody tr td li.status .bubble:after, .Listadoreferidos tbody tr td li.status .bubble:before, .capturar tbody tr td li.status .bubble, .capturar tbody tr td li.status .bubble:after, .capturar tbody tr td li.status .bubble:before {
     background-color: #FFF;
-    border-color: #dfdfdf;
-    -webkit-box-shadow: 0px 0px 3px 1px #dfdfdf !important;
-    -moz-box-shadow: 0px 0px 3px 1px #dfdfdf !important;
-    box-shadow: 0px 0px 3px 1px #dfdfdf !important; }
+    border: 1px solid #dfdfdf;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25) !important;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25) !important; }
 .consultar #modalRecompensas .modal-content, .Listadoreferidos #modalRecompensas .modal-content, .capturar #modalRecompensas .modal-content {
   padding-top: 0; }
   .consultar #modalRecompensas .modal-content .modal-header, .Listadoreferidos #modalRecompensas .modal-content .modal-header, .capturar #modalRecompensas .modal-content .modal-header {
@@ -2231,6 +2242,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     border: none;
     padding: 0;
     margin: 0; }
+    .consultar .modal.fade .modal-content .modal-header button.close, .Listadoreferidos .modal.fade .modal-content .modal-header button.close, .capturar .modal.fade .modal-content .modal-header button.close {
+      opacity: 0.5; }
     .consultar .modal.fade .modal-content .modal-header button.close span, .Listadoreferidos .modal.fade .modal-content .modal-header button.close span, .capturar .modal.fade .modal-content .modal-header button.close span {
       font-size: 40px;
       font-weight: lighter;
@@ -2291,8 +2304,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   #modalRecompensas .modal-content .modal-header {
     background: url(../img/img-modal-recompensa-smart.jpg) no-repeat !important;
     background-size: cover !important;
-    margin: 5px -10px 0 -10px !important; }
+    margin: 5px -10px 0 -10px !important;
+    min-height: 100px !important; }
     #modalRecompensas .modal-content .modal-header h3 {
+      margin-top: 64px;
       margin-left: 10px !important; }
 
   .consultar tbody span.dtr-title, .Listadoreferidos tbody span.dtr-title, .capturar tbody span.dtr-title {
@@ -2637,6 +2652,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       padding-top: 70px; }
   .login .form-group a {
     padding-left: 9px !important; } }
+.informacion .item img.img-responsive {
+  max-width: inherit !important;
+  width: initial; }
 .informacion .information-img .img-content {
   text-align: center; }
 .informacion .main-section section.main-content {
@@ -2657,9 +2675,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       top: 1px;
       display: inline-block;
       margin-bottom: 30px; }
-      .informacion .main-section section.main-content .beneficios-block .icon i:hover {
-        color: #eba102;
-        text-decoration: none; }
     .informacion .main-section section.main-content .beneficios-block .text p {
       font-size: 14px;
       color: #8d7f75; }
@@ -2716,13 +2731,26 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .home-content.container .form-feedback form.form-inline .form-group {
     padding-right: 0; }
 
+@media (min-width: 992px) {
+  .informacion .lead {
+    margin: 0 auto;
+    width: 80% !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  .informacion item img.img-responsive {
+    max-width: inherit !important;
+    width: initial; }
+
   .home-content.container .content {
     min-height: auto !important;
     background: url("../img/img-sonrisas-tablet.jpg") no-repeat 0 0/cover; }
     .home-content.container .content p {
       font-size: 18px; } }
 @media (max-width: 767px) {
+  .informacion .item img.img-responsive {
+    min-height: 170px;
+    height: inherit;
+    width: 100% !important;
+    max-width: inherit !important; }
   .informacion .information-img .img-content {
     text-align: left; }
   .informacion .main-section section.main-content {
