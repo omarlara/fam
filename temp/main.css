@@ -299,27 +299,37 @@ button.home-input {
       font-family: "Roboto", Sans-serif;
       display: block;
       margin-top: 5px; }
-  .navbar-default ul.nav li.active > a {
-    background-color: #FDB823;
-    color: #ffffff !important; }
-    .navbar-default ul.nav li.active > a:hover {
-      color: #ffffff !important;
-      background-color: #FDB823 !important; }
-  .navbar-default ul.nav li:hover > a {
-    background-color: transparent !important;
-    color: #666 !important; }
-  .navbar-default ul.nav li a {
-    font-family: "Roboto", Sans-serif;
-    text-align: center;
-    color: #323232 !important;
-    font-size: 18px;
-    font-weight: 500; }
+  .navbar-default ul.nav li {
+    /*&:hover {
+        > a {
+            background-color: transparent!important;
+            color: #666!important; 
+        }                    
+    }*/ }
+    .navbar-default ul.nav li:hover > a, .navbar-default ul.nav li:focus > a, .navbar-default ul.nav li:active > a, .navbar-default ul.nav li.active > a {
+      background-color: #FDB823;
+      color: #ffffff !important; }
+      .navbar-default ul.nav li:hover > a:hover, .navbar-default ul.nav li:focus > a:hover, .navbar-default ul.nav li:active > a:hover, .navbar-default ul.nav li.active > a:hover {
+        color: #ffffff !important;
+        background-color: #FDB823 !important; }
+    .navbar-default ul.nav li a {
+      font-family: "Roboto", Sans-serif;
+      text-align: center;
+      color: #323232 !important;
+      font-size: 18px;
+      font-weight: 500; }
 
+@media (min-width: 767px) and (max-width: 991px) {
+  .fiesta.container {
+    padding: 0; }
+
+  .navbar-collapse.collapsing {
+    padding: 0;
+    margin: 0; } }
 @media (max-width: 991px) {
   .fiesta.container {
     width: 100%;
-    margin: 0;
-    padding: 0; }
+    margin: 0; }
 
   .navbar-header {
     float: none;
@@ -344,10 +354,6 @@ button.home-input {
   .navbar-collapse.collapse {
     display: none !important;
     padding: 0; }
-
-  .navbar-collapse.collapsing {
-    padding: 0;
-    margin: 0; }
 
   .navbar-nav {
     float: none !important;
@@ -392,11 +398,7 @@ button.home-input {
   .navbar-toggle {
     float: right;
     display: block;
-    margin: 8px 0 0 0; }
-
-  .navbar-collapse.collapsing {
-    padding: 0 !important;
-    margin: 0 !important; } }
+    margin: 8px 0 0 0; } }
 @media (max-width: 320px) {
   div.fiesta a.navbar-brand {
     max-width: 210px;
@@ -544,7 +546,7 @@ button.home-input {
   top: 20%;
   right: 10%;
   text-align: right;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0 15px;
   max-width: 480px; }
   .hero #hero-carousel .item .carousel-content h1, .hero #hero-carousel .item .detalle-promocion h1 {
@@ -583,7 +585,10 @@ button.home-input {
   top: 15%;
   left: 0;
   bottom: 15%;
-  right: 0; }
+  right: 0;
+  min-width: 912px; }
+  .hero #hero-carousel.inicio .ref-video .carousel-content h1 {
+    font-size: 60px; }
   .hero #hero-carousel.inicio .ref-video .carousel-content a.boton-play {
     background-color: #fdb924;
     color: #FFF;
@@ -731,7 +736,10 @@ button.home-input {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hero #hero-carousel.inicio .ref-video .carousel-content {
-    text-align: center; } }
+    text-align: center;
+    min-width: 558px; }
+    .hero #hero-carousel.inicio .ref-video .carousel-content h1 {
+      font-size: 44px; } }
 @media (max-width: 991px) {
   .hero #hero-carousel .item img.img-responsive {
     max-width: inherit !important;
@@ -756,7 +764,10 @@ button.home-input {
     font-size: 14px; } }
 @media (max-width: 767px) {
   .hero #hero-carousel.inicio .ref-video .carousel-content {
-    text-align: center; }
+    text-align: center;
+    min-width: auto !important; }
+    .hero #hero-carousel.inicio .ref-video .carousel-content h1 {
+      font-size: 28px; }
     .hero #hero-carousel.inicio .ref-video .carousel-content a.btn.boton-play {
       margin-top: -210px; }
   .hero #hero-carousel .item img.img-responsive {
@@ -808,6 +819,8 @@ button.home-input {
   border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
+  .form-feedback form.form-inline.form-capturar .row.minivacs {
+    display: none; }
   .form-feedback form.form-inline.form-capturar h1, .form-feedback form.form-inline.form-capturar p {
     text-align: left; }
   .form-feedback form.form-inline.form-capturar .row {
@@ -904,6 +917,12 @@ button.home-input {
   font-family: "Roboto", Sans-serif; }
 .form-feedback form.form-inline .form-group {
   margin: 10px 0; }
+  .form-feedback form.form-inline .form-group :focus::-webkit-input-placeholder {
+    color: #323232; }
+  .form-feedback form.form-inline .form-group :-moz-placeholder:focus {
+    color: #323232; }
+  .form-feedback form.form-inline .form-group :-ms-input-placeholder:focus {
+    color: #323232; }
   .form-feedback form.form-inline .form-group label.control-label {
     font-size: 14px;
     color: #8D7F75;
@@ -911,7 +930,8 @@ button.home-input {
     font-family: "Roboto", Sans-serif;
     padding-top: 0;
     padding-right: 0;
-    font-weight: 700; }
+    font-weight: normal;
+    padding-bottom: 8px; }
   .form-feedback form.form-inline .form-group label.control-label.pull-left {
     text-align: left; }
   .form-feedback form.form-inline .form-group input {
@@ -1039,7 +1059,7 @@ footer {
       display: inline !important;
       color: #8D7F75 !important; }
     .footer-banner .footer-phone span, .footer-banner .footer-mail span {
-      font-size: 24px;
+      font-size: 18px;
       color: #8D7F75;
       font-weight: 500; }
   .footer-banner i {
@@ -1115,7 +1135,7 @@ section.promociones .tile-container .tile {
     font-family: "Roboto", Sans-serif; }
   section.promociones .tile-container .tile .place h2 {
     font-weight: lighter;
-    margin-bottom: 15px; }
+    margin-bottom: 0; }
   section.promociones .tile-container .tile .place p {
     font-weight: 500;
     line-height: 120%; }
@@ -1228,6 +1248,11 @@ section.promociones .tile-container .tile {
 .toggle-control {
   border: 1px solid #ccc;
   overflow: hidden; }
+  .toggle-control span[disabled] {
+    cursor: not-allowed; }
+    .toggle-control span[disabled].active {
+      background-color: #F4F1ED;
+      color: #8D7F75; }
   .toggle-control > span {
     cursor: pointer;
     display: block;
@@ -1473,12 +1498,12 @@ table.dataTable td {
     float: right;
     text-align: right;
     margin-bottom: 30px;
-    margin-top: -31px; }
+    margin-top: -35px; }
     .dataTables_wrapper .dataTables_filter input {
       margin-left: 0.5em; }
     .dataTables_wrapper .dataTables_filter input[type='search'] {
       border: 1px solid #ddd;
-      padding: 5px 20px 5px 10px;
+      padding: 6px 20px 7px 10px;
       font-family: "Roboto";
       font-size: 14px;
       font-weight: 500;
@@ -1895,7 +1920,7 @@ table.dataTable td {
       margin-left: 0.5em; }
     .dataTables_wrapper .dataTables_filter input[type='search'] {
       border: 1px solid #ddd;
-      padding: 5px 20px 5px 10px;
+      padding: 6px 20px 7px 10px;
       font-family: "Roboto";
       font-size: 14px;
       font-weight: 500;
@@ -2029,12 +2054,14 @@ div#tablaListado_wrapper {
       width: 100%;
       border: 1px solid #6E5F53;
       background-color: #8D7F75;
-      padding: 2px 3px;
-      font-size: 11px; }
+      padding: 6px;
+      font-size: 14px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+      margin: 15px 0; }
   div#tablaListado_wrapper thead tr > th.sorting,
   div#tablaListado_wrapper thead tr > th.sorting_asc,
   div#tablaListado_wrapper thead tr > th.sorting_desc {
-    background-position-y: 35%; }
+    background-position-y: 20%; }
   div#tablaListado_wrapper tbody td {
     padding: 10px; }
 
@@ -2190,6 +2217,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
         box-shadow: 0px 0 2px #dfdfdf;
         background-color: #f4f1ed;
         display: block;
+        border: 1px solid #dfdfdf;
         margin: 0 auto .5em; }
       .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .consultar tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .Listadoreferidos tbody tr td ul.progress-indicator.custom-complex li .bubble:before, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:after, .capturar tbody tr td ul.progress-indicator.custom-complex li .bubble:before {
         display: block;
@@ -2243,13 +2271,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     padding: 0;
     margin: 0; }
     .consultar .modal.fade .modal-content .modal-header button.close, .Listadoreferidos .modal.fade .modal-content .modal-header button.close, .capturar .modal.fade .modal-content .modal-header button.close {
-      opacity: 0.5; }
-    .consultar .modal.fade .modal-content .modal-header button.close span, .Listadoreferidos .modal.fade .modal-content .modal-header button.close span, .capturar .modal.fade .modal-content .modal-header button.close span {
-      font-size: 40px;
-      font-weight: lighter;
+      opacity: 0.5;
       position: absolute;
       top: 20px;
       right: 20px; }
+    .consultar .modal.fade .modal-content .modal-header button.close span, .Listadoreferidos .modal.fade .modal-content .modal-header button.close span, .capturar .modal.fade .modal-content .modal-header button.close span {
+      font-size: 40px;
+      font-weight: lighter; }
     .consultar .modal.fade .modal-content .modal-header h4, .Listadoreferidos .modal.fade .modal-content .modal-header h4, .capturar .modal.fade .modal-content .modal-header h4 {
       font-family: "Roboto", Sans-serif;
       font-weight: normal;
@@ -2346,12 +2374,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .tablero h1, .tablero h2, .tablero h3, .tablero a, .tablero p, .tablero h4, .tablero label {
     font-family: "Roboto", Sans-serif; }
   .tablero .inner-content {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     overflow: hidden;
     background: #FBF9F7;
     box-shadow: 0px 0px 3px #ccc; }
   .tablero i {
-    color: #FDB823; }
+    color: #FDB823;
+    font-size: 28px; }
   .tablero .rate {
     float: left;
     width: 30%;
@@ -2362,7 +2391,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       font-weight: 300;
       color: #C5BFB9;
       line-height: 1;
-      text-align: center; }
+      text-align: center;
+      text-shadow: 0 1px 0 white, 0 -1px 0 #938e8a; }
       .tablero .rate .number span.text {
         display: block;
         font-size: 14px;
@@ -2377,9 +2407,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     .tablero .description h3 {
       margin: 0px 0 0;
       padding: 0;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
-      color: #323232; }
+      color: #323232;
+      text-transform: uppercase; }
     .tablero .description label {
       display: block;
       font-size: 12px;
@@ -2394,7 +2425,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
 @media (max-width: 767px) {
   .tablero {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+    .tablero i {
+      font-size: 24px; }
+    .tablero .rate .number {
+      font-size: 46px; }
+      .tablero .rate .number span.text {
+        font-size: 13px; }
+    .tablero .description h3 {
+      font-size: 18px; } }
 .promocionDetalle .tile {
   position: relative;
   height: auto;
@@ -2403,13 +2442,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     text-align: center;
     position: relative;
     padding: 20px 10px;
-    border: 1px solid #ddd;
     font-family: "Roboto", Sans-serif;
     background-color: #FFF;
     margin-top: -40px;
     margin-left: 30px;
     margin-right: 30px;
-    z-index: 1; }
+    z-index: 1;
+    min-height: 130px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc; }
     .promocionDetalle .tile .share-control i.fa {
       width: 100%;
       font-size: 30px;
@@ -2437,7 +2478,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     letter-spacing: 0.05em;
     font-size: 18px; }
   .promocionDetalle .tile .tile-content {
-    height: 208px;
+    height: 180px;
     position: relative;
     background-size: cover;
     background-color: #ddd;
@@ -2462,16 +2503,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     font-family: "Roboto", Sans-serif; }
     .promocionDetalle .tile .share-control > span.text {
       display: inline-block;
-      margin-right: 10px; }
+      line-height: 14px; }
     .promocionDetalle .tile .share-control i {
       color: #FDB823;
       font-size: 18px;
       position: relative;
       top: 1px;
       display: inline-block; }
-      .promocionDetalle .tile .share-control i:hover {
-        color: #eba102;
-        text-decoration: none; }
     .promocionDetalle .tile .share-control span.drop-down a {
       text-decoration: none; }
     .promocionDetalle .tile .share-control span.drop-down.email {
@@ -2528,6 +2566,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
   .promocionDetalle #detalle-block .tile-block-xs h2 {
     font-size: 24px; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  .promocionDetalle .detalle-promociones .tile-content {
+    height: 220px; }
   .promocionDetalle #detalle-block .tile-block-xs .info h1 {
     font-size: 22px; }
   .promocionDetalle #detalle-block .tile-block-xs .info p {
@@ -2681,22 +2721,30 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     .informacion .main-section section.main-content .beneficios-block .text mark {
       background: none;
       color: #FDB823;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 18px; }
 
 .acercaDe h1, .acercaDe li {
   font-family: "Roboto", Sans-serif; }
 .acercaDe .information-img .img-content h1 {
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 50px; }
-.acercaDe section.acercaDe h1 {
-  margin-top: 30px;
-  font-size: 18px; }
-.acercaDe section.acercaDe ol {
-  padding-left: 15px; }
-  .acercaDe section.acercaDe ol li {
-    padding-left: 5px;
-    font-size: 14px;
-    color: #8d7f75;
-    margin: 10px 0; }
+.acercaDe section.acercaDe {
+  width: 80%;
+  margin: 0 auto !important;
+  float: none; }
+  .acercaDe section.acercaDe h1 {
+    margin-top: 30px;
+    font-size: 18px; }
+  .acercaDe section.acercaDe ol {
+    padding-left: 15px; }
+    .acercaDe section.acercaDe ol li {
+      padding-left: 5px;
+      font-size: 14px;
+      color: #8d7f75;
+      margin: 10px 0; }
 
 .home-content.container {
   margin-top: 30px; }
@@ -2725,7 +2773,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     text-align: left;
     font-size: 18px;
     margin-top: 0 !important;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-weight: normal; }
   .home-content.container .form-feedback form.form-inline p {
     text-align: left; }
   .home-content.container .form-feedback form.form-inline .form-group {
@@ -2736,6 +2785,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     margin: 0 auto;
     width: 80% !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  .acercaDe section.acercaDe {
+    width: 100%; }
+  .acercaDe .information-img .img-content h1 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px; }
+
   .informacion item img.img-responsive {
     max-width: inherit !important;
     width: initial; }
@@ -2776,18 +2832,21 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
     padding: 1px 20px; }
     .acercaDe .information-img .img-content h1 {
       font-size: 24px;
-      margin: 20px 0; }
-  .acercaDe section.acercaDe h1 {
-    font-weight: 400;
-    margin-top: 0;
-    font-size: 14px !important; }
-  .acercaDe section.acercaDe ol {
-    padding-left: 15px; }
-    .acercaDe section.acercaDe ol li {
-      padding-left: 5px;
-      font-size: 14px;
-      color: #8d7f75;
-      margin: 10px 0; }
+      margin: 20px 0;
+      width: 100%; }
+  .acercaDe section.acercaDe {
+    width: 100%; }
+    .acercaDe section.acercaDe h1 {
+      font-weight: 400;
+      margin-top: 0;
+      font-size: 14px !important; }
+    .acercaDe section.acercaDe ol {
+      padding-left: 15px; }
+      .acercaDe section.acercaDe ol li {
+        padding-left: 5px;
+        font-size: 14px;
+        color: #8d7f75;
+        margin: 10px 0; }
 
   .home-content.container .content {
     background: url("../img/img-sonrisas-smart.jpg") no-repeat 0 0/cover; }

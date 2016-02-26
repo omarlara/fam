@@ -73,7 +73,7 @@ $(function () {
 
     $("#hero-carousel").owlCarousel({
 
-        autoPlay : 3000,
+        autoPlay : 5000,
         navigation: false,
         slideSpeed: 300,
         paginationSpeed: 400,
@@ -87,6 +87,22 @@ $(function () {
         slideSpeed: 0,
         paginationSpeed: 0,
         singleItem: true
+    });
+    
+    $("#inputReferidor, #inputPhone").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A, Command+A
+            (e.keyCode == 65 && ( e.ctrlKey === true || e.metaKey === true ) ) || 
+             // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
     });
 
     $(".form-capturar").validate({
@@ -116,8 +132,8 @@ $(function () {
                 required: true
             },
             phone: {
-                required: true,                
-                regex: /\D*([2-9]\d{2})(\D*)([2-9]\d{2})(\D*)(\d{4})\D*/
+                required: true,
+                regex: /\b\d{3}[- .]?\d{3}[- .]?\d{4}\b/
             },
             pais: {
                 required: true
@@ -134,7 +150,7 @@ $(function () {
             },
             NumeroReferidor: {
                 required: true,
-                regex: /\d+/
+                //regex: /\d+/
             },
             TipoReferidor: {
                 required: true
@@ -158,15 +174,15 @@ $(function () {
         messages: {
             name: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de nombre incorrecto."
             },
             aPaterno: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de apellido incorrecto."
             },
             aMaterno: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de apellido incorrecto."
             },
             email: {
                 required: "Campo requerido.",
@@ -174,7 +190,7 @@ $(function () {
             },
             phone: {
                 required: "Campo requerido.",
-                regex: "Telefono invalido"
+                regex: "Formato de telefono invalido."
             },
             pais: {
                 required: "Favor de elegir una opci&oacute;n."
@@ -184,20 +200,19 @@ $(function () {
             },
             Ciudad: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de ciudad incorrecto."
             },
             PromoCode: {
                 required: "Favor de elegir una opci&oacute;n."
             },
             NumeroReferidor: {
-                required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                required: "Campo requerido."
             },
             TipoReferidor: {
                 required: "Favor de elegir una opci&oacute;n."
             },
             Privacy: {
-                required: "Campo requerido"
+                required: "Campo requerido."
             }
         }
     });
@@ -253,11 +268,11 @@ $(function () {
         messages: {
             name: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de nombre incorrecto."
             },
             lastName: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de apellido incorrecto"
             },
             email: {
                 required: "Campo requerido.",
@@ -265,20 +280,21 @@ $(function () {
             },
             phone: {
                 required: "Campo requerido.",
-                regex: "Telefono invalido"
+                regex: "Formato de telefono incorrecto."
             },
             state: {
                 required: "Favor de elegir una opci&oacute;n."
             },
             city: {
                 required: "Campo requerido.",
-                regex: "Formato incorrecto"
+                regex: "Formato de ciudad incorrecto."
             },
             numSocio: {
                 required: "Campo requerido."
             }
         }
     });
+    
 
     $(".toggle-control > span").on("click", function () {
         $(this).parent().find('span').removeClass('active');
@@ -286,6 +302,11 @@ $(function () {
         $(this).addClass('active');
 
     });
+    
+    $(".toggle-control > span[disabled]").off();
+    
+    
+    $(".toggle-control > span[disabled]").click(false);
 
     $('.submit-minivacs').on("click", function () {});
 

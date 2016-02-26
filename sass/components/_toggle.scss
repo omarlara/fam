@@ -1,4 +1,11 @@
 .toggle-control {
+    span[disabled] {
+        cursor: not-allowed;
+        &.active {
+            background-color: #F4F1ED;
+            color: #8D7F75;
+        }
+    }
     border: 1px solid #ccc;
     overflow: hidden;
     > span {

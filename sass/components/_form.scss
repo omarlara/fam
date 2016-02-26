@@ -9,6 +9,9 @@
         }        
     }
     form.form-inline.form-capturar {
+        .row.minivacs {
+            display: none;
+        }
         margin-bottom: 30px;
         h1, p {
            text-align: left; 
@@ -144,6 +147,15 @@
             font-family: $font-primary;
         }
       .form-group {
+        :focus::-webkit-input-placeholder {
+           color: #323232;
+        }
+        :-moz-placeholder:focus {
+           color: #323232;
+        }
+        :-ms-input-placeholder:focus {
+           color: #323232;
+        }
         margin: 10px 0;
         label.control-label {
             font-size: 14px;
@@ -152,7 +164,8 @@
             font-family: $font-primary;
             padding-top: 0;
             padding-right: 0;
-            font-weight: 700;
+            font-weight: normal;
+            padding-bottom: 8px;
         }
         label.control-label.pull-left {
             text-align: left;
@@ -163,6 +176,7 @@
           width: 100%;
           font-size: 14px;
           font-family: $font-primary;
+            
         }
         select {
           border-radius: 0;

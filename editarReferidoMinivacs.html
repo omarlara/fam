@@ -122,23 +122,23 @@
 </div>
 
         <!-- here you need to add your html-->
-         <div class="form-feedback container capturar-referido">
+         <div class="form-feedback container capturar-referido editar-minivacs">
             <form class="form-inline form-capturar">
-                <h1>CAPTURAR REFERIDO</h1>
+                <h1>EDITAR REFERIDO</h1>
                 <p>Los campos marcados con asterisco (<span class="red">*</span>) son obligatorios</p>
                 <h2 class="success">Los datos se han enviado correctamente. </h2>
                 <div class="row">
                     <p class="capturar-titulo">REFERIDOR</p>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label required">Numero de Referidor <span class="required">*</span></label>
+                        <label for="inputReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label required">Numero de Referidor</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputReferidor" name="NumeroReferidor" placeholder=" " class="form-control" required>
+                            <input id="inputReferidor" name="NumeroReferidor" placeholder=" " class="form-control" disabled>
                         </div>
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputPromoCode" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Campaña Promo / Code <span class="required">*</span></label>
+                        <label for="inputPromoCode" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Campaña Promo / Code</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <select id="inputPromoCode" name="PromoCode" class="form-control" required>
+                            <select id="inputPromoCode" name="PromoCode" class="form-control" disabled>
                                 <option selected value=""> </option>
                                 <option value="X">X</option>
                                 <option value="X">X</option>
@@ -148,37 +148,61 @@
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <label for="inputTipoReferidor" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">
-                            Elige un tipo de referidor <span class="required">*</span>
+                            Elige un tipo de referidor
                         </label>
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                            <div class="toggle-control">
-                                <span class="active">Socio</span>
-                                <span>No Socio</span>
+                            <div class="toggle-control" disabled>
+                                <span disabled>Socio</span>
+                                <span disabled>No Socio</span>
                                 <div class="hidden">
-                                    <input type="text" required value="socio" id="inputTipoReferidor" name="TipoReferidor" placeholder=" " class="form-control">
+                                    <input type="text" value="socio" id="inputTipoReferidor" name="TipoReferidor" placeholder=" " class="form-control">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <label for="inputStatusRef" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Estatus</label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <select id="inputStatusRef" name="statusRef" placeholder="" class="form-control">
+                                <option value="NOC">No contesta</option>
+                                <option value="NOI">No interesa</option>
+                                <option value="TE">Teléfono Erroneo</option>
+                                <option value="NC">No califica</option>
+                                <option value="NOM">No molestar</option>
+                                <option value="SV">Seguimiento Venta</option>
+                                <option value="SC">Seguimiento Contacto</option>
+                                <option value="CI">Cita</option>
+                                <option value="VEP">Venta de paquete</option>
+                                <option value="YS">Ya es socio</option>
+                                <option value="YR">Ya tiene reserva a playa</option>
+                                <option value="PQ">Problema/queja</option>
+                                <option value="EA">Error en asignación</option>
+                                <option value="VP">Viajo pero no tomo presentación</option>
+                                <option value="ANC">Asistió a la presentación pero no compró</option>
+                                <option value="ANC">Asistió a la presentación y Compro</option>
+                                <option value="PA">Proceso de acreditación de beneficio</option>
+                            </select>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <p class="capturar-titulo">NOMBRE</p>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputName" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombre (s) <span class="required">*</span></label>
+                        <label for="inputName" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombre (s)</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputName" name="name" placeholder="Juan Alberto" class="form-control" required>
+                            <input id="inputName" name="name" placeholder="Juan Alberto" class="form-control" disabled>
                         </div>
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputApellidoPaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Paterno <span class="required">*</span></label>
+                        <label for="inputApellidoPaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Paterno</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputApellidoPaterno" name="aPaterno" placeholder="Perez" class="form-control" required>
+                            <input id="inputApellidoPaterno" name="aPaterno" placeholder="Perez" class="form-control" disabled>
                         </div>
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputApellidoMaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Materno <span class="required">*</span></label>
+                        <label for="inputApellidoMaterno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Apellido Materno</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputApellidoMaterno" name="aMaterno" placeholder="Gonzalez" class="form-control" required>
+                            <input id="inputApellidoMaterno" name="aMaterno" placeholder="Gonzalez" class="form-control" disabled>
                         </div>
                     </div>
                 </div>
@@ -212,9 +236,9 @@
                 <div class="row">
                     <p class="capturar-titulo">UBICACIÓN</p>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputPais" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Pais <span class="required">*</span></label>
+                        <label for="inputPais" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Pais</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <select id="inputPais" name="pais" placeholder="México" class="form-control" required>
+                            <select id="inputPais" name="pais" placeholder="México" class="form-control" disabled>
                                 <option selected value="">Seleccione pais</option>
                                 <option value="AR">Argentina</option>
                                 <option value="MX">México</option>
@@ -225,9 +249,9 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputEstado" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Estado <span class="required">*</span></label>
+                        <label for="inputEstado" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Estado</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <select id="inputEstado" name="Estado" class="form-control" required>
+                            <select id="inputEstado" name="Estado" class="form-control" disabled>
                                 <option selected value="">Seleccione estado</option>
                                 <option value="AA">Estado 1</option>
                                 <option value="AB">Estado 2</option>
@@ -238,9 +262,9 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="inputCiudad" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Ciudad <span class="required">*</span></label>
+                        <label for="inputCiudad" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Ciudad</label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <input id="inputCiudad" name="Ciudad" class="form-control" required>
+                            <input id="inputCiudad" name="Ciudad" class="form-control" disabled>
                         </div>
                     </div>
                 </div>
@@ -262,15 +286,9 @@
                         </div>
                         
                     </div>
-                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="checkbox">
-                            <input type="checkbox" id="inputPrivacy" name="Privacy" />
-                            <label for="inputPrivacy" class="control-label">He leido los terminos de privacidad </label>
-                        </div>
-                    </div>
                     <div class="form-buttons">
-                        <button class="capturar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="submit" value="Submit">CAPTURAR</button>
-                        <button class="borrar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="reset" value="reset">BORRAR</button>
+                        <button class="capturar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="submit" value="Submit">GUARDAR</button>
+                        <button class="borrar-referido col-lg-2 col-md-2 col-sm-2 col-xs-12" type="reset" value="reset">CANCELAR</button>
                         
                     </div>                    
                 </div>
@@ -332,15 +350,6 @@
 <script src="bower_components/matchHeight/dist/jquery.matchHeight-min.js" type="text/javascript"></script>
 <script src="scripts/main.js"></script>
 
-    <!--<script>
-        $(function () {
-            var from = document.referrer,
-                miniv = 'minivacs';
-            if(from.indexOf(miniv) != -1){
-                $('.row.minivacs').show();
-            }
-        });
-    </script>-->
 
 </body>
 

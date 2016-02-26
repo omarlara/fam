@@ -46,7 +46,7 @@
                 top: 20%;
                 right: 10%;
                 text-align: right;
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.3);
                 padding: 0 15px;
                 max-width: 480px
             }
@@ -63,6 +63,10 @@
                 left: 0;
                 bottom: 15%;
                 right: 0;
+                min-width: 912px;
+                h1 {
+                    font-size: 60px;
+                }
                 a.boton-play {
                     background-color: #fdb924;
                     color: #FFF;
@@ -263,6 +267,10 @@
             .ref-video {
                 .carousel-content {
                     text-align: center;
+                    min-width: 558px;
+                    h1 {
+                        font-size: 44px;
+                    }
                 }
             }
         }
@@ -325,6 +333,10 @@
         .ref-video {
             .carousel-content {
                 text-align: center;
+                min-width: auto !important;
+                h1 {
+                    font-size: 28px;
+                }
                 a.btn.boton-play {
                     margin-top: -210px;
                 }

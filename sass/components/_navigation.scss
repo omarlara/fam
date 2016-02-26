@@ -40,6 +40,9 @@
     }
     ul.nav {
         li {
+            &:hover,
+            &:focus,
+            &:active,
             &.active {
                 > a {
                     background-color: #FDB823;
@@ -50,12 +53,12 @@
                     }
                 }
             }
-            &:hover {
+            /*&:hover {
                 > a {
                     background-color: transparent!important;
                     color: #666!important; 
                 }                    
-            }
+            }*/
             a {
                 font-family: $font-primary;
                 text-align: center;
@@ -75,11 +78,20 @@
     }
 }
 
+@media (min-width: 767px) and (max-width: 991px) {
+    .fiesta.container {
+        padding: 0;
+    }    
+    .navbar-collapse.collapsing {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media (max-width: 991px) {
     .fiesta.container {
         width: 100%;
         margin: 0;
-        padding: 0;
     }
     .navbar-header {
         float: none;
@@ -105,10 +117,6 @@
     .navbar-collapse.collapse {
         display: none!important;
         padding: 0;
-    }
-    .navbar-collapse.collapsing {
-        padding: 0;
-        margin: 0;
     }
     .navbar-nav {
         float: none!important;
@@ -168,10 +176,6 @@
         float: right;
         display: block;
         margin: 8px 0 0 0;
-    }
-    .navbar-collapse.collapsing {
-        padding: 0 !important;
-        margin: 0 !important;
     }
 }
 

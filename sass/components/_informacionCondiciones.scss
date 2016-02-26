@@ -42,6 +42,7 @@
                         background: none;
                         color: $color-yellow;
                         font-weight: bold;
+                        font-size: 18px;
                     }
                 }
             }
@@ -57,10 +58,16 @@
         .img-content {
             h1 {
                 margin-bottom: 50px;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 50px;
             } 
         }        
     }
     section.acercaDe {
+        width: 80%;
+        margin: 0 auto !important;
+        float: none;
         h1 {
             margin-top: 30px;
             font-size: 18px;
@@ -112,6 +119,7 @@
                 font-size: 18px;
                 margin-top: 0 !important;
                 margin-bottom: 20px;
+                font-weight: normal;
             }
             p {
                 text-align: left;
@@ -133,6 +141,20 @@
 }
 
 @media (min-width:768px) and (max-width:991px) {
+    .acercaDe {
+        section.acercaDe {
+            width: 100%;
+        }
+        .information-img {
+            .img-content {
+                h1 {
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 50px;
+                } 
+            }        
+        }
+    }
     .informacion {
         item img.img-responsive {
             max-width: inherit!important;
@@ -202,11 +224,13 @@
                 padding: 1px 20px;
                 h1 {
                     font-size: 24px;
-                    margin: 20px 0;
+                    margin: 20px 0;                    
+                    width: 100%;
                 } 
             }
         }
-        section.acercaDe {
+        section.acercaDe {            
+            width: 100%;
             h1 {
                 font-weight: 400;
                 margin-top: 0;

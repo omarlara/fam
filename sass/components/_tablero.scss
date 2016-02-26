@@ -4,13 +4,14 @@
         font-family: $font-primary;
     }
     .inner-content {
-        border: 1px solid #ddd;
+        border: 1px solid #ccc;
         overflow: hidden;
         background: #FBF9F7;
         box-shadow: 0px 0px 3px #ccc;
     }
     i {
         color: $color-yellow;
+        font-size: 28px;
     }
     .rate {
         float: left;
@@ -23,6 +24,7 @@
             color: #C5BFB9;
             line-height: 1;
             text-align: center;
+            text-shadow: 0 1px 0 white, 0 -1px 0 #938e8a;
             span.text {
                 display: block;
                 font-size: 14px;
@@ -40,9 +42,10 @@
         h3 {
             margin: 0px 0 0;
             padding: 0;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 400;
             color: #323232;
+            text-transform: uppercase;
         }
         label {
             display: block;
@@ -64,5 +67,21 @@
 @media (max-width: 767px) {
     .tablero {
         margin-bottom: 15px;
+        i {
+            font-size: 24px;
+        }
+        .rate {
+            .number {
+                font-size: 46px;
+                span.text {
+                    font-size: 13px;
+                }
+            }
+        }
+        .description {
+            h3 {
+                font-size: 18px;
+            }
+        }
     }
 }

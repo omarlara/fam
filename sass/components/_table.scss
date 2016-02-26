@@ -181,6 +181,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                             box-shadow: 0px 0 2px #dfdfdf;
                             background-color: #f4f1ed;
                             display: block;
+                            border: 1px solid #dfdfdf;
                             margin: 0 auto .5em;
                         }
                         .bubble:after, .bubble:before {
@@ -253,13 +254,13 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
                 margin: 0;
                 button.close {
                     opacity: 0.5;
-                }
-                button.close span{
-                    font-size: 40px;
-                    font-weight: lighter;
                     position: absolute;
                     top: 20px;
                     right: 20px;
+                }
+                button.close span{
+                    font-size: 40px;
+                    font-weight: lighter;                    
                 }
                 h4 {
                     font-family: $font-primary;
