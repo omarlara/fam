@@ -817,6 +817,8 @@ button.home-input {
     background: transparent !important; } }
 .form-feedback form.form-inline.form-capturar:first-child .row:first-of-type p.capturar-titulo {
   border-top: none !important; }
+.form-feedback form.form-inline.form-capturar:first-child .row:nth-of-type(2) p.capturar-titulo {
+  border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
   .form-feedback form.form-inline.form-capturar .row.minivacs {
@@ -835,7 +837,7 @@ button.home-input {
       border-top: 1px solid #edebeb;
       margin-top: 10px; }
     .form-feedback form.form-inline.form-capturar .row .form-group {
-      min-height: 75px; }
+      min-height: 85px; }
       .form-feedback form.form-inline.form-capturar .row .form-group .control-label {
         text-align: left;
         font-weight: normal; }

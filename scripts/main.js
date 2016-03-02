@@ -70,6 +70,22 @@ $(function () {
         $form.find('input:text, input:password, select, textarea').val('');
         $form.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
     });
+    
+    $('a[data-target="#modalRecompensas"]').on('click', function () {
+        $('.btn-guardar-recompensas').attr('disabled', 'disabled');
+        
+        $('#modalRecompensas').find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected').removeAttr('disabled');
+    });
+ 
+    $('.formReferidos').on('click', function () {
+        if ($('input[name="recompensaAsistido"]').is(':checked')) {
+            $('input[name="recompensaComprado"]').attr('disabled', 'disabled');
+            $('.btn-guardar-recompensas').removeAttr('disabled');
+        } else if ($('input[name="recompensaComprado"]').is(':checked')) {
+            $('input[name="recompensaAsistido"]').attr('disabled', 'disabled');
+            $('.btn-guardar-recompensas').removeAttr('disabled');
+        }
+    });
 
     $("#hero-carousel").owlCarousel({
 
@@ -89,7 +105,7 @@ $(function () {
         singleItem: true
     });
     
-    $("#inputReferidor, #inputPhone").keydown(function (e) {
+    $("#inputReferidor, #inputPhone, #inputTelefonoOficina, #inputTelefonoCasa").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
              // Allow: Ctrl+A, Command+A
@@ -225,6 +241,15 @@ $(function () {
         },
         "Verifice sus datos."
     );
+    
+    $('.formReferidos').validate({
+        errorPlacement: function(error,element) {
+            return true;
+          },
+        submitHandler: function (form) {
+            form.submit();
+        }        
+    });
     
     $(".form-inline").validate({
         rules: {

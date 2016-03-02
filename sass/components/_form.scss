@@ -6,7 +6,13 @@
             p.capturar-titulo {
                 border-top: none !important;
             }
-        }        
+        }
+        .row:nth-of-type(2) {
+            p.capturar-titulo {
+                border-top: none !important;
+            }
+        }
+        
     }
     form.form-inline.form-capturar {
         .row.minivacs {
@@ -31,7 +37,7 @@
             }
             
             .form-group {
-                min-height: 75px;
+                min-height: 85px;
                 .control-label {
                     text-align: left;                   
                     font-weight: normal;
