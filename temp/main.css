@@ -817,8 +817,6 @@ button.home-input {
     background: transparent !important; } }
 .form-feedback form.form-inline.form-capturar:first-child .row:first-of-type p.capturar-titulo {
   border-top: none !important; }
-.form-feedback form.form-inline.form-capturar:first-child .row:nth-of-type(2) p.capturar-titulo {
-  border-top: none !important; }
 .form-feedback form.form-inline.form-capturar {
   margin-bottom: 30px; }
   .form-feedback form.form-inline.form-capturar .row.minivacs {
@@ -2159,6 +2157,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
       cursor: default;
       text-decoration: none; }
 
+.consultar div#tablaCaptura_filter label, .consultar div#tablaConsulta_filter label, .Listadoreferidos div#tablaCaptura_filter label, .Listadoreferidos div#tablaConsulta_filter label, .capturar div#tablaCaptura_filter label, .capturar div#tablaConsulta_filter label {
+  font-size: 0; }
 .consultar tbody tr td, .Listadoreferidos tbody tr td, .capturar tbody tr td {
   font-family: "Roboto", Sans-serif;
   font-weight: normal;

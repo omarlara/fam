@@ -107,6 +107,12 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 
 .consultar, .Listadoreferidos, .capturar  {
     
+    div#tablaCaptura_filter, div#tablaConsulta_filter {
+        label {
+            font-size: 0;
+        }
+    }
+    
     tbody {
         tr {
             td {

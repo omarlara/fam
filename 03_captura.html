@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <p class="capturar-titulo">NOMBRE</p>
+                    <p class="capturar-titulo favc">NOMBRE</p>
                     <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <label for="inputName" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Nombre (s) <span class="required">*</span></label>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -175,15 +175,27 @@
 
     <!--#include virtual="ssi/master/scripts.shtml" -->
     
-    <!--<script>
-         $(function () {
-            var from = document.referrer,
-                miniv = 'localhost';
-            if(from.indexOf(miniv) != -1){
-                $('.row.minivacs').show();        
-            }
-         });
-    </script>-->
+    <script>
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            //if (!url) url = 'http://localhost:8181/fam/03_captura.html?val1=myValue&val2=OtherValue';
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            console.log('results = '+results);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        if ( (getParameterByName('val2')) === 'OtherValue') {
+            $('.row.minivacs').show();
+        } else {
+            $('.capturar-titulo.favc').css('border-top', 'transparent');
+        }
+        
+    </script>
 
 </body>
 

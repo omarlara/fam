@@ -20,47 +20,112 @@ $(function () {
                 }
             }
         });
-    }); 
+    });
+    
+    //se valida si es en español o ingles el sitio para modificar los indicadores de las tablas
+    if (( (window.location.href).indexOf('/es/') ) != -1) {       
+        if ($('#tablaConsulta').length) {
+            $('#tablaConsulta').DataTable({
+                ordering: true,
+                responsive: true
+            });
+        }
 
-    if ($('#tablaConsulta').length) {
-        $('#tablaConsulta').DataTable({
-            ordering: true,
-            responsive: true
-        });
-    }
+        if ($('#tablaCaptura').length) {
+             $('#tablaCaptura').DataTable({
+                ordering: true,
+                responsive: true
+            });
+        }
 
-    if ($('#tablaCaptura').length) {
-         $('#tablaCaptura').DataTable({
-            ordering: true,
-            responsive: true
-        });
-    }
+        if ($('#tablaListado').length) {
+            var table = $('#tablaListado').DataTable({
+                ordering: true,
+                responsive: false            
+            });
 
-    if ($('#tablaListado').length) {
-        var table = $('#tablaListado').DataTable({
-            ordering: true,
-            responsive: false
-        });
+            $('#tablaListado thead th').each(function () {
+                var title = $(this).text();
+                $(this).html('<div class="head-text">' + title + '</div>' + '<input type="text" placeholder="Buscar" />');
+            });
 
-        $('#tablaListado thead th').each(function () {
-            var title = $(this).text();
-            $(this).html('<div class="head-text">' + title + '</div>' + '<input type="text" placeholder="Buscar" />');
-        });
+            $('#tablaListado thead th:first').find('div').addClass('first');
+            $('#tablaListado thead th:last').find('div').addClass('last');
 
-        $('#tablaListado thead th:first').find('div').addClass('first');
-        $('#tablaListado thead th:last').find('div').addClass('last');
+            table.columns().every(function () {
+                var that = this;
 
-        table.columns().every(function () {
-            var that = this;
+                $('input', this.header()).on('keyup change', function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
 
-            $('input', this.header()).on('keyup change', function () {
-                if (that.search() !== this.value) {
-                    that
-                        .search(this.value)
-                        .draw();
+        }        
+    } else {        
+        
+        if ($('#tablaConsulta').length) {
+            
+            $('#tablaConsulta').DataTable({
+                ordering: true,
+                responsive: true,
+                "language": {
+                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json",
+                    searchPlaceholder: "Search",
                 }
             });
-        });
+            
+        }
+
+        if ($('#tablaCaptura').length) {
+            
+            $('#tablaCaptura').DataTable({
+                ordering: true,
+                responsive: true,
+                language: {
+                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json",
+                    searchPlaceholder: "Search"
+                }
+            });
+            
+            
+        }
+
+        if ($('#tablaListado').length) {
+            
+            $('#tablaListado thead th').each(function () {
+                var title = $(this).text();
+                $(this).html('<div class="head-text">' + title + '</div>' + '<input type="text" placeholder="Search" />');
+            });
+            
+            var table = $('#tablaListado').DataTable({
+                ordering: true,
+                responsive: false,
+                "language": {
+                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json"
+                }
+            });            
+
+            $('#tablaListado thead th:first').find('div').addClass('first');
+            $('#tablaListado thead th:last').find('div').addClass('last');
+
+            table.columns().every(function () {
+                var that = this;
+
+                $('input', this.header()).on('keyup change', function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+
+        }
+        
     }
 
     $('input[type="search"]').attr('placeholder', 'Buscar');
@@ -119,6 +184,29 @@ $(function () {
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
         }
+    });
+    
+    $('.submit-minivacs').on("click", function () {});
+
+    $("form.form-busqueda").submit(function (event) {
+
+        var nombres = $('#inputNombres').val();
+        var socio = $('#inputNumSocio').val();
+        var apellidos = $('#inputApellidos').val();
+        var spanError = $("span.message-form").attr("data-error-message");
+        var spanSuccess = $("span.message-form").attr("data-success-message");
+
+        if (nombres.length || socio.length || apellidos.length > 0) {
+            $(".message-form").removeClass('error-m').addClass('success-m');
+            $(".message-form").text("Hemos recibido los datos correctamente").fadeIn(500).show();
+            form.submit();
+            event.preventDefault();
+        } else {
+            $(".message-form").removeClass('success-m').addClass('error-m');
+            $(".message-form").text("Llena al menos uno de los siguientes campos para ver los referidos").fadeIn(500).show();
+            event.preventDefault();
+        }
+
     });
 
     $(".form-capturar").validate({
@@ -242,6 +330,14 @@ $(function () {
         "Verifice sus datos."
     );
     
+    $('.form-login').validate({
+        submitHandler: function (form) {
+            $('.success').show();
+            form.submit();
+        }     
+    });
+    
+    
     $('.formReferidos').validate({
         errorPlacement: function(error,element) {
             return true;
@@ -251,7 +347,7 @@ $(function () {
         }        
     });
     
-    $(".form-inline").validate({
+    $(".form-home").validate({
         rules: {
             name: {
                 required: true,
@@ -332,30 +428,5 @@ $(function () {
     
     
     $(".toggle-control > span[disabled]").click(false);
-
-    $('.submit-minivacs').on("click", function () {});
-
-    $("form.form-minivacs").submit(function (event) {
-
-        var nombres = $('#inputNombres').val();
-        var socio = $('#inputNumSocio').val();
-        var apellidos = $('#inputApellidos').val();
-        var spanError = $("span.message-form").attr("data-error-message");
-        var spanSuccess = $("span.message-form").attr("data-success-message");
-
-        if (nombres.length || socio.length || apellidos.length > 0) {
-            $(".message-form").removeClass('error-m').addClass('success-m');
-            $(".message-form").text("Hemos recibido los datos correctamente").fadeIn(500).show();
-            console.log("Paso");
-            event.preventDefault();
-        } else {
-            $(".message-form").removeClass('success-m').addClass('error-m');
-            $(".message-form").text("Llena al menos uno de los siguientes campos para ver los referidos").fadeIn(500).show();
-            console.log("No Paso");
-            event.preventDefault();
-        }
-
-
-    });
 
 });
