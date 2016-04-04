@@ -2,6 +2,28 @@
     .minivacs-block {
         background: url('../img/FiestaAmericanaPuertoVallarta.jpg') no-repeat 0 0 / cover;
         padding: 100px 0;
+        .forgotPass {
+            display: none;
+        }        
+        label.loginSuccess, label.loginError {
+            display: none;
+            font-weight: 400;
+            font-size: 11px;
+            padding-left: 15px;
+        }
+        label.loginError {
+            color: #f82c1d;
+        }
+        label.loginSuccess {
+            color: #fff;
+        }
+        label.loginError {
+            display: none;
+            color: #f82c1d;
+            font-weight: 400;
+            font-size: 11px;
+            padding-left: 15px;
+        }
     }
     .form-login {
         max-width: 370px;

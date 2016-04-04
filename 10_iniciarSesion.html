@@ -18,38 +18,34 @@
         <div class="minivacs-block">
             <div class="minivacs-form container">
                 <div class="form-feedback">
-                    <form class="form-inline form-minivacs form-login">
+                    <form class="form-inline form-minivacs form-login" >
                         <h1>INICIAR SESION</h1>
-
-                        <div class=" message-form " data-error-message="Al menos un campo es requerdo " data-success-message="Hemos recibido los datos correctamente "></div>
-                        <div class="row ">
-                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                <label for="inputNumSocio " class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label ">
-                                    Usuario
-                                </label>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                    <input id="user " name="user " type="text " class="form-control ">
+                        <label class="loginSuccess">Inicio de sesion exitoso</label>
+                        <label class="loginError">Usuario / Correo invalido</label>
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label for="loginUser" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label ">Usuario</label>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input id="loginUser" name="loguser" type="text" class="form-control" required>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="row ">
-                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                <label for="inputNumSocio " class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label ">
-                                    Contraseña
-                                </label>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                                    <input id="password " name="pwd " type="password " class="form-control ">
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label for="loginPassword" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 control-label">Contraseña</label>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input id="loginPassword" name="logpwd" type="password" class="form-control" required>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="row ">                            
+                        <div class="row">                            
                             <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
-                                <button class="home-input submit-minivacs " type="submit " type="submit " value="Submit ">INGRESAR</button>
+                                <button class="home-input" type="submit" value="Submit">INGRESAR</button>
                             </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-                                <a href="#">¿Olvidaste tu contraseña?</a>
+                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a class="forgotPass" href="#">¿Olvidaste tu contraseña?</a>
                             </div>
                         </div>
 

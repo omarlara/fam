@@ -83,7 +83,7 @@
                 <span class="bubble"></span>
             </li>
         </ul></div><div class="status">Nuevo Socio / en proceso de acreditacion</div></td>                                
-                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span>Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas" onclick="modalRec()"><span class="glyphicon glyphicon-gift"></span>Solicitar</a></td>
                                 <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span>Ver</a></td>
                                 <td><a href="#"><i class="fa fa-pencil"></i>Editar</a></td>
                             </tr>
@@ -109,7 +109,7 @@
             <li>
                 <span class="bubble"></i></span>
                                     </li></ul></div><div class="status">No cubre algún requisito indispensable para gozar de la promoción</div></td>                             
-                                <td><a data-toggle="modal" data-target="#modalRecompensas"><span class="glyphicon glyphicon-gift"></span>Solicitar</a></td>
+                                <td><a data-toggle="modal" data-target="#modalRecompensas" onclick="modalRec()"><span class="glyphicon glyphicon-gift"></span>Solicitar</a></td>
                                 <td><a data-toggle="modal" data-target="#modalComentario"><span class="glyphicon glyphicon-eye-open"></span>Ver</a></td>
                                 <td><a href="#"><i class="fa fa-pencil"></i>Editar</a></td>
                             </tr>
@@ -235,7 +235,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-guardar-recompensas" data-dismiss="modal">GUARDAR</button>
+                                    <button type="submit" class="btn btn-guardar-recompensas">GUARDAR</button>
                                     <button type="button" class="btn btn-cerrar-recompensas" data-dismiss="modal">CERRAR</button>
                                 </div>
                             </form>
@@ -288,6 +288,28 @@
     </div>
 
     <!--#include virtual="ssi/master/scripts.shtml" -->
+
+    <script>        
+        function modalRec() {
+            $('.btn-guardar-recompensas').attr('disabled', 'disabled');
+
+            $('#modalRecompensas').find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected').removeAttr('disabled');
+            var statusID = '19';
+            if ( statusID == '19' ) {
+                $('input[name="recompensaComprado"]').attr('disabled', 'disabled');
+            } else if ( statusID == '20' ) {            
+                $('input[name="recompensaAsistido"]').attr('disabled', 'disabled');
+            }
+
+            $('.formReferidos').on('click', function () {
+                if ($('input[name="recompensaAsistido"]').is(':checked')) {
+                    $('.btn-guardar-recompensas').removeAttr('disabled');
+                } else if ($('input[name="recompensaComprado"]').is(':checked')) {
+                    $('.btn-guardar-recompensas').removeAttr('disabled');
+                }
+            });
+        }
+    </script>
 
 </body>
 

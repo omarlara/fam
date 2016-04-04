@@ -1,6 +1,22 @@
 
 .form-feedback {
     
+    form.formModalMail {
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-body {
+            .form-group {
+                input {
+                   max-width: 100%;
+                }                
+            }
+        }
+        .modal-footer {
+            border-top: none;
+        }
+    }
+    
     form.form-inline.form-capturar:first-child {
         .row:first-of-type {
             p.capturar-titulo {
@@ -298,4 +314,11 @@
         }
     }
     
+    form.formModalMail {
+        .modal-footer > button {
+            float: none;
+            width: 100%;
+            margin: 5px 0 !important;
+        }
+    }
   }

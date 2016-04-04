@@ -5,7 +5,7 @@
         }
         .item {
             img.img-responsive {
-                min-height: 590px;
+                min-height: 560px;
                 width: 100%;
             }
             .carousel-content, .detalle-promocion {
@@ -139,7 +139,7 @@
     }
     .item {
         img.img-responsive {
-            min-height: 590px;
+            min-height: 560px;
             width: 100%;
         }
         .detalle-promocion {
@@ -261,6 +261,52 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .informacion, .acercaDe {
+        .item img.img-responsive {
+            max-width: inherit!important;
+            width: initial!important;
+        }
+    }
+    .informacion {
+        .information-img.container {
+            .img-content {
+                //background-color: rgba(0,0,0,.3);                
+                background-color: rgba(253,184,35,.3);
+                margin-bottom: 15px;
+                h1, h2 {
+                    //color: #FDB823 !important;
+                    color: #FFF !important;
+                    text-shadow: 0 1px 4px rgba(0,0,0,.6);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .informacion, .acercaDe {
+        .item img.img-responsive {
+            width: 100%!important;
+        }
+    }
+    .informacion {
+        .information-img.container {
+            .img-content {
+                //background-color: rgba(0,0,0,.3);                
+                background-color: rgba(253,184,35,.3);
+                margin-bottom: 15px;
+                h1, h2 {
+                    //color: #FDB823 !important;
+                    color: #FFF !important;
+                    text-shadow: 0 1px 4px rgba(0,0,0,.6);
+                }
+            }
+        }
+    }
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     .hero {
         #hero-carousel.inicio {
@@ -346,7 +392,7 @@
         #hero-carousel {
             .item {
                 img.img-responsive {
-                    min-height: 170px;
+                    min-height: 240px !important;
                     height: inherit;
                     width: 100% !important;
                 }
@@ -387,7 +433,7 @@
                 padding: 0;
             }
             img.img-responsive {
-                min-height: 170px;
+                min-height: 240px !important;
                 height: inherit;
                 width: 100%!important;
                 max-width: inherit!important;

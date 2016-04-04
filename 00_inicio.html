@@ -50,7 +50,7 @@ programa de referidos</h2>
                             <div class="carousel-share text-right">
                                 <span class="text-content">Compartir</span>
                                 <span class="carousel-email">
-                                    <a href="mailto:omar@acn.com">
+                                    <a data-toggle="modal" data-target="#modalMail">
                                         <i class="fa fa-envelope"></i>
                                     </a>
                                 </span>
@@ -75,7 +75,7 @@ programa de referidos</h2>
                             <div class="carousel-share text-right">
                                 <span class="text-content">Compartir</span>
                                 <span class="carousel-email">
-                                    <a href="mailto:omar@acn.com">
+                                    <a data-toggle="modal" data-target="#modalMail">
                                         <i class="fa fa-envelope"></i>
                                     </a>
                                 </span>
@@ -94,12 +94,14 @@ programa de referidos</h2>
     <div class="home-content container">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 content" >
             <h2>COMPARTIENDO SONRISAS</h2>
-            <p>Es un programa de Referidos en Fiesta Americana Vacation Club, en el cual tú como socio obtienes grandes beneficios al recomendarnos a tus familiares y amigos, al igual que ellos por conocernos y quedarse con nosotros.</p>
+            <p>Comparte Sonrisas invitando a tus familiares y amigos a formar parte de nuestro club vacacional, podrás obtener increíbles beneficios al compartir tu experiencia Fiesta Americana Vacation Club. </p>
             <a href="#" role="button" class="btn btn-lg btn-primary home-slide">MAS INFORMACION</a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 form-feedback" >
-            <form class="form-inline">
-                <h1 class="col-xs-12">Tómate un minuto y dinos a quién te gustaría hacerle vivir grandes momentos.</h1>                
+            <form class="form-inline form-home">
+                <h1 class="col-xs-12"> Tómate unos minutos y dinos a quién te gustaría compartirle tu experiencia con nosotros.</br> 
+¡Queremos que tus familiares y amigos vivan grandes momentos!
+</h1>                
                 <p class="col-xs-12 mandatory">Los campos marcados con asterisco (<span class="red">*</span>) obligatorios</p>
                 <h2 class="col-xs-12 success">Los datos se han enviado correctamente. </h2>
                 <div class="row">
@@ -182,6 +184,62 @@ programa de referidos</h2>
             </form>
         </div>
     </div>
+
+    
+                <div class="modal fade" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="modalMail">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content form-feedback">
+                            <form class="formModalMail form-inline">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="form-group col-xs-10">
+                                        <label class="pull-left col-xs-10 control-label">Numero de socio:</label>
+                                        <div class="col-xs-10">
+                                            <h4 class="modal-title" id="numeroSocio">333444</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                                                     
+                                    <div class="form-group col-xs-12">
+                                        <label class="pull-left col-xs-12 control-label">Saludo</label>
+                                        <div class="col-xs-12 inputs">
+                                            <input placeholder="Sr. Sra." class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-xs-12">
+                                        <label for="inputName" class="pull-left col-xs-12 control-label required">Nombre (s) <span class="required">*</span></label>
+                                        <div class="col-xs-12 inputs">
+                                            <input id="inputName" name="name" placeholder="Juan Alberto" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-xs-12">
+                                        <label for="inputLastName" class="pull-left col-xs-12 control-label">Apellido (s) <span class="required">*</span></label>
+                                        <div class="col-xs-12 inputs">
+                                            <input id="inputLastName" name="lastName" placeholder="Perez Gonzalez" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-xs-12">
+                                        <label for="inputEmail" class="pull-left col-xs-12 control-label">Correo Electronico <span class="required">*</span></label>
+                                        <div class="col-xs-12 inputs">
+                                            <input id="inputEmail" name="email" type="email" placeholder="usuario@correo.com" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-xs-12">
+                                        <label class="pull-left col-xs-12 control-label">Link:</label>
+                                        <div class="col-xs-12">
+                                            <h4 name="link" class="modal-title" id="mailLink">www.asdf.com</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" value="Submit" class="btn guardar-Listado" >ENVIAR</button>
+                                    <button type="button" class="btn btn-cerrar" data-dismiss="modal">CANCELAR</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
     
     
     

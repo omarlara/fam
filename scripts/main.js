@@ -2,6 +2,10 @@
 
 $(function () {
     
+    $('#loginUser').on('focusout', function () {
+        $('.forgotPass').css('display', 'block');
+    });
+    
     $('[data-order]').each(function() {
         var progressVal = $(this).attr('data-order');
         var statusVal = $(this).attr('data-status');
@@ -73,7 +77,7 @@ $(function () {
                 ordering: true,
                 responsive: true,
                 "language": {
-                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json",
+                    url: "scripts/English.json",
                     searchPlaceholder: "Search",
                 }
             });
@@ -86,7 +90,7 @@ $(function () {
                 ordering: true,
                 responsive: true,
                 language: {
-                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json",
+                    url: "scripts/English.json",
                     searchPlaceholder: "Search"
                 }
             });
@@ -105,7 +109,7 @@ $(function () {
                 ordering: true,
                 responsive: false,
                 "language": {
-                   "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json"
+                    url: "scripts/English.json",
                 }
             });            
 
@@ -127,6 +131,10 @@ $(function () {
         }
         
     }
+    
+    $(".printListado").on("click", function ()  {
+        window.print();
+    });
 
     $('input[type="search"]').attr('placeholder', 'Buscar');
 
@@ -136,22 +144,28 @@ $(function () {
         $form.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
     });
     
-    $('a[data-target="#modalRecompensas"]').on('click', function () {
+   /* $('a[data-target="#modalRecompensas"]').on('click', function () {
+        console.log('Click a recompensas');
         $('.btn-guardar-recompensas').attr('disabled', 'disabled');
         
         $('#modalRecompensas').find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected').removeAttr('disabled');
-    });
- 
-    $('.formReferidos').on('click', function () {
-        if ($('input[name="recompensaAsistido"]').is(':checked')) {
+        var statusID = '19';
+        if ( statusID == '19' ) {
             $('input[name="recompensaComprado"]').attr('disabled', 'disabled');
-            $('.btn-guardar-recompensas').removeAttr('disabled');
-        } else if ($('input[name="recompensaComprado"]').is(':checked')) {
+        } else if ( statusID == '20' ) {            
             $('input[name="recompensaAsistido"]').attr('disabled', 'disabled');
-            $('.btn-guardar-recompensas').removeAttr('disabled');
         }
+        
+        $('.formReferidos').on('click', function () {
+            if ($('input[name="recompensaAsistido"]').is(':checked')) {
+                $('.btn-guardar-recompensas').removeAttr('disabled');
+            } else if ($('input[name="recompensaComprado"]').is(':checked')) {
+                $('.btn-guardar-recompensas').removeAttr('disabled');
+            }
+        });
+        
     });
-
+    */
     $("#hero-carousel").owlCarousel({
 
         autoPlay : 5000,
@@ -330,11 +344,65 @@ $(function () {
         "Verifice sus datos."
     );
     
-    $('.form-login').validate({
+    
+    $(".formReferidos").validate({
         submitHandler: function (form) {
-            $('.success').show();
             form.submit();
-        }     
+        }
+    });
+    
+    $(".formModStatusRec").validate({
+        rules: {
+            selectStatusRec: {
+                required: true
+            }
+        },
+        submitHandler: function (form) {
+            form.submit();
+        }
+    });
+    
+    $(".formModStatus").validate({
+        rules: {
+            selectStatus: {
+                required: true
+            }
+        },
+        submitHandler: function (form) {
+            form.submit();
+        }
+    });
+    
+    $(".formModalMail").validate({
+        submitHandler: function (form) {
+            form.submit();
+        }
+    });
+    
+    $("#loginUser").val(localStorage["user"]);
+    
+    $('.form-login').validate({
+        rules: {
+            loguser: {
+                required: true
+            },
+            logpwd: {
+                required: true
+            }
+
+        },
+        submitHandler: function (form) {
+            form.submit();
+            localStorage["user"] = $("#loginUser").val();
+        },
+        messages: {
+            loguser: {
+                required: "Campo requerido."
+            },
+            logpwd: {
+                required: "Campo requerido."
+            }
+        }
     });
     
     

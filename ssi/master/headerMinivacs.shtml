@@ -34,15 +34,6 @@
                 </li>
             </ul>
             </span>
-            <span class="drop-down chat">
-                <span class="text" aria-haspopup="true">
-                  <i class="fa fa-comments"></i>
-                  <span class="name">
-                      <a href="#">Chat</a>
-                  </span>
-            </span>
-
-            </span>
             <span class="drop-down user-action">
                        <span class="text" aria-haspopup="true">
                           <i class="fa fa-user"></i>
